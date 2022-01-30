@@ -16,12 +16,10 @@ spawn_random_apsr_resource_on_capital_planet = {
 				NOR = {
 					has_global_flag = apsr11_spawned
 					has_global_flag = apsr12_spawned
-				}
-				NOR = {
 					has_global_flag = apsr13_spawned
 					has_global_flag = apsr14_spawned
+					has_global_flag = apsr15_spawned
 				}
-				NOT = { has_global_flag = apsr15_spawned }
 			}		
 		}
 		random_list = {
@@ -461,36 +459,22 @@ spawn_random_apsr_resource_on_capital_system = {
 				NOR = {
 					has_global_flag = apsr8_spawned
 					has_global_flag = apsr9_spawned
-				}
-				NOR = {
 					has_global_flag = apsr10_spawned
 					has_global_flag = apsr11_spawned
-				}
-				NOR = {
 					has_global_flag = apsr12_spawned
 					has_global_flag = apsr13_spawned
-				}
-				NOR = {
 					has_global_flag = apsr14_spawned
 					has_global_flag = apsr15_spawned
-				}
-				NOR = {
 					has_global_flag = apsr16_spawned
 					has_global_flag = apsr17_spawned
-				}
-				NOR = {
 					has_global_flag = apsr18_spawned
 					has_global_flag = apsr19_spawned
-				}
-				NOR = {
 					has_global_flag = apsr20_spawned
 					has_global_flag = apsr21_spawned
-				}
-				NOR = {
 					has_global_flag = apsr22_spawned
 					has_global_flag = apsr23_spawned
+					has_global_flag = apsr24_spawned
 				}
-				NOT = { has_global_flag = apsr24_spawned }
 			}		
 		}
 		random_list = {

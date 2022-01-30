@@ -2661,8 +2661,6 @@ planet_event = {
 						NOR = {
 							has_technology = tech_apsr9_upgrade_1
 							has_technology = tech_apsr9_upgrade_2
-						}
-						NOR = {
 							has_technology = tech_apsr9_upgrade_3
 							has_technology = tech_apsr9_building_part2
 						}
@@ -2693,8 +2691,8 @@ planet_event = {
 						NOR = {
 							has_technology = tech_apsr9_upgrade_2
 							has_technology = tech_apsr9_upgrade_3
+							has_technology = tech_apsr9_building_part2
 						}
-						NOT = { has_technology = tech_apsr9_building_part2 }
 					}
 				}			
 			}

@@ -89,12 +89,12 @@ apsr_console_spawn_2 = {
 				NOR = {
 					has_planet_flag = "apsr_planet"
 					has_planet_flag = "legw_planet"
+					has_planet_flag = hatchling_egg
+					has_planet_flag = gpm_is_precursor_world
+					has_planet_flag = gpm_is_wondrous_planet
+					has_planet_flag = gpm_ego_gaia_planet
+					has_global_flag = apsr2_spawned
 				}
-				NOT = { has_planet_flag = hatchling_egg }
-				NOT = { has_planet_flag = gpm_is_precursor_world }
-				NOT = { has_planet_flag = gpm_is_wondrous_planet }
-				NOT = { has_planet_flag = gpm_ego_gaia_planet }
-				NOT = { has_global_flag = apsr2_spawned }
 				is_colony = no
 				is_capital = no
 				planet_size > 15
@@ -169,12 +169,12 @@ apsr_console_spawn_3 = {
 				NOR = {
 					has_planet_flag = "apsr_planet"
 					has_planet_flag = "legw_planet"
+					has_planet_flag = hatchling_egg
+					has_planet_flag = gpm_is_precursor_world
+					has_planet_flag = gpm_is_wondrous_planet
+					has_planet_flag = gpm_ego_gaia_planet
+					has_global_flag = apsr3_spawned
 				}
-				NOT = { has_planet_flag = hatchling_egg }
-				NOT = { has_planet_flag = gpm_is_precursor_world }
-				NOT = { has_planet_flag = gpm_is_wondrous_planet }
-				NOT = { has_planet_flag = gpm_ego_gaia_planet }
-				NOT = { has_global_flag = apsr3_spawned }
 				is_colony = no
 				is_capital = no
 				planet_size > 20
@@ -248,12 +248,12 @@ apsr_console_spawn_4 = {
 				NOR = {
 					has_planet_flag = "apsr_planet"
 					has_planet_flag = "legw_planet"
+					has_planet_flag = hatchling_egg
+					has_planet_flag = gpm_is_precursor_world
+					has_planet_flag = gpm_is_wondrous_planet
+					has_planet_flag = gpm_ego_gaia_planet
+					has_global_flag = apsr4_spawned
 				}
-				NOT = { has_planet_flag = hatchling_egg }
-				NOT = { has_planet_flag = gpm_is_precursor_world }
-				NOT = { has_planet_flag = gpm_is_wondrous_planet }
-				NOT = { has_planet_flag = gpm_ego_gaia_planet }
-				NOT = { has_global_flag = apsr4_spawned }
 				is_colony = no
 				is_capital = no
 				planet_size > 9
@@ -329,12 +329,12 @@ apsr_console_spawn_5 = {
 				NOR = {
 					has_planet_flag = "apsr_planet"
 					has_planet_flag = "legw_planet"
+					has_planet_flag = hatchling_egg
+					has_planet_flag = gpm_is_precursor_world
+					has_planet_flag = gpm_is_wondrous_planet
+					has_planet_flag = gpm_ego_gaia_planet
+					has_global_flag = apsr5_spawned
 				}
-				NOT = { has_planet_flag = hatchling_egg }
-				NOT = { has_planet_flag = gpm_is_precursor_world }
-				NOT = { has_planet_flag = gpm_is_wondrous_planet }
-				NOT = { has_planet_flag = gpm_ego_gaia_planet }
-				NOT = { has_global_flag = apsr5_spawned }
 				is_colony = no
 				is_capital = no
 				planet_size > 11
@@ -407,12 +407,12 @@ apsr_console_spawn_6 = {
 				NOR = {
 					has_planet_flag = "apsr_planet"
 					has_planet_flag = "legw_planet"
+					has_planet_flag = hatchling_egg
+					has_planet_flag = gpm_is_precursor_world
+					has_planet_flag = gpm_is_wondrous_planet
+					has_planet_flag = gpm_ego_gaia_planet
+					has_global_flag = apsr6_spawned
 				}
-				NOT = { has_planet_flag = hatchling_egg }
-				NOT = { has_planet_flag = gpm_is_precursor_world }
-				NOT = { has_planet_flag = gpm_is_wondrous_planet }
-				NOT = { has_planet_flag = gpm_ego_gaia_planet }
-				NOT = { has_global_flag = apsr6_spawned }
 				is_colony = no
 				is_capital = no
 				planet_size > 9
@@ -485,12 +485,12 @@ apsr_console_spawn_7 = {
 				NOR = {
 					has_planet_flag = "apsr_planet"
 					has_planet_flag = "legw_planet"
+					has_planet_flag = hatchling_egg
+					has_planet_flag = gpm_is_precursor_world
+					has_planet_flag = gpm_is_wondrous_planet
+					has_planet_flag = gpm_ego_gaia_planet
+					has_global_flag = apsr7_spawned
 				}
-				NOT = { has_planet_flag = hatchling_egg }
-				NOT = { has_planet_flag = gpm_is_precursor_world }
-				NOT = { has_planet_flag = gpm_is_wondrous_planet }
-				NOT = { has_planet_flag = gpm_ego_gaia_planet }
-				NOT = { has_global_flag = apsr7_spawned }
 				is_colony = no
 				is_capital = no
 				planet_size > 12
@@ -562,12 +562,12 @@ apsr_console_spawn_8 = {
 				NOR = {
 					has_planet_flag = "apsr_planet"
 					has_planet_flag = "legw_planet"
+					has_planet_flag = hatchling_egg
+					has_planet_flag = gpm_is_precursor_world
+					has_planet_flag = gpm_is_wondrous_planet
+					has_planet_flag = gpm_ego_gaia_planet
+					has_global_flag = apsr8_spawned
 				}
-				NOT = { has_planet_flag = hatchling_egg }
-				NOT = { has_planet_flag = gpm_is_precursor_world }
-				NOT = { has_planet_flag = gpm_is_wondrous_planet }
-				NOT = { has_planet_flag = gpm_ego_gaia_planet }
-				NOT = { has_global_flag = apsr8_spawned }
 				is_colony = no
 				is_capital = no
 				planet_size > 14
@@ -640,12 +640,12 @@ apsr_console_spawn_9 = {
 				NOR = {
 					has_planet_flag = "apsr_planet"
 					has_planet_flag = "legw_planet"
+					has_planet_flag = hatchling_egg
+					has_planet_flag = gpm_is_precursor_world
+					has_planet_flag = gpm_is_wondrous_planet
+					has_planet_flag = gpm_ego_gaia_planet
+					has_global_flag = apsr9_spawned
 				}
-				NOT = { has_planet_flag = hatchling_egg }
-				NOT = { has_planet_flag = gpm_is_precursor_world }
-				NOT = { has_planet_flag = gpm_is_wondrous_planet }
-				NOT = { has_planet_flag = gpm_ego_gaia_planet }
-				NOT = { has_global_flag = apsr9_spawned }
 				is_colony = no
 				is_capital = no
 				planet_size < 12
@@ -717,12 +717,12 @@ apsr_console_spawn_10 = {
 				NOR = {
 					has_planet_flag = "apsr_planet"
 					has_planet_flag = "legw_planet"
+					has_planet_flag = hatchling_egg
+					has_planet_flag = gpm_is_precursor_world
+					has_planet_flag = gpm_is_wondrous_planet
+					has_planet_flag = gpm_ego_gaia_planet
+					has_global_flag = apsr10_spawned
 				}
-				NOT = { has_planet_flag = hatchling_egg }
-				NOT = { has_planet_flag = gpm_is_precursor_world }
-				NOT = { has_planet_flag = gpm_is_wondrous_planet }
-				NOT = { has_planet_flag = gpm_ego_gaia_planet }
-				NOT = { has_global_flag = apsr10_spawned }
 				is_colony = no
 				is_capital = no
 				planet_size > 9
@@ -793,12 +793,12 @@ apsr_console_spawn_11 = {
 				NOR = {
 					has_planet_flag = "apsr_planet"
 					has_planet_flag = "legw_planet"
+					has_planet_flag = hatchling_egg
+					has_planet_flag = gpm_is_precursor_world
+					has_planet_flag = gpm_is_wondrous_planet
+					has_planet_flag = gpm_ego_gaia_planet
+					has_global_flag = apsr11_spawned
 				}
-				NOT = { has_planet_flag = hatchling_egg }
-				NOT = { has_planet_flag = gpm_is_precursor_world }
-				NOT = { has_planet_flag = gpm_is_wondrous_planet }
-				NOT = { has_planet_flag = gpm_ego_gaia_planet }
-				NOT = { has_global_flag = apsr11_spawned }
 				is_colony = no
 				is_capital = no
 				planet_size > 11
@@ -873,12 +873,12 @@ apsr_console_spawn_12 = {
 				NOR = {
 					has_planet_flag = "apsr_planet"
 					has_planet_flag = "legw_planet"
+					has_planet_flag = hatchling_egg
+					has_planet_flag = gpm_is_precursor_world
+					has_planet_flag = gpm_is_wondrous_planet
+					has_planet_flag = gpm_ego_gaia_planet
+					has_global_flag = apsr12_spawned
 				}
-				NOT = { has_planet_flag = hatchling_egg }
-				NOT = { has_planet_flag = gpm_is_precursor_world }
-				NOT = { has_planet_flag = gpm_is_wondrous_planet }
-				NOT = { has_planet_flag = gpm_ego_gaia_planet }
-				NOT = { has_global_flag = apsr12_spawned }
 				is_colony = no
 				is_capital = no
 				planet_size > 11
@@ -951,12 +951,12 @@ apsr_console_spawn_13 = {
 				NOR = {
 					has_planet_flag = "apsr_planet"
 					has_planet_flag = "legw_planet"
+					has_planet_flag = hatchling_egg
+					has_planet_flag = gpm_is_precursor_world
+					has_planet_flag = gpm_is_wondrous_planet
+					has_planet_flag = gpm_ego_gaia_planet
+					has_global_flag = apsr13_spawned
 				}
-				NOT = { has_planet_flag = hatchling_egg }
-				NOT = { has_planet_flag = gpm_is_precursor_world }
-				NOT = { has_planet_flag = gpm_is_wondrous_planet }
-				NOT = { has_planet_flag = gpm_ego_gaia_planet }
-				NOT = { has_global_flag = apsr13_spawned }
 				is_colony = no
 				is_capital = no
 				planet_size > 11
@@ -1029,12 +1029,12 @@ apsr_console_spawn_14 = {
 				NOR = {
 					has_planet_flag = "apsr_planet"
 					has_planet_flag = "legw_planet"
+					has_planet_flag = hatchling_egg
+					has_planet_flag = gpm_is_precursor_world
+					has_planet_flag = gpm_is_wondrous_planet
+					has_planet_flag = gpm_ego_gaia_planet
+					has_global_flag = apsr14_spawned
 				}
-				NOT = { has_planet_flag = hatchling_egg }
-				NOT = { has_planet_flag = gpm_is_precursor_world }
-				NOT = { has_planet_flag = gpm_is_wondrous_planet }
-				NOT = { has_planet_flag = gpm_ego_gaia_planet }
-				NOT = { has_global_flag = apsr14_spawned }
 				is_colony = no
 				is_capital = no
 				planet_size > 9
@@ -1110,12 +1110,12 @@ apsr_console_spawn_15 = {
 				NOR = {
 					has_planet_flag = "apsr_planet"
 					has_planet_flag = "legw_planet"
+					has_planet_flag = hatchling_egg
+					has_planet_flag = gpm_is_precursor_world
+					has_planet_flag = gpm_is_wondrous_planet
+					has_planet_flag = gpm_ego_gaia_planet
+					has_global_flag = apsr15_spawned
 				}
-				NOT = { has_planet_flag = hatchling_egg }
-				NOT = { has_planet_flag = gpm_is_precursor_world }
-				NOT = { has_planet_flag = gpm_is_wondrous_planet }
-				NOT = { has_planet_flag = gpm_ego_gaia_planet }
-				NOT = { has_global_flag = apsr15_spawned }
 				is_colony = no
 				is_capital = no
 				planet_size > 15
@@ -1196,12 +1196,12 @@ apsr_console_spawn_16 = {
 				NOR = {
 					has_planet_flag = "apsr_planet"
 					has_planet_flag = "legw_planet"
+					has_planet_flag = hatchling_egg
+					has_planet_flag = gpm_is_precursor_world
+					has_planet_flag = gpm_is_wondrous_planet
+					has_planet_flag = gpm_ego_gaia_planet
+					has_global_flag = apsr16_spawned
 				}
-				NOT = { has_planet_flag = hatchling_egg }
-				NOT = { has_planet_flag = gpm_is_precursor_world }
-				NOT = { has_planet_flag = gpm_is_wondrous_planet }
-				NOT = { has_planet_flag = gpm_ego_gaia_planet }
-				NOT = { has_global_flag = apsr16_spawned }
 				is_colony = no
 				is_capital = no
 				planet_size > 15
@@ -1274,12 +1274,12 @@ apsr_console_spawn_17 = {
 				NOR = {
 					has_planet_flag = "apsr_planet"
 					has_planet_flag = "legw_planet"
+					has_planet_flag = hatchling_egg
+					has_planet_flag = gpm_is_precursor_world
+					has_planet_flag = gpm_is_wondrous_planet
+					has_planet_flag = gpm_ego_gaia_planet
+					has_global_flag = apsr17_spawned
 				}
-				NOT = { has_planet_flag = hatchling_egg }
-				NOT = { has_planet_flag = gpm_is_precursor_world }
-				NOT = { has_planet_flag = gpm_is_wondrous_planet }
-				NOT = { has_planet_flag = gpm_ego_gaia_planet }
-				NOT = { has_global_flag = apsr17_spawned }
 				is_colony = no
 				is_capital = no
 				planet_size > 15
@@ -1352,12 +1352,12 @@ apsr_console_spawn_18 = {
 				NOR = {
 					has_planet_flag = "apsr_planet"
 					has_planet_flag = "legw_planet"
+					has_planet_flag = hatchling_egg
+					has_planet_flag = gpm_is_precursor_world
+					has_planet_flag = gpm_is_wondrous_planet
+					has_planet_flag = gpm_ego_gaia_planet
+					has_global_flag = apsr18_spawned
 				}
-				NOT = { has_planet_flag = hatchling_egg }
-				NOT = { has_planet_flag = gpm_is_precursor_world }
-				NOT = { has_planet_flag = gpm_is_wondrous_planet }
-				NOT = { has_planet_flag = gpm_ego_gaia_planet }
-				NOT = { has_global_flag = apsr18_spawned }
 				is_colony = no
 				is_capital = no
 				planet_size > 15
@@ -1430,12 +1430,12 @@ apsr_console_spawn_19 = {
 				NOR = {
 					has_planet_flag = "apsr_planet"
 					has_planet_flag = "legw_planet"
+					has_planet_flag = hatchling_egg
+					has_planet_flag = gpm_is_precursor_world
+					has_planet_flag = gpm_is_wondrous_planet
+					has_planet_flag = gpm_ego_gaia_planet
+					has_global_flag = apsr19_spawned
 				}
-				NOT = { has_planet_flag = hatchling_egg }
-				NOT = { has_planet_flag = gpm_is_precursor_world }
-				NOT = { has_planet_flag = gpm_is_wondrous_planet }
-				NOT = { has_planet_flag = gpm_ego_gaia_planet }
-				NOT = { has_global_flag = apsr19_spawned }
 				is_colony = no
 				is_capital = no
 				planet_size > 15
@@ -1511,12 +1511,12 @@ apsr_console_spawn_20 = {
 				NOR = {
 					has_planet_flag = "apsr_planet"
 					has_planet_flag = "legw_planet"
+					has_planet_flag = hatchling_egg
+					has_planet_flag = gpm_is_precursor_world
+					has_planet_flag = gpm_is_wondrous_planet
+					has_planet_flag = gpm_ego_gaia_planet
+					has_global_flag = apsr20_spawned
 				}
-				NOT = { has_planet_flag = hatchling_egg }
-				NOT = { has_planet_flag = gpm_is_precursor_world }
-				NOT = { has_planet_flag = gpm_is_wondrous_planet }
-				NOT = { has_planet_flag = gpm_ego_gaia_planet }
-				NOT = { has_global_flag = apsr20_spawned }
 				is_colony = no
 				is_capital = no
 				planet_size > 15
@@ -1589,12 +1589,12 @@ apsr_console_spawn_21 = {
 				NOR = {
 					has_planet_flag = "apsr_planet"
 					has_planet_flag = "legw_planet"
+					has_planet_flag = hatchling_egg
+					has_planet_flag = gpm_is_precursor_world
+					has_planet_flag = gpm_is_wondrous_planet
+					has_planet_flag = gpm_ego_gaia_planet
+					has_global_flag = apsr21_spawned
 				}
-				NOT = { has_planet_flag = hatchling_egg }
-				NOT = { has_planet_flag = gpm_is_precursor_world }
-				NOT = { has_planet_flag = gpm_is_wondrous_planet }
-				NOT = { has_planet_flag = gpm_ego_gaia_planet }
-				NOT = { has_global_flag = apsr21_spawned }
 				is_colony = no
 				is_capital = no
 				planet_size > 15
@@ -1670,12 +1670,12 @@ apsr_console_spawn_22 = {
 				NOR = {
 					has_planet_flag = "apsr_planet"
 					has_planet_flag = "legw_planet"
+					has_planet_flag = hatchling_egg
+					has_planet_flag = gpm_is_precursor_world
+					has_planet_flag = gpm_is_wondrous_planet
+					has_planet_flag = gpm_ego_gaia_planet
+					has_global_flag = apsr22_spawned
 				}
-				NOT = { has_planet_flag = hatchling_egg }
-				NOT = { has_planet_flag = gpm_is_precursor_world }
-				NOT = { has_planet_flag = gpm_is_wondrous_planet }
-				NOT = { has_planet_flag = gpm_ego_gaia_planet }
-				NOT = { has_global_flag = apsr22_spawned }
 				is_colony = no
 				is_capital = no
 				planet_size > 15
@@ -1748,12 +1748,12 @@ apsr_console_spawn_23 = {
 				NOR = {
 					has_planet_flag = "apsr_planet"
 					has_planet_flag = "legw_planet"
+					has_planet_flag = hatchling_egg
+					has_planet_flag = gpm_is_precursor_world
+					has_planet_flag = gpm_is_wondrous_planet
+					has_planet_flag = gpm_ego_gaia_planet
+					has_global_flag = apsr23_spawned
 				}
-				NOT = { has_planet_flag = hatchling_egg }
-				NOT = { has_planet_flag = gpm_is_precursor_world }
-				NOT = { has_planet_flag = gpm_is_wondrous_planet }
-				NOT = { has_planet_flag = gpm_ego_gaia_planet }
-				NOT = { has_global_flag = apsr23_spawned }
 				is_colony = no
 				is_capital = no
 				planet_size > 15
@@ -1826,12 +1826,12 @@ apsr_console_spawn_24 = {
 				NOR = {
 					has_planet_flag = "apsr_planet"
 					has_planet_flag = "legw_planet"
+					has_planet_flag = hatchling_egg
+					has_planet_flag = gpm_is_precursor_world
+					has_planet_flag = gpm_is_wondrous_planet
+					has_planet_flag = gpm_ego_gaia_planet
+					has_global_flag = apsr24_spawned
 				}
-				NOT = { has_planet_flag = hatchling_egg }
-				NOT = { has_planet_flag = gpm_is_precursor_world }
-				NOT = { has_planet_flag = gpm_is_wondrous_planet }
-				NOT = { has_planet_flag = gpm_ego_gaia_planet }
-				NOT = { has_global_flag = apsr24_spawned }
 				is_colony = no
 				is_capital = no
 				planet_size > 15

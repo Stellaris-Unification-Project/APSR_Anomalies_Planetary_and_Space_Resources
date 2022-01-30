@@ -2640,12 +2640,10 @@ country_event = {
 						NOR = {
 							has_global_flag = apsr11_spawned
 							has_global_flag = apsr12_spawned
-						}
-						NOR = {
 							has_global_flag = apsr13_spawned
 							has_global_flag = apsr14_spawned
+							has_global_flag = apsr15_spawned
 						}
-						NOT = { has_global_flag = apsr15_spawned }
 					}
 				}
 			}

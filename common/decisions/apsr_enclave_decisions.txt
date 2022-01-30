@@ -373,10 +373,7 @@ apsr_enclave_defence_20_decision = {
 		cost = {
 			trigger = {
 				owner = {
-					NOR = {
-							has_ethic = ethic_fanatic_pacifist
-							has_ethic = ethic_pacifist
-}
+					is_pacifist = no
 				}
 			}
 			influence = 100
