@@ -5,18 +5,22 @@
 spawn_random_apsr_resource_on_capital_planet = {
 	if = {
 		limit = {
-			OR = {
-				NOT = { has_global_flag = apsr1_spawned }
-				NOT = { has_global_flag = apsr2_spawned }
-				NOT = { has_global_flag = apsr3_spawned }
-				NOT = { has_global_flag = apsr4_spawned }
-				NOT = { has_global_flag = apsr5_spawned }
-				NOT = { has_global_flag = apsr6_spawned }
-				NOT = { has_global_flag = apsr8_spawned }
-				NOT = { has_global_flag = apsr11_spawned }
-				NOT = { has_global_flag = apsr12_spawned }
-				NOT = { has_global_flag = apsr13_spawned }
-				NOT = { has_global_flag = apsr14_spawned }
+			NAND = {
+				has_global_flag = apsr1_spawned
+				has_global_flag = apsr2_spawned
+				has_global_flag = apsr3_spawned
+				has_global_flag = apsr4_spawned
+				has_global_flag = apsr5_spawned
+				has_global_flag = apsr6_spawned
+				has_global_flag = apsr8_spawned
+				NOR = {
+					has_global_flag = apsr11_spawned
+					has_global_flag = apsr12_spawned
+				}
+				NOR = {
+					has_global_flag = apsr13_spawned
+					has_global_flag = apsr14_spawned
+				}
 				NOT = { has_global_flag = apsr15_spawned }
 			}		
 		}
@@ -446,30 +450,46 @@ spawn_random_apsr_resource_on_capital_planet = {
 spawn_random_apsr_resource_on_capital_system = {
 	if = {
 		limit = {
-			OR = {
-				NOT = { has_global_flag = apsr1_spawned }
-				NOT = { has_global_flag = apsr2_spawned }
-				NOT = { has_global_flag = apsr3_spawned }
-				NOT = { has_global_flag = apsr4_spawned }
-				NOT = { has_global_flag = apsr5_spawned }
-				NOT = { has_global_flag = apsr6_spawned }
-				NOT = { has_global_flag = apsr7_spawned }
-				NOT = { has_global_flag = apsr8_spawned }
-				NOT = { has_global_flag = apsr9_spawned }
-				NOT = { has_global_flag = apsr10_spawned }
-				NOT = { has_global_flag = apsr11_spawned }
-				NOT = { has_global_flag = apsr12_spawned }
-				NOT = { has_global_flag = apsr13_spawned }
-				NOT = { has_global_flag = apsr14_spawned }
-				NOT = { has_global_flag = apsr15_spawned }
-				NOT = { has_global_flag = apsr16_spawned }
-				NOT = { has_global_flag = apsr17_spawned }
-				NOT = { has_global_flag = apsr18_spawned }
-				NOT = { has_global_flag = apsr19_spawned }
-				NOT = { has_global_flag = apsr20_spawned }
-				NOT = { has_global_flag = apsr21_spawned }
-				NOT = { has_global_flag = apsr22_spawned }
-				NOT = { has_global_flag = apsr23_spawned }
+			NAND = {
+				has_global_flag = apsr1_spawned
+				has_global_flag = apsr2_spawned
+				has_global_flag = apsr3_spawned
+				has_global_flag = apsr4_spawned
+				has_global_flag = apsr5_spawned
+				has_global_flag = apsr6_spawned
+				has_global_flag = apsr7_spawned
+				NOR = {
+					has_global_flag = apsr8_spawned
+					has_global_flag = apsr9_spawned
+				}
+				NOR = {
+					has_global_flag = apsr10_spawned
+					has_global_flag = apsr11_spawned
+				}
+				NOR = {
+					has_global_flag = apsr12_spawned
+					has_global_flag = apsr13_spawned
+				}
+				NOR = {
+					has_global_flag = apsr14_spawned
+					has_global_flag = apsr15_spawned
+				}
+				NOR = {
+					has_global_flag = apsr16_spawned
+					has_global_flag = apsr17_spawned
+				}
+				NOR = {
+					has_global_flag = apsr18_spawned
+					has_global_flag = apsr19_spawned
+				}
+				NOR = {
+					has_global_flag = apsr20_spawned
+					has_global_flag = apsr21_spawned
+				}
+				NOR = {
+					has_global_flag = apsr22_spawned
+					has_global_flag = apsr23_spawned
+				}
 				NOT = { has_global_flag = apsr24_spawned }
 			}		
 		}

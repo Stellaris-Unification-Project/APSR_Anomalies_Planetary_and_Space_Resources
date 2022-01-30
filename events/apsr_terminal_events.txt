@@ -7202,14 +7202,16 @@ country_event = {
 			random_system = {
 				limit = {
 					exists = owner
-					owner = { is_same_value = root }
+					is_owned_by = root
 					any_system_planet = {
 						is_star = no
 						is_capital = no
 						habitable_structure = no
 						is_asteroid = no
-						NOT = { is_planet_class = pc_gas_giant }
-						NOT = { is_planet_class = pc_city }
+						NOR = {
+							is_planet_class = pc_gas_giant
+							is_planet_class = pc_city
+						}
 					}
 				}
 				random_system_planet = {
@@ -7218,8 +7220,10 @@ country_event = {
 						is_capital = no
 						habitable_structure = no
 						is_asteroid = no
-						NOT = { is_planet_class = pc_gas_giant }
-						NOT = { is_planet_class = pc_city }
+						NOR = {
+							is_planet_class = pc_gas_giant
+							is_planet_class = pc_city
+						}
 					}
 					save_global_event_target_as = apsr_terminal_site_61
 				}		
@@ -7233,10 +7237,7 @@ country_event = {
 		trigger = {
 			owner = {
 				NOT = {
-					OR = {
-						has_ethic = ethic_authoritarian
-						has_ethic = ethic_fanatic_authoritarian
-					}
+					is_authoritarian = yes
 				}
 			}
 		}
@@ -7257,10 +7258,7 @@ country_event = {
 		custom_tooltip = apsr_terminal.161.button2.tooltip
 		trigger = {
 			owner = {
-				OR = {
-					has_ethic = ethic_authoritarian
-					has_ethic = ethic_fanatic_authoritarian
-				}
+				is_authoritarian = yes
 			}
 		}
 		enable_special_project = {
@@ -11834,14 +11832,10 @@ country_event = {
 		name = apsr_terminal.361.button1
 		trigger = {
 			AND = {
-				NOT = {
-					has_global_flag = apsr_terminal_site_61_complete
-				}
 				NOR = {
-					has_ethic = ethic_xenophobe
-					has_ethic = ethic_fanatic_xenophobe
-					has_ethic = ethic_militarist
-					has_ethic = ethic_fanatic_militarist
+					has_global_flag = apsr_terminal_site_61_complete
+					is_xenophobe = yes
+					is_militarist = yes
 				}
 			}
 		}
@@ -11855,10 +11849,8 @@ country_event = {
 					has_global_flag = apsr_terminal_site_61_complete
 				}
 				OR = {
-					has_ethic = ethic_xenophobe
-					has_ethic = ethic_fanatic_xenophobe
-					has_ethic = ethic_militarist
-					has_ethic = ethic_fanatic_militarist
+					is_xenophobe = yes
+					is_militarist = yes
 				}
 			}
 		}
@@ -12002,7 +11994,7 @@ country_event = {
 		name = apsr_terminal.90025.button1
 		custom_tooltip = apsr_terminal.90025.button1.tooltip
 		hidden_effect = {
-			every_country = {
+			every_playable_country = {
 				limit = {
 					is_ai = no
 				}
@@ -12239,13 +12231,11 @@ ship_event = {
 	desc = {
 		trigger = {
 			owner = {
-				AND = {
-					NOT = {
-						apsr_terminal_has_any_code_info = yes
-					}
-					NOT = {
-						has_relic = relic_apsr_terminal
-					}
+				NOR = {
+					apsr_terminal_has_any_code_info = yes
+					
+					has_relic = relic_apsr_terminal
+					
 				}
 			}
 		}
@@ -12283,13 +12273,11 @@ ship_event = {
 		custom_tooltip = apsr_terminal.90001.button1.tooltip
 		trigger = {
 			owner = {
-				AND = {
-					NOT = {
-						apsr_terminal_has_any_code_info = yes
-					}
-					NOT = {
-						has_relic = relic_apsr_terminal
-					}
+				NOR = {
+					apsr_terminal_has_any_code_info = yes
+					
+					has_relic = relic_apsr_terminal
+					
 				}
 			}
 		}
@@ -13814,10 +13802,7 @@ fleet_event = {
 				AND = {
 					is_gestalt = no
 					NOT = {
-						OR = {
-							has_ethic = "ethic_xenophile"
-							has_ethic = "ethic_fanatic_xenophile"
-						}
+						is_xenophile = yes
 					}
 				}
 			}
@@ -13835,10 +13820,7 @@ fleet_event = {
 				AND = {
 					is_gestalt = no
 					NOT = {
-						OR = {
-							has_ethic = "ethic_xenophile"
-							has_ethic = "ethic_fanatic_xenophile"
-						}
+						is_xenophile = yes
 					}
 				}
 			}
@@ -13852,10 +13834,7 @@ fleet_event = {
 			owner = {
 				AND = {
 					is_gestalt = no
-					OR = {
-						has_ethic = "ethic_xenophile"
-						has_ethic = "ethic_fanatic_xenophile"
-					}
+					is_xenophile = yes
 				}
 			}
 		}
@@ -13944,10 +13923,7 @@ fleet_event = {
 				AND = {
 					is_gestalt = no
 					NOT = {
-						OR = {
-							has_ethic = "ethic_xenophile"
-							has_ethic = "ethic_fanatic_xenophile"
-						}
+						is_xenophile = yes
 					}
 				}
 			}
@@ -13965,10 +13941,7 @@ fleet_event = {
 				AND = {
 					is_gestalt = no
 					NOT = {
-						OR = {
-							has_ethic = "ethic_xenophile"
-							has_ethic = "ethic_fanatic_xenophile"
-						}
+						is_xenophile = yes
 					}
 				}
 			}
@@ -13982,10 +13955,7 @@ fleet_event = {
 			owner = {
 				AND = {
 					is_gestalt = no
-					OR = {
-						has_ethic = "ethic_xenophile"
-						has_ethic = "ethic_fanatic_xenophile"
-					}
+					is_xenophile = yes
 				}
 			}
 		}
@@ -15394,10 +15364,7 @@ fleet_event = {
 		trigger = {
 			owner = {
 				NOT = {
-					OR = {
-						has_ethic = ethic_egalitarian
-						has_ethic = ethic_fanatic_egalitarian
-					}
+					is_egalitarian = yes
 				}
 			}
 		}
@@ -16139,10 +16106,8 @@ country_event = {
 			limit = {
 				AND = {
 					any_country = {
-						OR = {
-							is_country_type = fallen_empire
-							is_country_type = awakened_fallen_empire 
-						}
+						
+							is_fallen_empire = yes
 						has_communications = root
 						NOT = { is_at_war_with = root }
 						opinion = { who = root value > 99 }
@@ -16591,10 +16556,8 @@ country_event = {
 			limit = {
 				AND = {
 					any_country = {
-						OR = {
-							is_country_type = fallen_empire
-							is_country_type = awakened_fallen_empire 
-						}
+						
+							is_fallen_empire = yes
 						has_communications = root
 						NOT = { is_at_war_with = root }
 						opinion = { who = root value > 99 }
@@ -16610,10 +16573,8 @@ country_event = {
 			random_country = {
 				limit = { 
 					AND = {
-						OR = {
-							is_country_type = fallen_empire
-							is_country_type = awakened_fallen_empire 
-						}
+						
+							is_fallen_empire = yes
 						has_communications = root
 						NOT = { is_at_war_with = root }
 						opinion = { who = root value > 99 }
@@ -16652,10 +16613,8 @@ country_event = {
 			limit = {
 				AND = {
 					any_country = {
-						OR = {
-							is_country_type = fallen_empire
-							is_country_type = awakened_fallen_empire 
-						}
+						
+							is_fallen_empire = yes
 						has_communications = root
 						NOT = { is_at_war_with = root }
 						opinion = { who = root value > 99 }
@@ -16668,10 +16627,8 @@ country_event = {
 			random_country = {
 				limit = { 
 					AND = {
-						OR = {
-							is_country_type = fallen_empire
-							is_country_type = awakened_fallen_empire 
-						}
+						
+							is_fallen_empire = yes
 						has_communications = root
 						NOT = { is_at_war_with = root }
 						opinion = { who = root value > 99 }
@@ -17286,13 +17243,11 @@ planet_event = {
 	desc = {
 		trigger = {
 			AND = {
-				NOT = {
-					OR = {
+				NOR = {
 						has_planet_flag = apsr_terminal_blocker_code_unique
 						has_planet_flag = apsr_terminal_blocker_code_ancient
 						has_planet_flag = apsr_terminal_blocker_code_ruined
-					}
-				}
+}
 				owner = {
 					NOT = {
 						has_relic = relic_apsr_terminal
@@ -17338,13 +17293,11 @@ planet_event = {
 	desc = {
 		trigger = {
 			AND = {
-				NOT = {
-					OR = {
+				NOR = {
 						has_planet_flag = apsr_terminal_blocker_code_unique
 						has_planet_flag = apsr_terminal_blocker_code_ancient
 						has_planet_flag = apsr_terminal_blocker_code_ruined
-					}
-				}
+}
 				owner = {
 					has_relic = relic_apsr_terminal
 				}
@@ -17462,13 +17415,11 @@ planet_event = {
 		custom_tooltip = apsr_terminal.82003.button1.tooltip
 		trigger = {
 			owner = {
-				AND = {
-					NOT = {
-						apsr_terminal_has_any_code_info = yes
-					}
-					NOT = {
-						has_relic = relic_apsr_terminal
-					}
+				NOR = {
+					apsr_terminal_has_any_code_info = yes
+					
+					has_relic = relic_apsr_terminal
+					
 				}
 			}
 		}

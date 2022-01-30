@@ -900,12 +900,10 @@ planet_event = {
 					AND = {
 						has_building = apsr21_building_part_m1
 						owner = {
-							NOT = {
-								OR = {
+							NOR = {
 									has_authority = auth_machine_intelligence
 									has_country_flag = synthetic_age
-								}
-							}
+}
 						}
 					}
 				}
@@ -919,12 +917,10 @@ planet_event = {
 					AND = {
 						has_building = apsr21_building_part_m2
 						owner = {
-							NOT = {
-								OR = {
+							NOR = {
 									has_authority = auth_machine_intelligence
 									has_country_flag = synthetic_age
-								}
-							}
+}
 						}
 					}
 				}
@@ -938,12 +934,10 @@ planet_event = {
 					AND = {
 						has_building = apsr21_building_part_m3
 						owner = {
-							NOT = {
-								OR = {
+							NOR = {
 									has_authority = auth_machine_intelligence
 									has_country_flag = synthetic_age
-								}
-							}
+}
 						}
 					}
 				}

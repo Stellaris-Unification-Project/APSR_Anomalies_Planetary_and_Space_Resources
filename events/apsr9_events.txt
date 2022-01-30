@@ -34,9 +34,9 @@ planet_event = {
 	desc = {
 		trigger = {
 			owner = { 
-				AND = {
-					NOT = { has_country_flag = apsr9001_ruined }
-					NOT = { has_country_flag = apsr9001_get_back }
+				NOR = {
+					has_country_flag = apsr9001_ruined 
+					has_country_flag = apsr9001_get_back 
 				}
 			}
 		}
@@ -357,8 +357,10 @@ planet_event = {
 			owner = { 
 				AND = {
 					has_country_flag = apsr9001_reward0 
-					NOT = { has_country_flag = apsr9002_get_back }
-					NOT = { has_country_flag = apsr9001_ruined }
+					NOR = {
+						has_country_flag = apsr9002_get_back
+						has_country_flag = apsr9001_ruined
+					}
 				} 
 			}
 		}
@@ -369,8 +371,10 @@ planet_event = {
 			owner = {  
 				AND = {
 					has_country_flag = apsr9001_reward1 
-					NOT = { has_country_flag = apsr9002_get_back }
-					NOT = { has_country_flag = apsr9001_ruined }
+					NOR = {
+						has_country_flag = apsr9002_get_back
+						has_country_flag = apsr9001_ruined
+					}
 				} 
 			}
 		}
@@ -381,8 +385,10 @@ planet_event = {
 			owner = {  
 				AND = {
 					has_country_flag = apsr9001_reward2 
-					NOT = { has_country_flag = apsr9002_get_back }
-					NOT = { has_country_flag = apsr9001_ruined }
+					NOR = {
+						has_country_flag = apsr9002_get_back
+						has_country_flag = apsr9001_ruined
+					}
 				} 
 			}
 		}
@@ -778,8 +784,10 @@ planet_event = {
 			owner = {   
 				AND = {
 					has_country_flag = apsr9002_reward1 
-					NOT = { has_country_flag = apsr9003_get_back }
-					NOT = { has_country_flag = apsr9001_ruined }
+					NOR = {
+						has_country_flag = apsr9003_get_back
+						has_country_flag = apsr9001_ruined
+					}
 				}  
 			}
 		}
@@ -790,8 +798,10 @@ planet_event = {
 			owner = {  
 				AND = {
 					has_country_flag = apsr9002_reward3 
-					NOT = { has_country_flag = apsr9003_get_back }
-					NOT = { has_country_flag = apsr9001_ruined }
+					NOR = {
+						has_country_flag = apsr9003_get_back
+						has_country_flag = apsr9001_ruined
+					}
 				}   
 			}
 		}
@@ -802,8 +812,10 @@ planet_event = {
 			owner = {  
 				AND = {
 					has_country_flag = apsr9002_reward5 
-					NOT = { has_country_flag = apsr9003_get_back }
-					NOT = { has_country_flag = apsr9001_ruined }
+					NOR = {
+						has_country_flag = apsr9003_get_back
+						has_country_flag = apsr9001_ruined
+					}
 				}  
 			}
 		}
@@ -1199,8 +1211,10 @@ planet_event = {
 			owner = {   
 				AND = {
 					has_country_flag = apsr9003_reward2
-					NOT = { has_country_flag = apsr9004_get_back }
-					NOT = { has_country_flag = apsr9001_ruined }
+					NOR = {
+						has_country_flag = apsr9004_get_back
+						has_country_flag = apsr9001_ruined
+					}
 				} 
 			}
 		}
@@ -1211,8 +1225,10 @@ planet_event = {
 			owner = {   
 				AND = {
 					has_country_flag = apsr9003_reward5 
-					NOT = { has_country_flag = apsr9004_get_back }
-					NOT = { has_country_flag = apsr9001_ruined }
+					NOR = {
+						has_country_flag = apsr9004_get_back
+						has_country_flag = apsr9001_ruined
+					}
 				}  
 			}
 		}
@@ -1223,8 +1239,10 @@ planet_event = {
 			owner = {   
 				AND = {
 					has_country_flag = apsr9003_reward8 
-					NOT = { has_country_flag = apsr9004_get_back }
-					NOT = { has_country_flag = apsr9001_ruined }
+					NOR = {
+						has_country_flag = apsr9004_get_back
+						has_country_flag = apsr9001_ruined
+					}
 				} 
 			}
 		}
@@ -2606,12 +2624,12 @@ planet_event = {
 		if = {
 			limit = {
 				owner = {
-					AND = {
-						NOT = { has_technology = tech_apsr9_building_part1 }
-						NOT = { has_technology = tech_apsr9_upgrade_1 }
-						NOT = { has_technology = tech_apsr9_upgrade_2 }
-						NOT = { has_technology = tech_apsr9_upgrade_3 }
-						NOT = { has_technology = tech_apsr9_building_part2 }
+					NOR = {
+						has_technology = tech_apsr9_building_part1 
+						has_technology = tech_apsr9_upgrade_1 
+						has_technology = tech_apsr9_upgrade_2 
+						has_technology = tech_apsr9_upgrade_3 
+						has_technology = tech_apsr9_building_part2 
 					}
 				}			
 			}
@@ -2640,10 +2658,14 @@ planet_event = {
 				owner = {
 					AND = {
 						has_technology = tech_apsr9_building_part1
-						NOT = { has_technology = tech_apsr9_upgrade_1 }
-						NOT = { has_technology = tech_apsr9_upgrade_2 }
-						NOT = { has_technology = tech_apsr9_upgrade_3 }
-						NOT = { has_technology = tech_apsr9_building_part2 }
+						NOR = {
+							has_technology = tech_apsr9_upgrade_1
+							has_technology = tech_apsr9_upgrade_2
+						}
+						NOR = {
+							has_technology = tech_apsr9_upgrade_3
+							has_technology = tech_apsr9_building_part2
+						}
 					}
 				}			
 			}
@@ -2668,8 +2690,10 @@ planet_event = {
 					AND = {
 						has_technology = tech_apsr9_building_part1
 						has_technology = tech_apsr9_upgrade_1
-						NOT = { has_technology = tech_apsr9_upgrade_2 }
-						NOT = { has_technology = tech_apsr9_upgrade_3 }
+						NOR = {
+							has_technology = tech_apsr9_upgrade_2
+							has_technology = tech_apsr9_upgrade_3
+						}
 						NOT = { has_technology = tech_apsr9_building_part2 }
 					}
 				}			
@@ -2696,8 +2720,10 @@ planet_event = {
 						has_technology = tech_apsr9_building_part1
 						has_technology = tech_apsr9_upgrade_1
 						has_technology = tech_apsr9_upgrade_2
-						NOT = { has_technology = tech_apsr9_upgrade_3 }
-						NOT = { has_technology = tech_apsr9_building_part2 }
+						NOR = {
+							has_technology = tech_apsr9_upgrade_3
+							has_technology = tech_apsr9_building_part2
+						}
 					}
 				}			
 			}

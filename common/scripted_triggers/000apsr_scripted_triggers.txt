@@ -111,8 +111,10 @@ has_ancient_complex_apsr_modifiers = {
 
 apsr_spawn_blocker = {
 	AND = {
-		NOT = { has_planet_flag = "apsr_planet" }
-		NOT = { has_planet_flag = hatchling_egg } # Stellaris
+		NOR = {
+			has_planet_flag = "apsr_planet"
+			has_planet_flag = hatchling_egg
+		} # Stellaris
 		NOT = { has_deposit = d_valley_of_zanaam } # Stellaris
 		NOT = { has_modifier = pm_wenkwort_gardens } # Stellaris
 		NOT = { has_planet_flag = phaseshifting_active } # Stellaris

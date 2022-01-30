@@ -29,10 +29,8 @@ planet_event = {
 		if = {
 			limit = {
 				AND = {
-					NOT = {
+					NOR = {
 						has_global_flag = apsr_sao_is_launch
-					}
-					NOT = {
 						has_global_flag = apsr_sao_set_off
 					}
 					fromfrom = {
@@ -114,10 +112,7 @@ country_event = {
 		name = apsr_sao.3.button_1
 		trigger = {
 			NOT = {
-				OR = {
-					has_ethic = "ethic_xenophile"
-					has_ethic = "ethic_fanatic_xenophile"
-				}
+				is_xenophile = yes
 			} 
 		}
 		custom_tooltip = apsr_sao.3.button_1.tooltip
@@ -129,10 +124,7 @@ country_event = {
 	option = {
 		name = apsr_sao.3.button_2
 		trigger = {
-			OR = {
-				has_ethic = "ethic_xenophile"
-				has_ethic = "ethic_fanatic_xenophile"
-			}
+			is_xenophile = yes
 		}
 		custom_tooltip = apsr_sao.3.button_2.tooltip
 		hidden_effect = {
@@ -1555,14 +1547,12 @@ country_event = {
 					which = apsr_sao_level_count
 					value > 99
 				}
-				NOT = { 
-					OR = {
+				NOR = {
 						has_ethic = ethic_fanatic_xenophobe
 						has_civic = civic_machine_terminator 
 						has_civic = civic_fanatic_purifiers
 						has_civic = civic_hive_devouring_swarm
-					}
-				}
+}
 			}
 		}
 		hidden_effect = {
@@ -1588,14 +1578,12 @@ country_event = {
 					which = apsr_sao_level_count
 					value > 99
 				}
-				NOT = { 
-					OR = {
+				NOR = {
 						has_ethic = ethic_fanatic_xenophobe
 						has_civic = civic_machine_terminator 
 						has_civic = civic_fanatic_purifiers
 						has_civic = civic_hive_devouring_swarm
-					}
-				}
+}
 			}
 		}
 		hidden_effect = {
@@ -1764,14 +1752,12 @@ country_event = {
 					which = apsr_sao_level_count
 					value > 99
 				}
-				NOT = { 
-					OR = {
+				NOR = {
 						has_ethic = ethic_fanatic_xenophobe
 						has_civic = civic_machine_terminator 
 						has_civic = civic_fanatic_purifiers
 						has_civic = civic_hive_devouring_swarm
-					}
-				}
+}
 			}
 		}
 		hidden_effect = {
@@ -1797,14 +1783,12 @@ country_event = {
 					which = apsr_sao_level_count
 					value > 99
 				}
-				NOT = { 
-					OR = {
+				NOR = {
 						has_ethic = ethic_fanatic_xenophobe
 						has_civic = civic_machine_terminator 
 						has_civic = civic_fanatic_purifiers
 						has_civic = civic_hive_devouring_swarm
-					}
-				}
+}
 			}
 		}
 		hidden_effect = {
@@ -1967,14 +1951,12 @@ country_event = {
 					which = apsr_sao_level_count
 					value > 99
 				}
-				NOT = { 
-					OR = {
+				NOR = {
 						has_ethic = ethic_fanatic_xenophobe
 						has_civic = civic_machine_terminator 
 						has_civic = civic_fanatic_purifiers
 						has_civic = civic_hive_devouring_swarm
-					}
-				}
+}
 			}
 		}
 		hidden_effect = {
@@ -2000,14 +1982,12 @@ country_event = {
 					which = apsr_sao_level_count
 					value > 99
 				}
-				NOT = { 
-					OR = {
+				NOR = {
 						has_ethic = ethic_fanatic_xenophobe
 						has_civic = civic_machine_terminator 
 						has_civic = civic_fanatic_purifiers
 						has_civic = civic_hive_devouring_swarm
-					}
-				}
+}
 			}
 		}
 		hidden_effect = {
@@ -2170,14 +2150,12 @@ country_event = {
 					which = apsr_sao_level_count
 					value > 99
 				}
-				NOT = { 
-					OR = {
+				NOR = {
 						has_ethic = ethic_fanatic_xenophobe
 						has_civic = civic_machine_terminator 
 						has_civic = civic_fanatic_purifiers
 						has_civic = civic_hive_devouring_swarm
-					}
-				}
+}
 			}
 		}
 		hidden_effect = {
@@ -2203,14 +2181,12 @@ country_event = {
 					which = apsr_sao_level_count
 					value > 99
 				}
-				NOT = { 
-					OR = {
+				NOR = {
 						has_ethic = ethic_fanatic_xenophobe
 						has_civic = civic_machine_terminator 
 						has_civic = civic_fanatic_purifiers
 						has_civic = civic_hive_devouring_swarm
-					}
-				}
+}
 			}
 		}
 		hidden_effect = {
@@ -2360,14 +2336,12 @@ country_event = {
 					which = apsr_sao_level_count
 					value > 99
 				}
-				NOT = { 
-					OR = {
+				NOR = {
 						has_ethic = ethic_fanatic_xenophobe
 						has_civic = civic_machine_terminator 
 						has_civic = civic_fanatic_purifiers
 						has_civic = civic_hive_devouring_swarm
-					}
-				}
+}
 			}
 		}
 		hidden_effect = {
@@ -2393,14 +2367,12 @@ country_event = {
 					which = apsr_sao_level_count
 					value > 99
 				}
-				NOT = { 
-					OR = {
+				NOR = {
 						has_ethic = ethic_fanatic_xenophobe
 						has_civic = civic_machine_terminator 
 						has_civic = civic_fanatic_purifiers
 						has_civic = civic_hive_devouring_swarm
-					}
-				}
+}
 			}
 		}
 		hidden_effect = {
@@ -2550,14 +2522,12 @@ country_event = {
 					which = apsr_sao_level_count
 					value > 99
 				}
-				NOT = { 
-					OR = {
+				NOR = {
 						has_ethic = ethic_fanatic_xenophobe
 						has_civic = civic_machine_terminator 
 						has_civic = civic_fanatic_purifiers
 						has_civic = civic_hive_devouring_swarm
-					}
-				}
+}
 			}
 		}
 		hidden_effect = {
@@ -2583,14 +2553,12 @@ country_event = {
 					which = apsr_sao_level_count
 					value > 99
 				}
-				NOT = { 
-					OR = {
+				NOR = {
 						has_ethic = ethic_fanatic_xenophobe
 						has_civic = civic_machine_terminator 
 						has_civic = civic_fanatic_purifiers
 						has_civic = civic_hive_devouring_swarm
-					}
-				}
+}
 			}
 		}
 		hidden_effect = {
@@ -2760,14 +2728,12 @@ country_event = {
 					which = apsr_sao_level_count
 					value > 99
 				}
-				NOT = { 
-					OR = {
+				NOR = {
 						has_ethic = ethic_fanatic_xenophobe
 						has_civic = civic_machine_terminator 
 						has_civic = civic_fanatic_purifiers
 						has_civic = civic_hive_devouring_swarm
-					}
-				}
+}
 			}
 		}
 		hidden_effect = {
@@ -2793,14 +2759,12 @@ country_event = {
 					which = apsr_sao_level_count
 					value > 99
 				}
-				NOT = { 
-					OR = {
+				NOR = {
 						has_ethic = ethic_fanatic_xenophobe
 						has_civic = civic_machine_terminator 
 						has_civic = civic_fanatic_purifiers
 						has_civic = civic_hive_devouring_swarm
-					}
-				}
+}
 			}
 		}
 		hidden_effect = {
@@ -3048,7 +3012,7 @@ planet_event = {
 			create_country = {
 				name = random
 				type = default
-				species = last_created
+				species = last_created_species
 				ignore_initial_colony_error = yes
 				day_zero_contact = no
 				authority = random
@@ -3063,7 +3027,7 @@ planet_event = {
 			while = {
 				count = 19
 				create_pop = {
-					species = last_created
+					species = last_created_species
 				}					
 			}		
 		}

@@ -8,8 +8,10 @@ apsr_console_spawn_1 = {
 	random_galaxy_planet = {
 		limit = {
 			AND = {
-				NOT = { has_planet_flag = "apsr_planet" }
-				NOT = { has_planet_flag = "legw_planet" } # MOD: Legendary Worlds
+				NOR = {
+					has_planet_flag = "apsr_planet"
+					has_planet_flag = "legw_planet"
+				} # MOD: Legendary Worlds
 				NOT = { has_planet_flag = hatchling_egg }
 				NOT = { has_planet_flag = gpm_is_precursor_world } # MOD: Guilli Planet Modifiers
 				NOT = { has_planet_flag = gpm_is_wondrous_planet } # MOD: Guilli Planet Modifiers
@@ -84,8 +86,10 @@ apsr_console_spawn_2 = {
 	random_galaxy_planet = {
 		limit = {
 			AND = {
-				NOT = { has_planet_flag = "apsr_planet" }
-				NOT = { has_planet_flag = "legw_planet" }
+				NOR = {
+					has_planet_flag = "apsr_planet"
+					has_planet_flag = "legw_planet"
+				}
 				NOT = { has_planet_flag = hatchling_egg }
 				NOT = { has_planet_flag = gpm_is_precursor_world }
 				NOT = { has_planet_flag = gpm_is_wondrous_planet }
@@ -162,8 +166,10 @@ apsr_console_spawn_3 = {
 	random_galaxy_planet = {
 		limit = {
 			AND = {
-				NOT = { has_planet_flag = "apsr_planet" }
-				NOT = { has_planet_flag = "legw_planet" }
+				NOR = {
+					has_planet_flag = "apsr_planet"
+					has_planet_flag = "legw_planet"
+				}
 				NOT = { has_planet_flag = hatchling_egg }
 				NOT = { has_planet_flag = gpm_is_precursor_world }
 				NOT = { has_planet_flag = gpm_is_wondrous_planet }
@@ -239,8 +245,10 @@ apsr_console_spawn_4 = {
 	random_galaxy_planet = {
 		limit = {
 			AND = {
-				NOT = { has_planet_flag = "apsr_planet" }
-				NOT = { has_planet_flag = "legw_planet" }
+				NOR = {
+					has_planet_flag = "apsr_planet"
+					has_planet_flag = "legw_planet"
+				}
 				NOT = { has_planet_flag = hatchling_egg }
 				NOT = { has_planet_flag = gpm_is_precursor_world }
 				NOT = { has_planet_flag = gpm_is_wondrous_planet }
@@ -318,8 +326,10 @@ apsr_console_spawn_5 = {
 	random_galaxy_planet = {
 		limit = {
 			AND = {
-				NOT = { has_planet_flag = "apsr_planet" }
-				NOT = { has_planet_flag = "legw_planet" }
+				NOR = {
+					has_planet_flag = "apsr_planet"
+					has_planet_flag = "legw_planet"
+				}
 				NOT = { has_planet_flag = hatchling_egg }
 				NOT = { has_planet_flag = gpm_is_precursor_world }
 				NOT = { has_planet_flag = gpm_is_wondrous_planet }
@@ -394,8 +404,10 @@ apsr_console_spawn_6 = {
 	random_galaxy_planet = {
 		limit = {
 			AND = {
-				NOT = { has_planet_flag = "apsr_planet" }
-				NOT = { has_planet_flag = "legw_planet" }
+				NOR = {
+					has_planet_flag = "apsr_planet"
+					has_planet_flag = "legw_planet"
+				}
 				NOT = { has_planet_flag = hatchling_egg }
 				NOT = { has_planet_flag = gpm_is_precursor_world }
 				NOT = { has_planet_flag = gpm_is_wondrous_planet }
@@ -470,8 +482,10 @@ apsr_console_spawn_7 = {
 	random_galaxy_planet = {
 		limit = {
 			AND = {
-				NOT = { has_planet_flag = "apsr_planet" }
-				NOT = { has_planet_flag = "legw_planet" }
+				NOR = {
+					has_planet_flag = "apsr_planet"
+					has_planet_flag = "legw_planet"
+				}
 				NOT = { has_planet_flag = hatchling_egg }
 				NOT = { has_planet_flag = gpm_is_precursor_world }
 				NOT = { has_planet_flag = gpm_is_wondrous_planet }
@@ -545,8 +559,10 @@ apsr_console_spawn_8 = {
 	random_galaxy_planet = {
 		limit = {
 			AND = {
-				NOT = { has_planet_flag = "apsr_planet" }
-				NOT = { has_planet_flag = "legw_planet" }
+				NOR = {
+					has_planet_flag = "apsr_planet"
+					has_planet_flag = "legw_planet"
+				}
 				NOT = { has_planet_flag = hatchling_egg }
 				NOT = { has_planet_flag = gpm_is_precursor_world }
 				NOT = { has_planet_flag = gpm_is_wondrous_planet }
@@ -621,8 +637,10 @@ apsr_console_spawn_9 = {
 	random_galaxy_planet = {
 		limit = {
 			AND = {
-				NOT = { has_planet_flag = "apsr_planet" }
-				NOT = { has_planet_flag = "legw_planet" }
+				NOR = {
+					has_planet_flag = "apsr_planet"
+					has_planet_flag = "legw_planet"
+				}
 				NOT = { has_planet_flag = hatchling_egg }
 				NOT = { has_planet_flag = gpm_is_precursor_world }
 				NOT = { has_planet_flag = gpm_is_wondrous_planet }
@@ -696,8 +714,10 @@ apsr_console_spawn_10 = {
 	random_galaxy_planet = {
 		limit = {
 			AND = {
-				NOT = { has_planet_flag = "apsr_planet" }
-				NOT = { has_planet_flag = "legw_planet" }
+				NOR = {
+					has_planet_flag = "apsr_planet"
+					has_planet_flag = "legw_planet"
+				}
 				NOT = { has_planet_flag = hatchling_egg }
 				NOT = { has_planet_flag = gpm_is_precursor_world }
 				NOT = { has_planet_flag = gpm_is_wondrous_planet }
@@ -770,8 +790,10 @@ apsr_console_spawn_11 = {
 	random_galaxy_planet = {
 		limit = {
 			AND = {
-				NOT = { has_planet_flag = "apsr_planet" }
-				NOT = { has_planet_flag = "legw_planet" }
+				NOR = {
+					has_planet_flag = "apsr_planet"
+					has_planet_flag = "legw_planet"
+				}
 				NOT = { has_planet_flag = hatchling_egg }
 				NOT = { has_planet_flag = gpm_is_precursor_world }
 				NOT = { has_planet_flag = gpm_is_wondrous_planet }
@@ -848,8 +870,10 @@ apsr_console_spawn_12 = {
 	random_galaxy_planet = {
 		limit = {
 			AND = {
-				NOT = { has_planet_flag = "apsr_planet" }
-				NOT = { has_planet_flag = "legw_planet" }
+				NOR = {
+					has_planet_flag = "apsr_planet"
+					has_planet_flag = "legw_planet"
+				}
 				NOT = { has_planet_flag = hatchling_egg }
 				NOT = { has_planet_flag = gpm_is_precursor_world }
 				NOT = { has_planet_flag = gpm_is_wondrous_planet }
@@ -924,8 +948,10 @@ apsr_console_spawn_13 = {
 	random_galaxy_planet = {
 		limit = {
 			AND = {
-				NOT = { has_planet_flag = "apsr_planet" }
-				NOT = { has_planet_flag = "legw_planet" }
+				NOR = {
+					has_planet_flag = "apsr_planet"
+					has_planet_flag = "legw_planet"
+				}
 				NOT = { has_planet_flag = hatchling_egg }
 				NOT = { has_planet_flag = gpm_is_precursor_world }
 				NOT = { has_planet_flag = gpm_is_wondrous_planet }
@@ -1000,8 +1026,10 @@ apsr_console_spawn_14 = {
 	random_galaxy_planet = {
 		limit = {
 			AND = {
-				NOT = { has_planet_flag = "apsr_planet" }
-				NOT = { has_planet_flag = "legw_planet" }
+				NOR = {
+					has_planet_flag = "apsr_planet"
+					has_planet_flag = "legw_planet"
+				}
 				NOT = { has_planet_flag = hatchling_egg }
 				NOT = { has_planet_flag = gpm_is_precursor_world }
 				NOT = { has_planet_flag = gpm_is_wondrous_planet }
@@ -1079,8 +1107,10 @@ apsr_console_spawn_15 = {
 	random_galaxy_planet = {
 		limit = {
 			AND = {
-				NOT = { has_planet_flag = "apsr_planet" }
-				NOT = { has_planet_flag = "legw_planet" }
+				NOR = {
+					has_planet_flag = "apsr_planet"
+					has_planet_flag = "legw_planet"
+				}
 				NOT = { has_planet_flag = hatchling_egg }
 				NOT = { has_planet_flag = gpm_is_precursor_world }
 				NOT = { has_planet_flag = gpm_is_wondrous_planet }
@@ -1163,8 +1193,10 @@ apsr_console_spawn_16 = {
 	random_galaxy_planet = {
 		limit = {
 			AND = {
-				NOT = { has_planet_flag = "apsr_planet" }
-				NOT = { has_planet_flag = "legw_planet" }
+				NOR = {
+					has_planet_flag = "apsr_planet"
+					has_planet_flag = "legw_planet"
+				}
 				NOT = { has_planet_flag = hatchling_egg }
 				NOT = { has_planet_flag = gpm_is_precursor_world }
 				NOT = { has_planet_flag = gpm_is_wondrous_planet }
@@ -1239,8 +1271,10 @@ apsr_console_spawn_17 = {
 	random_galaxy_planet = {
 		limit = {
 			AND = {
-				NOT = { has_planet_flag = "apsr_planet" }
-				NOT = { has_planet_flag = "legw_planet" }
+				NOR = {
+					has_planet_flag = "apsr_planet"
+					has_planet_flag = "legw_planet"
+				}
 				NOT = { has_planet_flag = hatchling_egg }
 				NOT = { has_planet_flag = gpm_is_precursor_world }
 				NOT = { has_planet_flag = gpm_is_wondrous_planet }
@@ -1315,8 +1349,10 @@ apsr_console_spawn_18 = {
 	random_galaxy_planet = {
 		limit = {
 			AND = {
-				NOT = { has_planet_flag = "apsr_planet" }
-				NOT = { has_planet_flag = "legw_planet" }
+				NOR = {
+					has_planet_flag = "apsr_planet"
+					has_planet_flag = "legw_planet"
+				}
 				NOT = { has_planet_flag = hatchling_egg }
 				NOT = { has_planet_flag = gpm_is_precursor_world }
 				NOT = { has_planet_flag = gpm_is_wondrous_planet }
@@ -1391,8 +1427,10 @@ apsr_console_spawn_19 = {
 	random_galaxy_planet = {
 		limit = {
 			AND = {
-				NOT = { has_planet_flag = "apsr_planet" }
-				NOT = { has_planet_flag = "legw_planet" }
+				NOR = {
+					has_planet_flag = "apsr_planet"
+					has_planet_flag = "legw_planet"
+				}
 				NOT = { has_planet_flag = hatchling_egg }
 				NOT = { has_planet_flag = gpm_is_precursor_world }
 				NOT = { has_planet_flag = gpm_is_wondrous_planet }
@@ -1470,8 +1508,10 @@ apsr_console_spawn_20 = {
 	random_galaxy_planet = {
 		limit = {
 			AND = {
-				NOT = { has_planet_flag = "apsr_planet" }
-				NOT = { has_planet_flag = "legw_planet" }
+				NOR = {
+					has_planet_flag = "apsr_planet"
+					has_planet_flag = "legw_planet"
+				}
 				NOT = { has_planet_flag = hatchling_egg }
 				NOT = { has_planet_flag = gpm_is_precursor_world }
 				NOT = { has_planet_flag = gpm_is_wondrous_planet }
@@ -1546,8 +1586,10 @@ apsr_console_spawn_21 = {
 	random_galaxy_planet = {
 		limit = {
 			AND = {
-				NOT = { has_planet_flag = "apsr_planet" }
-				NOT = { has_planet_flag = "legw_planet" }
+				NOR = {
+					has_planet_flag = "apsr_planet"
+					has_planet_flag = "legw_planet"
+				}
 				NOT = { has_planet_flag = hatchling_egg }
 				NOT = { has_planet_flag = gpm_is_precursor_world }
 				NOT = { has_planet_flag = gpm_is_wondrous_planet }
@@ -1625,8 +1667,10 @@ apsr_console_spawn_22 = {
 	random_galaxy_planet = {
 		limit = {
 			AND = {
-				NOT = { has_planet_flag = "apsr_planet" }
-				NOT = { has_planet_flag = "legw_planet" }
+				NOR = {
+					has_planet_flag = "apsr_planet"
+					has_planet_flag = "legw_planet"
+				}
 				NOT = { has_planet_flag = hatchling_egg }
 				NOT = { has_planet_flag = gpm_is_precursor_world }
 				NOT = { has_planet_flag = gpm_is_wondrous_planet }
@@ -1701,8 +1745,10 @@ apsr_console_spawn_23 = {
 	random_galaxy_planet = {
 		limit = {
 			AND = {
-				NOT = { has_planet_flag = "apsr_planet" }
-				NOT = { has_planet_flag = "legw_planet" }
+				NOR = {
+					has_planet_flag = "apsr_planet"
+					has_planet_flag = "legw_planet"
+				}
 				NOT = { has_planet_flag = hatchling_egg }
 				NOT = { has_planet_flag = gpm_is_precursor_world }
 				NOT = { has_planet_flag = gpm_is_wondrous_planet }
@@ -1777,8 +1823,10 @@ apsr_console_spawn_24 = {
 	random_galaxy_planet = {
 		limit = {
 			AND = {
-				NOT = { has_planet_flag = "apsr_planet" }
-				NOT = { has_planet_flag = "legw_planet" }
+				NOR = {
+					has_planet_flag = "apsr_planet"
+					has_planet_flag = "legw_planet"
+				}
 				NOT = { has_planet_flag = hatchling_egg }
 				NOT = { has_planet_flag = gpm_is_precursor_world }
 				NOT = { has_planet_flag = gpm_is_wondrous_planet }

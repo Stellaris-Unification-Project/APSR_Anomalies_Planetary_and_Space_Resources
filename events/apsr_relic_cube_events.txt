@@ -154,13 +154,11 @@ fleet_event = {
 	desc = {
 		trigger = {
 			owner = {
-				AND = {
-					NOT = {
-						has_country_flag = apsr_player_have_cube
-					} 
-					NOT = {
-						has_relic = relic_apsr_cube
-					} 
+				NOR = {
+					has_country_flag = apsr_player_have_cube
+					 
+					has_relic = relic_apsr_cube
+					 
 				}
 			}
 		}
@@ -229,13 +227,11 @@ fleet_event = {
 		custom_tooltip = apsr_arcrel.104.tooltip_no_cube_and_flag
 		trigger = {
 			owner = {
-				AND = {
-					NOT = {
-						has_country_flag = apsr_player_have_cube
-					} 
-					NOT = {
-						has_relic = relic_apsr_cube
-					} 
+				NOR = {
+					has_country_flag = apsr_player_have_cube
+					 
+					has_relic = relic_apsr_cube
+					 
 				}
 			}
 		}
@@ -584,13 +580,11 @@ country_event = {
 	title = "apsr_arcrel.209.title"
 	desc = {
 		trigger = {
-			AND = {
-				NOT = {
-					has_country_flag = apsr_player_have_cube
-				} 
-				NOT = {
-					has_relic = relic_apsr_cube
-				} 
+			NOR = {
+				has_country_flag = apsr_player_have_cube
+				 
+				has_relic = relic_apsr_cube
+				 
 			}
 		}
 		text = "apsr_arcrel.209.desc_no_cube_and_flag"
@@ -625,13 +619,11 @@ country_event = {
 		name = apsr_arcrel.209.button_no_cube_and_flag
 		custom_tooltip = apsr_arcrel.209.tooltip_no_cube_and_flag
 		trigger = {
-			AND = {
-				NOT = {
-					has_country_flag = apsr_player_have_cube
-				} 
-				NOT = {
-					has_relic = relic_apsr_cube
-				} 
+			NOR = {
+				has_country_flag = apsr_player_have_cube
+				 
+				has_relic = relic_apsr_cube
+				 
 			}
 		}
 		hidden_effect = {
@@ -696,10 +688,8 @@ planet_event = {
 			limit = {
 				AND = {
 					any_country = {
-						OR = {
-							is_country_type = fallen_empire
-							is_country_type = awakened_fallen_empire 
-						}
+						
+							is_fallen_empire = yes
 						has_ethic = ethic_fanatic_materialist
 						has_communications = root.owner
 						NOT = { is_at_war_with = root.owner }
@@ -707,10 +697,7 @@ planet_event = {
 					}
 					owner = {
 						NOT ={
-							OR = {
-								has_ethic = ethic_spiritualist
-								has_ethic = ethic_fanatic_spiritualist
-							}
+							is_spiritualist = yes
 						}
 					}
 				}
@@ -719,10 +706,8 @@ planet_event = {
 			random_country = {
 				limit = { 
 					AND = {
-						OR = {
-							is_country_type = fallen_empire
-							is_country_type = awakened_fallen_empire 
-						}
+						
+							is_fallen_empire = yes
 						has_ethic = ethic_fanatic_materialist
 					}
 				}
@@ -737,17 +722,12 @@ planet_event = {
 			limit = {
 				OR = {
 					owner = {
-						OR = {
-							has_ethic = ethic_spiritualist
-							has_ethic = ethic_fanatic_spiritualist
-						}
+						is_spiritualist = yes
 					}
 					NOT = {
 						any_country = {
-							OR = {
-								is_country_type = fallen_empire
-								is_country_type = awakened_fallen_empire 
-							}
+							
+								is_fallen_empire = yes
 							has_ethic = ethic_fanatic_materialist
 							has_communications = root.owner
 							NOT = { is_at_war_with = root.owner }
@@ -1029,13 +1009,11 @@ fleet_event = {
 	desc = {
 		trigger = {
 			owner = {
-				AND = {
-					NOT = {
-						has_country_flag = apsr_player_have_cube
-					} 
-					NOT = {
-						has_relic = relic_apsr_cube
-					} 
+				NOR = {
+					has_country_flag = apsr_player_have_cube
+					 
+					has_relic = relic_apsr_cube
+					 
 				}
 			}
 		}
@@ -1087,13 +1065,11 @@ fleet_event = {
 		custom_tooltip = apsr_arcrel.309.tooltip_no_cube_and_flag
 		trigger = {
 			owner = {
-				AND = {
-					NOT = {
-						has_country_flag = apsr_player_have_cube
-					} 
-					NOT = {
-						has_relic = relic_apsr_cube
-					} 
+				NOR = {
+					has_country_flag = apsr_player_have_cube
+					 
+					has_relic = relic_apsr_cube
+					 
 				}
 			}
 		}
@@ -1379,13 +1355,11 @@ country_event = {
 	title = "apsr_arcrel.409.title"
 	desc = {
 		trigger = {
-			AND = {
-				NOT = {
-					has_country_flag = apsr_player_have_cube
-				} 
-				NOT = {
-					has_relic = relic_apsr_cube
-				} 
+			NOR = {
+				has_country_flag = apsr_player_have_cube
+				 
+				has_relic = relic_apsr_cube
+				 
 			}
 		}
 		text = "apsr_arcrel.409.desc_no_cube_and_flag"
@@ -1420,13 +1394,11 @@ country_event = {
 		name = apsr_arcrel.409.button_no_cube_and_flag
 		custom_tooltip = apsr_arcrel.409.tooltip_no_cube_and_flag
 		trigger = {
-			AND = {
-				NOT = {
-					has_country_flag = apsr_player_have_cube
-				} 
-				NOT = {
-					has_relic = relic_apsr_cube
-				} 
+			NOR = {
+				has_country_flag = apsr_player_have_cube
+				 
+				has_relic = relic_apsr_cube
+				 
 			}
 		}
 		hidden_effect = {
@@ -1676,13 +1648,11 @@ country_event = {
 	title = "apsr_arcrel.509.title"
 	desc = {
 		trigger = {
-			AND = {
-				NOT = {
-					has_country_flag = apsr_player_have_cube
-				} 
-				NOT = {
-					has_relic = relic_apsr_cube
-				} 
+			NOR = {
+				has_country_flag = apsr_player_have_cube
+				 
+				has_relic = relic_apsr_cube
+				 
 			}
 		}
 		text = "apsr_arcrel.509.desc_no_cube_and_flag"
@@ -1717,13 +1687,11 @@ country_event = {
 		name = apsr_arcrel.509.button_no_cube_and_flag
 		custom_tooltip = apsr_arcrel.509.tooltip_no_cube_and_flag
 		trigger = {
-			AND = {
-				NOT = {
-					has_country_flag = apsr_player_have_cube
-				} 
-				NOT = {
-					has_relic = relic_apsr_cube
-				} 
+			NOR = {
+				has_country_flag = apsr_player_have_cube
+				 
+				has_relic = relic_apsr_cube
+				 
 			}
 		}
 		hidden_effect = {
@@ -1973,13 +1941,11 @@ country_event = {
 	title = "apsr_arcrel.609.title"
 	desc = {
 		trigger = {
-			AND = {
-				NOT = {
-					has_country_flag = apsr_player_have_cube
-				} 
-				NOT = {
-					has_relic = relic_apsr_cube
-				} 
+			NOR = {
+				has_country_flag = apsr_player_have_cube
+				 
+				has_relic = relic_apsr_cube
+				 
 			}
 		}
 		text = "apsr_arcrel.609.desc_no_cube_and_flag"
@@ -2014,13 +1980,11 @@ country_event = {
 		name = apsr_arcrel.609.button_no_cube_and_flag
 		custom_tooltip = apsr_arcrel.609.tooltip_no_cube_and_flag
 		trigger = {
-			AND = {
-				NOT = {
-					has_country_flag = apsr_player_have_cube
-				} 
-				NOT = {
-					has_relic = relic_apsr_cube
-				} 
+			NOR = {
+				has_country_flag = apsr_player_have_cube
+				 
+				has_relic = relic_apsr_cube
+				 
 			}
 		}
 		hidden_effect = {
@@ -2216,13 +2180,11 @@ country_event = {
 	title = "apsr_arcrel.709.title"
 	desc = {
 		trigger = {
-			AND = {
-				NOT = {
-					has_country_flag = apsr_player_have_cube
-				} 
-				NOT = {
-					has_relic = relic_apsr_cube
-				} 
+			NOR = {
+				has_country_flag = apsr_player_have_cube
+				 
+				has_relic = relic_apsr_cube
+				 
 			}
 		}
 		text = "apsr_arcrel.709.desc_no_cube_and_flag"
@@ -2257,13 +2219,11 @@ country_event = {
 		name = apsr_arcrel.709.button_no_cube_and_flag
 		custom_tooltip = apsr_arcrel.709.tooltip_no_cube_and_flag
 		trigger = {
-			AND = {
-				NOT = {
-					has_country_flag = apsr_player_have_cube
-				} 
-				NOT = {
-					has_relic = relic_apsr_cube
-				} 
+			NOR = {
+				has_country_flag = apsr_player_have_cube
+				 
+				has_relic = relic_apsr_cube
+				 
 			}
 		}
 		hidden_effect = {
@@ -2379,12 +2339,10 @@ fleet_event = {
 	desc = {
 		trigger = {
 			owner = { 
-				NOT = {
-					OR = {
+				NOR = {
 						has_authority = auth_machine_intelligence
 						has_authority = auth_hive_mind
-					}
-				}
+}
 			}
 		}
 		text = "apsr_arcrel.801.desc_d"
@@ -2438,12 +2396,10 @@ fleet_event = {
 	desc = {
 		trigger = {
 			owner = { 
-				NOT = {
-					OR = {
+				NOR = {
 						has_authority = auth_machine_intelligence
 						has_authority = auth_hive_mind
-					}
-				}
+}
 			}
 		}
 		text = "apsr_arcrel.802.desc_d"
@@ -2488,12 +2444,10 @@ fleet_event = {
 	desc = {
 		trigger = {
 			owner = { 
-				NOT = {
-					OR = {
+				NOR = {
 						has_authority = auth_machine_intelligence
 						has_authority = auth_hive_mind
-					}
-				}
+}
 			}
 		}
 		text = "apsr_arcrel.803.desc_d"
@@ -2600,13 +2554,11 @@ country_event = {
 	title = "apsr_arcrel.809.title"
 	desc = {
 		trigger = {
-			AND = {
-				NOT = {
-					has_country_flag = apsr_player_have_cube
-				} 
-				NOT = {
-					has_relic = relic_apsr_cube
-				} 
+			NOR = {
+				has_country_flag = apsr_player_have_cube
+				 
+				has_relic = relic_apsr_cube
+				 
 			}
 		}
 		text = "apsr_arcrel.809.desc_no_cube_and_flag"
@@ -2641,13 +2593,11 @@ country_event = {
 		name = apsr_arcrel.809.button_no_cube_and_flag
 		custom_tooltip = apsr_arcrel.809.tooltip_no_cube_and_flag
 		trigger = {
-			AND = {
-				NOT = {
-					has_country_flag = apsr_player_have_cube
-				} 
-				NOT = {
-					has_relic = relic_apsr_cube
-				} 
+			NOR = {
+				has_country_flag = apsr_player_have_cube
+				 
+				has_relic = relic_apsr_cube
+				 
 			}
 		}
 		hidden_effect = {
@@ -2960,18 +2910,12 @@ country_event = {
 		name = apsr_arcrel.816.button3
 		response_text = apsr_arcrel.816.button3.response
 		trigger = {
-			NOT = {
-				OR = {
-					has_ethic = ethic_spiritualist
-					has_ethic = ethic_fanatic_spiritualist
-					has_ethic = ethic_materialist
-					has_ethic = ethic_fanatic_materialist
-					has_ethic = ethic_xenophobe
-					has_ethic = ethic_fanatic_xenophobe
-					has_ethic = ethic_xenophile
-					has_ethic = ethic_fanatic_xenophile
-				}
-			}
+			NOR = {
+					is_spiritualist = yes
+					is_materialist = yes
+					is_xenophobe = yes
+					is_xenophile = yes
+}
 		}
 		hidden_effect = {
 			create_species = {
@@ -3055,17 +2999,11 @@ country_event = {
 		trigger = {
 			NOT = {
 				OR = {
-					has_ethic = ethic_spiritualist
-					has_ethic = ethic_fanatic_spiritualist
-					has_ethic = ethic_materialist
-					has_ethic = ethic_fanatic_materialist
-					has_ethic = ethic_xenophobe
-					has_ethic = ethic_fanatic_xenophobe
+					is_spiritualist = yes
+					is_materialist = yes
+					is_xenophobe = yes
 					AND = {
-						OR = {
-							has_ethic = ethic_xenophile
-							has_ethic = ethic_fanatic_xenophile
-						}
+						is_xenophile = yes
 						NOT = {
 							has_ascension_perk = ap_xeno_compatibility
 						}
@@ -3081,10 +3019,7 @@ country_event = {
 		response_text = apsr_arcrel.816.button5.response
 		trigger = {
 			AND = {
-				OR = {
-					has_ethic = ethic_spiritualist
-					has_ethic = ethic_fanatic_spiritualist
-				}
+				is_spiritualist = yes
 				NOT = {
 					has_ascension_perk = ap_transcendence
 				}
@@ -3110,10 +3045,7 @@ country_event = {
 		response_text = apsr_arcrel.816.button6.response
 		trigger = {
 			AND = {
-				OR = {
-					has_ethic = ethic_spiritualist
-					has_ethic = ethic_fanatic_spiritualist
-				}
+				is_spiritualist = yes
 				has_ascension_perk = ap_transcendence
 			}
 		}
@@ -3125,10 +3057,7 @@ country_event = {
 		name = apsr_arcrel.816.button7
 		response_text = apsr_arcrel.816.button7.response
 		trigger = {
-			OR = {
-				has_ethic = ethic_materialist
-				has_ethic = ethic_fanatic_materialist
-			}
+			is_materialist = yes
 		}
 		event_target:apsr_arch8_scientist = {
 			add_trait = apsr8_leader_trait_scientist
@@ -3140,10 +3069,7 @@ country_event = {
 		name = apsr_arcrel.816.button8
 		response_text = apsr_arcrel.816.button8.response
 		trigger = {
-			OR = {
-				has_ethic = ethic_xenophobe
-				has_ethic = ethic_fanatic_xenophobe
-			}
+			is_xenophobe = yes
 		}
 		hidden_effect = {
 			create_species = {
@@ -3227,8 +3153,7 @@ country_event = {
 		trigger = {
 			AND = {
 				OR = {
-					has_ethic = ethic_xenophile
-					has_ethic = ethic_fanatic_xenophile
+					is_xenophile = yes
 				}
 				has_ascension_perk = ap_xeno_compatibility
 			}
@@ -3344,10 +3269,7 @@ fleet_event = {
 		name = apsr_arcrel.823.button_militarist
 		trigger = {
 			owner = {
-				OR = {
-					has_ethic = ethic_militarist
-					has_ethic = ethic_fanatic_militarist
-				}
+				is_militarist = yes
 			}
 		}
 		apsr_small_archaeology_reward = yes
@@ -3365,13 +3287,10 @@ fleet_event = {
 		name = apsr_arcrel.823.button_all
 		trigger = {
 			owner = {
-				NOT = {
-					OR = {
-						has_ethic = ethic_militarist
-						has_ethic = ethic_fanatic_militarist
+				NOR = {
+						is_militarist = yes
 						has_origin = apsr_origin_unique_capital
-					}
-				}
+}
 			}
 		}
 		apsr_small_archaeology_reward = yes
@@ -3426,10 +3345,8 @@ country_event = {
 		if = {
 			limit = {
 				any_country = {
-					OR = {
-						is_country_type = fallen_empire
-						is_country_type = awakened_fallen_empire 
-					}
+					
+						is_fallen_empire = yes
 					OR = {
 						has_ethic = ethic_fanatic_materialist
 						has_ethic = ethic_fanatic_spiritualist
@@ -3443,10 +3360,8 @@ country_event = {
 			random_country = {
 				limit = { 
 					AND = {
-						OR = {
-							is_country_type = fallen_empire
-							is_country_type = awakened_fallen_empire 
-						}
+						
+							is_fallen_empire = yes
 						OR = {
 							has_ethic = ethic_fanatic_materialist
 							has_ethic = ethic_fanatic_spiritualist
@@ -3466,10 +3381,8 @@ country_event = {
 			limit = {
 				NOT = {
 					any_country = {
-						OR = {
-							is_country_type = fallen_empire
-							is_country_type = awakened_fallen_empire 
-						}
+						
+							is_fallen_empire = yes
 						OR = {
 							has_ethic = ethic_fanatic_materialist
 							has_ethic = ethic_fanatic_spiritualist
@@ -3749,13 +3662,11 @@ fleet_event = {
 	desc = {
 		trigger = {
 			owner = {
-				AND = {
-					NOT = {
-						has_country_flag = apsr_player_have_cube
-					} 
-					NOT = {
-						has_relic = relic_apsr_cube
-					} 
+				NOR = {
+					has_country_flag = apsr_player_have_cube
+					 
+					has_relic = relic_apsr_cube
+					 
 				}
 			}
 		}
@@ -3822,13 +3733,11 @@ fleet_event = {
 		custom_tooltip = apsr_arcrel.834.tooltip_no_cube_and_flag
 		trigger = {
 			owner = {
-				AND = {
-					NOT = {
-						has_country_flag = apsr_player_have_cube
-					} 
-					NOT = {
-						has_relic = relic_apsr_cube
-					} 
+				NOR = {
+					has_country_flag = apsr_player_have_cube
+					 
+					has_relic = relic_apsr_cube
+					 
 				}
 			}
 		}	 
@@ -4096,13 +4005,11 @@ country_event = {
 	title = "apsr_arcrel.909.title"
 	desc = {
 		trigger = {
-			AND = {
-				NOT = {
-					has_country_flag = apsr_player_have_cube
-				} 
-				NOT = {
-					has_relic = relic_apsr_cube
-				} 
+			NOR = {
+				has_country_flag = apsr_player_have_cube
+				 
+				has_relic = relic_apsr_cube
+				 
 			}
 		}
 		text = "apsr_arcrel.909.desc_no_cube_and_flag"
@@ -4137,13 +4044,11 @@ country_event = {
 		name = apsr_arcrel.909.button_no_cube_and_flag
 		custom_tooltip = apsr_arcrel.909.tooltip_no_cube_and_flag
 		trigger = {
-			AND = {
-				NOT = {
-					has_country_flag = apsr_player_have_cube
-				} 
-				NOT = {
-					has_relic = relic_apsr_cube
-				} 
+			NOR = {
+				has_country_flag = apsr_player_have_cube
+				 
+				has_relic = relic_apsr_cube
+				 
 			}
 		}
 		hidden_effect = {
@@ -4387,13 +4292,11 @@ country_event = {
 	title = "apsr_arcrel.919.title"
 	desc = {
 		trigger = {
-			AND = {
-				NOT = {
-					has_country_flag = apsr_player_have_cube
-				} 
-				NOT = {
-					has_relic = relic_apsr_cube
-				} 
+			NOR = {
+				has_country_flag = apsr_player_have_cube
+				 
+				has_relic = relic_apsr_cube
+				 
 			}
 		}
 		text = "apsr_arcrel.919.desc_no_cube_and_flag"
@@ -4428,13 +4331,11 @@ country_event = {
 		name = apsr_arcrel.919.button_no_cube_and_flag
 		custom_tooltip = apsr_arcrel.919.tooltip_no_cube_and_flag
 		trigger = {
-			AND = {
-				NOT = {
-					has_country_flag = apsr_player_have_cube
-				} 
-				NOT = {
-					has_relic = relic_apsr_cube
-				} 
+			NOR = {
+				has_country_flag = apsr_player_have_cube
+				 
+				has_relic = relic_apsr_cube
+				 
 			}
 		}
 		hidden_effect = {
@@ -4618,13 +4519,11 @@ fleet_event = {
 	desc = {
 		trigger = {
 			owner = {
-				AND = {
-					NOT = {
-						has_country_flag = apsr_player_have_cube
-					} 
-					NOT = {
-						has_relic = relic_apsr_cube
-					} 
+				NOR = {
+					has_country_flag = apsr_player_have_cube
+					 
+					has_relic = relic_apsr_cube
+					 
 				}
 			}
 		}
@@ -4691,13 +4590,11 @@ fleet_event = {
 		custom_tooltip = apsr_arcrel.1009.tooltip_no_cube_and_flag
 		trigger = {
 			owner = {
-				AND = {
-					NOT = {
-						has_country_flag = apsr_player_have_cube
-					} 
-					NOT = {
-						has_relic = relic_apsr_cube
-					} 
+				NOR = {
+					has_country_flag = apsr_player_have_cube
+					 
+					has_relic = relic_apsr_cube
+					 
 				}
 			}
 		}	 
@@ -5019,13 +4916,11 @@ country_event = {
 	title = "apsr_arcrel.1109.title"
 	desc = {
 		trigger = {
-			AND = {
-				NOT = {
-					has_country_flag = apsr_player_have_cube
-				} 
-				NOT = {
-					has_relic = relic_apsr_cube
-				} 
+			NOR = {
+				has_country_flag = apsr_player_have_cube
+				 
+				has_relic = relic_apsr_cube
+				 
 			}
 		}
 		text = "apsr_arcrel.1109.desc_no_cube_and_flag"
@@ -5060,13 +4955,11 @@ country_event = {
 		name = apsr_arcrel.1109.button_no_cube_and_flag
 		custom_tooltip = apsr_arcrel.1109.tooltip_no_cube_and_flag
 		trigger = {
-			AND = {
-				NOT = {
-					has_country_flag = apsr_player_have_cube
-				} 
-				NOT = {
-					has_relic = relic_apsr_cube
-				} 
+			NOR = {
+				has_country_flag = apsr_player_have_cube
+				 
+				has_relic = relic_apsr_cube
+				 
 			}
 		}
 		hidden_effect = {
@@ -5316,13 +5209,11 @@ country_event = {
 	title = "apsr_arcrel.1209.title"
 	desc = {
 		trigger = {
-			AND = {
-				NOT = {
-					has_country_flag = apsr_player_have_cube
-				} 
-				NOT = {
-					has_relic = relic_apsr_cube
-				} 
+			NOR = {
+				has_country_flag = apsr_player_have_cube
+				 
+				has_relic = relic_apsr_cube
+				 
 			}
 		}
 		text = "apsr_arcrel.1209.desc_no_cube_and_flag"
@@ -5357,13 +5248,11 @@ country_event = {
 		name = apsr_arcrel.1209.button_no_cube_and_flag
 		custom_tooltip = apsr_arcrel.1209.tooltip_no_cube_and_flag
 		trigger = {
-			AND = {
-				NOT = {
-					has_country_flag = apsr_player_have_cube
-				} 
-				NOT = {
-					has_relic = relic_apsr_cube
-				} 
+			NOR = {
+				has_country_flag = apsr_player_have_cube
+				 
+				has_relic = relic_apsr_cube
+				 
 			}
 		}
 		hidden_effect = {
@@ -5645,13 +5534,11 @@ fleet_event = {
 	desc = {
 		trigger = {
 			owner = {
-				AND = {
-					NOT = {
-						has_country_flag = apsr_player_have_cube
-					} 
-					NOT = {
-						has_relic = relic_apsr_cube
-					} 
+				NOR = {
+					has_country_flag = apsr_player_have_cube
+					 
+					has_relic = relic_apsr_cube
+					 
 				}
 			}
 		}
@@ -5702,13 +5589,11 @@ fleet_event = {
 		custom_tooltip = apsr_arcrel.1308.tooltip_no_cube_and_flag
 		trigger = {
 			owner = {
-				AND = {
-					NOT = {
-						has_country_flag = apsr_player_have_cube
-					} 
-					NOT = {
-						has_relic = relic_apsr_cube
-					} 
+				NOR = {
+					has_country_flag = apsr_player_have_cube
+					 
+					has_relic = relic_apsr_cube
+					 
 				}
 			}
 		}
@@ -6009,13 +5894,11 @@ fleet_event = {
 	desc = {
 		trigger = {
 			owner = {
-				AND = {
-					NOT = {
-						has_country_flag = apsr_player_have_cube
-					} 
-					NOT = {
-						has_relic = relic_apsr_cube
-					} 
+				NOR = {
+					has_country_flag = apsr_player_have_cube
+					 
+					has_relic = relic_apsr_cube
+					 
 				}
 			}
 		}
@@ -6082,13 +5965,11 @@ fleet_event = {
 		custom_tooltip = apsr_arcrel.1409.tooltip_no_cube_and_flag
 		trigger = {
 			owner = {
-				AND = {
-					NOT = {
-						has_country_flag = apsr_player_have_cube
-					} 
-					NOT = {
-						has_relic = relic_apsr_cube
-					} 
+				NOR = {
+					has_country_flag = apsr_player_have_cube
+					 
+					has_relic = relic_apsr_cube
+					 
 				}
 			}
 		}
@@ -6609,13 +6490,11 @@ country_event = {
 	title = "apsr_arcrel.1510.title"
 	desc = {
 		trigger = {
-			AND = {
-				NOT = {
-					has_country_flag = apsr_player_have_cube
-				} 
-				NOT = {
-					has_relic = relic_apsr_cube
-				} 
+			NOR = {
+				has_country_flag = apsr_player_have_cube
+				 
+				has_relic = relic_apsr_cube
+				 
 			}
 		}
 		text = "apsr_arcrel.1510.desc_no_cube_and_flag"
@@ -6650,13 +6529,11 @@ country_event = {
 		name = apsr_arcrel.1510.button_no_cube_and_flag
 		custom_tooltip = apsr_arcrel.1510.tooltip_no_cube_and_flag
 		trigger = {
-			AND = {
-				NOT = {
-					has_country_flag = apsr_player_have_cube
-				} 
-				NOT = {
-					has_relic = relic_apsr_cube
-				} 
+			NOR = {
+				has_country_flag = apsr_player_have_cube
+				 
+				has_relic = relic_apsr_cube
+				 
 			}
 		}
 		hidden_effect = {
@@ -7167,13 +7044,11 @@ country_event = {
 	title = "apsr_arcrel.1609.title"
 	desc = {
 		trigger = {
-			AND = {
-				NOT = {
-					has_country_flag = apsr_player_have_cube
-				} 
-				NOT = {
-					has_relic = relic_apsr_cube
-				} 
+			NOR = {
+				has_country_flag = apsr_player_have_cube
+				 
+				has_relic = relic_apsr_cube
+				 
 			}
 		}
 		text = "apsr_arcrel.1609.desc_no_cube_and_flag"
@@ -7208,13 +7083,11 @@ country_event = {
 		name = apsr_arcrel.1609.button_no_cube_and_flag
 		custom_tooltip = apsr_arcrel.1609.tooltip_no_cube_and_flag
 		trigger = {
-			AND = {
-				NOT = {
-					has_country_flag = apsr_player_have_cube
-				} 
-				NOT = {
-					has_relic = relic_apsr_cube
-				} 
+			NOR = {
+				has_country_flag = apsr_player_have_cube
+				 
+				has_relic = relic_apsr_cube
+				 
 			}
 		}
 		hidden_effect = {
@@ -7518,13 +7391,11 @@ country_event = {
 	title = "apsr_arcrel.1709.title"
 	desc = {
 		trigger = {
-			AND = {
-				NOT = {
-					has_country_flag = apsr_player_have_cube
-				} 
-				NOT = {
-					has_relic = relic_apsr_cube
-				} 
+			NOR = {
+				has_country_flag = apsr_player_have_cube
+				 
+				has_relic = relic_apsr_cube
+				 
 			}
 		}
 		text = "apsr_arcrel.1709.desc_no_cube_and_flag"
@@ -7559,13 +7430,11 @@ country_event = {
 		name = apsr_arcrel.1709.button_no_cube_and_flag
 		custom_tooltip = apsr_arcrel.1709.tooltip_no_cube_and_flag
 		trigger = {
-			AND = {
-				NOT = {
-					has_country_flag = apsr_player_have_cube
-				} 
-				NOT = {
-					has_relic = relic_apsr_cube
-				} 
+			NOR = {
+				has_country_flag = apsr_player_have_cube
+				 
+				has_relic = relic_apsr_cube
+				 
 			}
 		}
 		hidden_effect = {
@@ -7842,13 +7711,11 @@ country_event = {
 	title = "apsr_arcrel.1809.title"
 	desc = {
 		trigger = {
-			AND = {
-				NOT = {
-					has_country_flag = apsr_player_have_cube
-				} 
-				NOT = {
-					has_relic = relic_apsr_cube
-				} 
+			NOR = {
+				has_country_flag = apsr_player_have_cube
+				 
+				has_relic = relic_apsr_cube
+				 
 			}
 		}
 		text = "apsr_arcrel.1809.desc_no_cube_and_flag"
@@ -7883,13 +7750,11 @@ country_event = {
 		name = apsr_arcrel.1809.button_no_cube_and_flag
 		custom_tooltip = apsr_arcrel.1809.tooltip_no_cube_and_flag
 		trigger = {
-			AND = {
-				NOT = {
-					has_country_flag = apsr_player_have_cube
-				} 
-				NOT = {
-					has_relic = relic_apsr_cube
-				} 
+			NOR = {
+				has_country_flag = apsr_player_have_cube
+				 
+				has_relic = relic_apsr_cube
+				 
 			}
 		}
 		hidden_effect = {
@@ -8193,13 +8058,11 @@ country_event = {
 	title = "apsr_arcrel.1909.title"
 	desc = {
 		trigger = {
-			AND = {
-				NOT = {
-					has_country_flag = apsr_player_have_cube
-				} 
-				NOT = {
-					has_relic = relic_apsr_cube
-				} 
+			NOR = {
+				has_country_flag = apsr_player_have_cube
+				 
+				has_relic = relic_apsr_cube
+				 
 			}
 		}
 		text = "apsr_arcrel.1909.desc_no_cube_and_flag"
@@ -8234,13 +8097,11 @@ country_event = {
 		name = apsr_arcrel.1909.button_no_cube_and_flag
 		custom_tooltip = apsr_arcrel.1909.tooltip_no_cube_and_flag
 		trigger = {
-			AND = {
-				NOT = {
-					has_country_flag = apsr_player_have_cube
-				} 
-				NOT = {
-					has_relic = relic_apsr_cube
-				} 
+			NOR = {
+				has_country_flag = apsr_player_have_cube
+				 
+				has_relic = relic_apsr_cube
+				 
 			}
 		}
 		hidden_effect = {
@@ -8490,13 +8351,11 @@ country_event = {
 	title = "apsr_arcrel.2009.title"
 	desc = {
 		trigger = {
-			AND = {
-				NOT = {
-					has_country_flag = apsr_player_have_cube
-				} 
-				NOT = {
-					has_relic = relic_apsr_cube
-				} 
+			NOR = {
+				has_country_flag = apsr_player_have_cube
+				 
+				has_relic = relic_apsr_cube
+				 
 			}
 		}
 		text = "apsr_arcrel.2009.desc_no_cube_and_flag"
@@ -8531,13 +8390,11 @@ country_event = {
 		name = apsr_arcrel.2009.button_no_cube_and_flag
 		custom_tooltip = apsr_arcrel.2009.tooltip_no_cube_and_flag
 		trigger = {
-			AND = {
-				NOT = {
-					has_country_flag = apsr_player_have_cube
-				} 
-				NOT = {
-					has_relic = relic_apsr_cube
-				} 
+			NOR = {
+				has_country_flag = apsr_player_have_cube
+				 
+				has_relic = relic_apsr_cube
+				 
 			}
 		}
 		hidden_effect = {
@@ -8787,13 +8644,11 @@ country_event = {
 	title = "apsr_arcrel.2109.title"
 	desc = {
 		trigger = {
-			AND = {
-				NOT = {
-					has_country_flag = apsr_player_have_cube
-				} 
-				NOT = {
-					has_relic = relic_apsr_cube
-				} 
+			NOR = {
+				has_country_flag = apsr_player_have_cube
+				 
+				has_relic = relic_apsr_cube
+				 
 			}
 		}
 		text = "apsr_arcrel.2109.desc_no_cube_and_flag"
@@ -8828,13 +8683,11 @@ country_event = {
 		name = apsr_arcrel.2109.button_no_cube_and_flag
 		custom_tooltip = apsr_arcrel.2109.tooltip_no_cube_and_flag
 		trigger = {
-			AND = {
-				NOT = {
-					has_country_flag = apsr_player_have_cube
-				} 
-				NOT = {
-					has_relic = relic_apsr_cube
-				} 
+			NOR = {
+				has_country_flag = apsr_player_have_cube
+				 
+				has_relic = relic_apsr_cube
+				 
 			}
 		}
 		hidden_effect = {
@@ -9084,13 +8937,11 @@ country_event = {
 	title = "apsr_arcrel.2209.title"
 	desc = {
 		trigger = {
-			AND = {
-				NOT = {
-					has_country_flag = apsr_player_have_cube
-				} 
-				NOT = {
-					has_relic = relic_apsr_cube
-				} 
+			NOR = {
+				has_country_flag = apsr_player_have_cube
+				 
+				has_relic = relic_apsr_cube
+				 
 			}
 		}
 		text = "apsr_arcrel.2209.desc_no_cube_and_flag"
@@ -9125,13 +8976,11 @@ country_event = {
 		name = apsr_arcrel.2209.button_no_cube_and_flag
 		custom_tooltip = apsr_arcrel.2209.tooltip_no_cube_and_flag
 		trigger = {
-			AND = {
-				NOT = {
-					has_country_flag = apsr_player_have_cube
-				} 
-				NOT = {
-					has_relic = relic_apsr_cube
-				} 
+			NOR = {
+				has_country_flag = apsr_player_have_cube
+				 
+				has_relic = relic_apsr_cube
+				 
 			}
 		}
 		hidden_effect = {
@@ -9381,13 +9230,11 @@ country_event = {
 	title = "apsr_arcrel.2309.title"
 	desc = {
 		trigger = {
-			AND = {
-				NOT = {
-					has_country_flag = apsr_player_have_cube
-				} 
-				NOT = {
-					has_relic = relic_apsr_cube
-				} 
+			NOR = {
+				has_country_flag = apsr_player_have_cube
+				 
+				has_relic = relic_apsr_cube
+				 
 			}
 		}
 		text = "apsr_arcrel.2309.desc_no_cube_and_flag"
@@ -9422,13 +9269,11 @@ country_event = {
 		name = apsr_arcrel.2309.button_no_cube_and_flag
 		custom_tooltip = apsr_arcrel.2309.tooltip_no_cube_and_flag
 		trigger = {
-			AND = {
-				NOT = {
-					has_country_flag = apsr_player_have_cube
-				} 
-				NOT = {
-					has_relic = relic_apsr_cube
-				} 
+			NOR = {
+				has_country_flag = apsr_player_have_cube
+				 
+				has_relic = relic_apsr_cube
+				 
 			}
 		}
 		hidden_effect = {
@@ -9678,13 +9523,11 @@ country_event = {
 	title = "apsr_arcrel.2409.title"
 	desc = {
 		trigger = {
-			AND = {
-				NOT = {
-					has_country_flag = apsr_player_have_cube
-				} 
-				NOT = {
-					has_relic = relic_apsr_cube
-				} 
+			NOR = {
+				has_country_flag = apsr_player_have_cube
+				 
+				has_relic = relic_apsr_cube
+				 
 			}
 		}
 		text = "apsr_arcrel.2409.desc_no_cube_and_flag"
@@ -9719,13 +9562,11 @@ country_event = {
 		name = apsr_arcrel.2409.button_no_cube_and_flag
 		custom_tooltip = apsr_arcrel.2409.tooltip_no_cube_and_flag
 		trigger = {
-			AND = {
-				NOT = {
-					has_country_flag = apsr_player_have_cube
-				} 
-				NOT = {
-					has_relic = relic_apsr_cube
-				} 
+			NOR = {
+				has_country_flag = apsr_player_have_cube
+				 
+				has_relic = relic_apsr_cube
+				 
 			}
 		}
 		hidden_effect = {
@@ -9810,13 +9651,11 @@ planet_event = {
 	desc = {
 		trigger = {
 			owner = {
-				AND = {
-					NOT = {
-						has_country_flag = apsr_player_have_cube
-					} 
-					NOT = {
-						has_relic = relic_apsr_cube
-					} 
+				NOR = {
+					has_country_flag = apsr_player_have_cube
+					 
+					has_relic = relic_apsr_cube
+					 
 				}
 			}
 		}
@@ -9859,13 +9698,11 @@ planet_event = {
 		custom_tooltip = apsr_arcrel.2.tooltip_no_cube_and_flag
 		trigger = {	
 			owner = {
-				AND = {
-					NOT = {
-						has_country_flag = apsr_player_have_cube
-					} 
-					NOT = {
-						has_relic = relic_apsr_cube
-					} 
+				NOR = {
+					has_country_flag = apsr_player_have_cube
+					 
+					has_relic = relic_apsr_cube
+					 
 				}
 			}
 		}

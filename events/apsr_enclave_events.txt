@@ -195,84 +195,70 @@ country_event = {
 						add = 15
 						AND = {
 							apsr_enclave_economy_completed = yes
-							NOT = {
-								OR = {
+							NOR = {
 									has_global_flag = prethoryn_invasion_happened
 									has_global_flag = apsr_enclave_prethoryn_on_the_way
-								}
-							}
+}
 						}
 					}
 					modifier = {
 						add = 15
 						AND = {
 							apsr_enclave_science_completed = yes
-							NOT = {
-								OR = {
+							NOR = {
 									has_global_flag = prethoryn_invasion_happened
 									has_global_flag = apsr_enclave_prethoryn_on_the_way
-								}
-							}
+}
 						}
 					}
 					modifier = {
 						add = 15
 						AND = {
 							apsr_enclave_assault_completed = yes
-							NOT = {
-								OR = {
+							NOR = {
 									has_global_flag = prethoryn_invasion_happened
 									has_global_flag = apsr_enclave_prethoryn_on_the_way
-								}
-							}
+}
 						}
 					}
 					modifier = {
 						add = 15
 						AND = {
 							apsr_enclave_defence_completed = yes
-							NOT = {
-								OR = {
+							NOR = {
 									has_global_flag = prethoryn_invasion_happened
 									has_global_flag = apsr_enclave_prethoryn_on_the_way
-								}
-							}
+}
 						}
 					}
 					modifier = {
 						add = 5
 						AND = {
 							has_technology = tech_apsr16_building_part3
-							NOT = {
-								OR = {
+							NOR = {
 									has_global_flag = prethoryn_invasion_happened
 									has_global_flag = apsr_enclave_prethoryn_on_the_way
-								}
-							}
+}
 						}
 					}
 					modifier = {
 						add = 5
 						AND = {
 							has_technology = tech_apsr17_building_part3
-							NOT = {
-								OR = {
+							NOR = {
 									has_global_flag = prethoryn_invasion_happened
 									has_global_flag = apsr_enclave_prethoryn_on_the_way
-								}
-							}
+}
 						}
 					}
 					modifier = {
 						add = 5
 						AND = {
 							has_technology = tech_apsr18_building_part3
-							NOT = {
-								OR = {
+							NOR = {
 									has_global_flag = prethoryn_invasion_happened
 									has_global_flag = apsr_enclave_prethoryn_on_the_way
-								}
-							}
+}
 						}
 					}
 					modifier = {
@@ -282,24 +268,20 @@ country_event = {
 								has_technology = tech_apsr19_building_part_b3
 								has_technology = tech_apsr19_building_part_m3
 							}	
-							NOT = {
-								OR = {
+							NOR = {
 									has_global_flag = prethoryn_invasion_happened
 									has_global_flag = apsr_enclave_prethoryn_on_the_way
-								}
-							}
+}
 						}
 					}
 					modifier = {
 						add = 5
 						AND = {
 							has_technology = tech_apsr20_building_part3
-							NOT = {
-								OR = {
+							NOR = {
 									has_global_flag = prethoryn_invasion_happened
 									has_global_flag = apsr_enclave_prethoryn_on_the_way
-								}
-							}
+}
 						}
 					}
 					modifier = {
@@ -309,36 +291,30 @@ country_event = {
 								has_technology = tech_apsr21_building_part_b3
 								has_technology = tech_apsr21_building_part_m3
 							}
-							NOT = {
-								OR = {
+							NOR = {
 									has_global_flag = prethoryn_invasion_happened
 									has_global_flag = apsr_enclave_prethoryn_on_the_way
-								}
-							}
+}
 						}
 					}
 					modifier = {
 						add = 5
 						AND = {
 							has_technology = tech_apsr22_building_part3
-							NOT = {
-								OR = {
+							NOR = {
 									has_global_flag = prethoryn_invasion_happened
 									has_global_flag = apsr_enclave_prethoryn_on_the_way
-								}
-							}
+}
 						}
 					}
 					modifier = {
 						add = 5
 						AND = {
 							has_technology = tech_apsr23_building_part3
-							NOT = {
-								OR = {
+							NOR = {
 									has_global_flag = prethoryn_invasion_happened
 									has_global_flag = apsr_enclave_prethoryn_on_the_way
-								}
-							}
+}
 						}
 					}
 					country_event = { id = apsr_enclave.110 } # преторианцы
@@ -356,108 +332,90 @@ country_event = {
 						add = 15
 						AND = {
 							apsr_enclave_economy_completed = yes
-							NOT = {
-								OR = {
+							NOR = {
 									has_global_flag = extradimensional_invasion_happened
 									has_global_flag = apsr_enclave_extradimensional_on_the_way
-								}
-							}
+}
 						}
 					}
 					modifier = {
 						add = 15
 						AND = {
 							apsr_enclave_science_completed = yes
-							NOT = {
-								OR = {
+							NOR = {
 									has_global_flag = extradimensional_invasion_happened
 									has_global_flag = apsr_enclave_extradimensional_on_the_way
-								}
-							}
+}
 						}
 					}
 					modifier = {
 						add = 15
 						AND = {
 							apsr_enclave_assault_completed = yes
-							NOT = {
-								OR = {
+							NOR = {
 									has_global_flag = extradimensional_invasion_happened
 									has_global_flag = apsr_enclave_extradimensional_on_the_way
-								}
-							}
+}
 						}
 					}
 					modifier = {
 						add = 15
 						AND = {
 							apsr_enclave_defence_completed = yes
-							NOT = {
-								OR = {
+							NOR = {
 									has_global_flag = extradimensional_invasion_happened
 									has_global_flag = apsr_enclave_extradimensional_on_the_way
-								}
-							}
+}
 						}
 					}
 					modifier = {
 						add = 5
 						AND = {
 							has_technology = tech_apsr2_building_part5
-							NOT = {
-								OR = {
+							NOR = {
 									has_global_flag = extradimensional_invasion_happened
 									has_global_flag = apsr_enclave_extradimensional_on_the_way
-								}
-							}
+}
 						}
 					}
 					modifier = {
 						add = 5
 						AND = {
 							has_technology = tech_apsr7_building_part3
-							NOT = {
-								OR = {
+							NOR = {
 									has_global_flag = extradimensional_invasion_happened
 									has_global_flag = apsr_enclave_extradimensional_on_the_way
-								}
-							}
+}
 						}
 					}
 					modifier = {
 						add = 5
 						AND = {
 							has_technology = tech_apsr8_building_part3
-							NOT = {
-								OR = {
+							NOR = {
 									has_global_flag = extradimensional_invasion_happened
 									has_global_flag = apsr_enclave_extradimensional_on_the_way
-								}
-							}
+}
 						}
 					}
 					modifier = {
 						add = 5
 						AND = {
 							has_technology = tech_apsr9_building_part2
-							NOT = {
-								OR = {
+							NOR = {
 									has_global_flag = extradimensional_invasion_happened
 									has_global_flag = apsr_enclave_extradimensional_on_the_way
-								}
-							}
+}
 						}
 					}
 					modifier = {
 						add = 5
 						AND = {
 							has_technology = tech_apsr10_building_part1
-							NOT = {
-								OR = {
+							NOR = {
 									has_global_flag = extradimensional_invasion_happened
 									has_global_flag = apsr_enclave_extradimensional_on_the_way
-								}
-							}
+}
 						}
 					}
 					modifier = {
@@ -467,24 +425,20 @@ country_event = {
 								has_technology = tech_apsr11_building_part_b3
 								has_technology = tech_apsr11_building_part_m3
 							}
-							NOT = {
-								OR = {
+							NOR = {
 									has_global_flag = extradimensional_invasion_happened
 									has_global_flag = apsr_enclave_extradimensional_on_the_way
-								}
-							}
+}
 						}
 					}
 					modifier = {
 						add = 5
 						AND = {
 							has_technology = tech_apsr12_building_part3
-							NOT = {
-								OR = {
+							NOR = {
 									has_global_flag = extradimensional_invasion_happened
 									has_global_flag = apsr_enclave_extradimensional_on_the_way
-								}
-							}
+}
 						}
 					}
 					modifier = {
@@ -497,12 +451,10 @@ country_event = {
 								has_technology = tech_apsr15_building_part44
 								has_technology = tech_apsr15_building_part45
 							}	
-							NOT = {
-								OR = {
+							NOR = {
 									has_global_flag = extradimensional_invasion_happened
 									has_global_flag = apsr_enclave_extradimensional_on_the_way
-								}
-							}
+}
 						}
 					}
 					country_event = { id = apsr_enclave.120 } # незванные
@@ -520,72 +472,60 @@ country_event = {
 						add = 15
 						AND = {
 							apsr_enclave_economy_completed = yes
-							NOT = {
-								OR = {
+							NOR = {
 									has_global_flag = ai_invasion_happened
 									has_global_flag = apsr_enclave_ai_on_the_way
-								}
-							}
+}
 						}
 					}
 					modifier = {
 						add = 15
 						AND = {
 							apsr_enclave_science_completed = yes
-							NOT = {
-								OR = {
+							NOR = {
 									has_global_flag = ai_invasion_happened
 									has_global_flag = apsr_enclave_ai_on_the_way
-								}
-							}
+}
 						}
 					}
 					modifier = {
 						add = 15
 						AND = {
 							apsr_enclave_assault_completed = yes
-							NOT = {
-								OR = {
+							NOR = {
 									has_global_flag = ai_invasion_happened
 									has_global_flag = apsr_enclave_ai_on_the_way
-								}
-							}
+}
 						}
 					}
 					modifier = {
 						add = 15
 						AND = {
 							apsr_enclave_defence_completed = yes
-							NOT = {
-								OR = {
+							NOR = {
 									has_global_flag = ai_invasion_happened
 									has_global_flag = apsr_enclave_ai_on_the_way
-								}
-							}
+}
 						}
 					}
 					modifier = {
 						add = 5
 						AND = {
 							has_technology = tech_apsr1_building_part3
-							NOT = {
-								OR = {
+							NOR = {
 									has_global_flag = ai_invasion_happened
 									has_global_flag = apsr_enclave_ai_on_the_way
-								}
-							}
+}
 						}
 					}
 					modifier = {
 						add = 5
 						AND = {
 							has_technology = tech_apsr3_building_part3
-							NOT = {
-								OR = {
+							NOR = {
 									has_global_flag = ai_invasion_happened
 									has_global_flag = apsr_enclave_ai_on_the_way
-								}
-							}
+}
 						}
 					}
 					modifier = {
@@ -595,48 +535,40 @@ country_event = {
 								has_technology = tech_apsr4_building_part3
 								has_technology = tech_apsr4_building_part3_ext
 							}
-							NOT = {
-								OR = {
+							NOR = {
 									has_global_flag = ai_invasion_happened
 									has_global_flag = apsr_enclave_ai_on_the_way
-								}
-							}
+}
 						}
 					}
 					modifier = {
 						add = 5
 						AND = {
 							has_technology = tech_apsr5_building_part3
-							NOT = {
-								OR = {
+							NOR = {
 									has_global_flag = ai_invasion_happened
 									has_global_flag = apsr_enclave_ai_on_the_way
-								}
-							}
+}
 						}
 					}
 					modifier = {
 						add = 5
 						AND = {
 							has_technology = tech_apsr6_building_part3
-							NOT = {
-								OR = {
+							NOR = {
 									has_global_flag = ai_invasion_happened
 									has_global_flag = apsr_enclave_ai_on_the_way
-								}
-							}
+}
 						}
 					}
 					modifier = {
 						add = 5
 						AND = {
 							has_technology = tech_apsr13_building_part3
-							NOT = {
-								OR = {
+							NOR = {
 									has_global_flag = ai_invasion_happened
 									has_global_flag = apsr_enclave_ai_on_the_way
-								}
-							}
+}
 						}
 					}
 					modifier = {
@@ -646,24 +578,20 @@ country_event = {
 								has_technology = tech_apsr14_building_part_b3
 								has_technology = tech_apsr14_building_part_m3
 							}
-							NOT = {
-								OR = {
+							NOR = {
 									has_global_flag = ai_invasion_happened
 									has_global_flag = apsr_enclave_ai_on_the_way
-								}
-							}
+}
 						}
 					}
 					modifier = {
 						add = 5
 						AND = {
 							has_technology = tech_apsr24_building_talisman
-							NOT = {
-								OR = {
+							NOR = {
 									has_global_flag = ai_invasion_happened
 									has_global_flag = apsr_enclave_ai_on_the_way
-								}
-							}
+}
 						}
 					}
 					country_event = { id = apsr_enclave.130 } # контингенция
@@ -2069,13 +1997,11 @@ country_event = {
 		name = apsr_enclave.102.balance
 		response_text = apsr_enclave.102.balance.response
 		trigger = {
-			NOT = {
-				AND = {
-					apsr_enclave_economy_completed = yes
-					apsr_enclave_science_completed = yes
-					apsr_enclave_assault_completed = yes
-					apsr_enclave_defence_completed = yes
-				}
+			NAND = {
+				apsr_enclave_economy_completed = yes
+				apsr_enclave_science_completed = yes
+				apsr_enclave_assault_completed = yes
+				apsr_enclave_defence_completed = yes
 			}
 		}
 		is_dialog_only = yes
@@ -2282,10 +2208,8 @@ country_event = {
 			limit = {
 				AND = {
 					has_country_flag = apsr_enclave_prethoryn_1
-					NOT = {
+					NOR = {
 						has_country_flag = apsr_enclave_prethoryn_2
-					}
-					NOT = {
 						has_country_flag = apsr_enclave_prethoryn_3
 					}
 				}
@@ -2294,16 +2218,13 @@ country_event = {
 		}
 		else_if = {
 			limit = {
-				AND = {
-					NOT = {
-						has_country_flag = apsr_enclave_prethoryn_1
-					}
-					NOT = {
-						has_country_flag = apsr_enclave_prethoryn_2
-					}
-					NOT = {
-						has_country_flag = apsr_enclave_prethoryn_3
-					}
+				NOR = {
+					has_country_flag = apsr_enclave_prethoryn_1
+					
+					has_country_flag = apsr_enclave_prethoryn_2
+					
+					has_country_flag = apsr_enclave_prethoryn_3
+					
 				}
 			}
 			country_event = { id = apsr_enclave.111 }
@@ -2481,10 +2402,8 @@ country_event = {
 			limit = {
 				AND = {
 					has_country_flag = apsr_enclave_extradimensional_1
-					NOT = {
+					NOR = {
 						has_country_flag = apsr_enclave_extradimensional_2
-					}
-					NOT = {
 						has_country_flag = apsr_enclave_extradimensional_3
 					}
 				}
@@ -2493,16 +2412,13 @@ country_event = {
 		}
 		else_if = {
 			limit = {
-				AND = {
-					NOT = {
-						has_country_flag = apsr_enclave_extradimensional_1
-					}
-					NOT = {
-						has_country_flag = apsr_enclave_extradimensional_2
-					}
-					NOT = {
-						has_country_flag = apsr_enclave_extradimensional_3
-					}
+				NOR = {
+					has_country_flag = apsr_enclave_extradimensional_1
+					
+					has_country_flag = apsr_enclave_extradimensional_2
+					
+					has_country_flag = apsr_enclave_extradimensional_3
+					
 				}
 			}
 			country_event = { id = apsr_enclave.121 }
@@ -2692,10 +2608,8 @@ country_event = {
 			limit = {
 				AND = {
 					has_country_flag = apsr_enclave_ai_1
-					NOT = {
+					NOR = {
 						has_country_flag = apsr_enclave_ai_2
-					}
-					NOT = {
 						has_country_flag = apsr_enclave_ai_3
 					}
 				}
@@ -2704,16 +2618,13 @@ country_event = {
 		}
 		else_if = {
 			limit = {
-				AND = {
-					NOT = {
-						has_country_flag = apsr_enclave_ai_1
-					}
-					NOT = {
-						has_country_flag = apsr_enclave_ai_2
-					}
-					NOT = {
-						has_country_flag = apsr_enclave_ai_3
-					}
+				NOR = {
+					has_country_flag = apsr_enclave_ai_1
+					
+					has_country_flag = apsr_enclave_ai_2
+					
+					has_country_flag = apsr_enclave_ai_3
+					
 				}
 			}
 			country_event = { id = apsr_enclave.131 }
@@ -2855,12 +2766,10 @@ country_event = {
 			random_galaxy_planet = {
 				limit = {
 					AND = {
-						NOT = {
-							OR = {
+						NOR = {
 								has_apsr_modifiers = yes
 								has_planet_flag = apsr_planet
-							}
-						}
+}
 						is_planet_class = pc_barren
 						is_moon = no
 					}
@@ -2879,12 +2788,10 @@ country_event = {
 			random_galaxy_planet = {
 				limit = {
 					AND = {
-						NOT = {
-							OR = {
+						NOR = {
 								has_apsr_modifiers = yes
 								has_planet_flag = apsr_planet
-							}
-						}
+}
 						is_planet_class = pc_molten
 						is_moon = no
 					}
@@ -2903,12 +2810,10 @@ country_event = {
 			random_galaxy_planet = {
 				limit = {
 					AND = {
-						NOT = {
-							OR = {
+						NOR = {
 								has_apsr_modifiers = yes
 								has_planet_flag = apsr_planet
-							}
-						}
+}
 						is_planet_class = pc_gas_giant
 						is_moon = no
 					}
@@ -2927,12 +2832,10 @@ country_event = {
 			random_galaxy_planet = {
 				limit = {
 					AND = {
-						NOT = {
-							OR = {
+						NOR = {
 								has_apsr_modifiers = yes
 								has_planet_flag = apsr_planet
-							}
-						}
+}
 						is_planet_class = pc_toxic
 						is_moon = no
 					}
@@ -3014,13 +2917,11 @@ ship_event = {
 	desc = {
 		trigger = {
 			owner = {
-				AND = {
-					NOT = {
-						apsr_terminal_has_any_code_info = yes
-					}
-					NOT = {
-						has_relic = relic_apsr_terminal
-					}
+				NOR = {
+					apsr_terminal_has_any_code_info = yes
+					
+					has_relic = relic_apsr_terminal
+					
 				}
 			}
 		}
@@ -3058,13 +2959,11 @@ ship_event = {
 		custom_tooltip = apsr_enclave.209.button1.tooltip
 		trigger = {
 			owner = {
-				AND = {
-					NOT = {
-						apsr_terminal_has_any_code_info = yes
-					}
-					NOT = {
-						has_relic = relic_apsr_terminal
-					}
+				NOR = {
+					apsr_terminal_has_any_code_info = yes
+					
+					has_relic = relic_apsr_terminal
+					
 				}
 			}
 		}
@@ -3381,8 +3280,10 @@ country_event = {
 		random_country = {
 			limit = {
 				is_country_type = fallen_empire
-				NOT = { has_ethic = ethic_gestalt_consciousness }
-				NOT = { is_at_war_with = root }
+				NOR = {
+					has_ethic = ethic_gestalt_consciousness
+					is_at_war_with = root
+				}
 				has_communications = root
 			}
 			save_event_target_as = apsr_enclave_ancient_fact_01_fallen_empire

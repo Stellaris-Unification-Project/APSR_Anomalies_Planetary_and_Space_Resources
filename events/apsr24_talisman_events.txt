@@ -853,12 +853,9 @@ country_event = {
 		custom_tooltip = apsr.24117.button.A.tooltip
 		trigger = {
 			OR = {
-				has_ethic = ethic_militarist
-				has_ethic = ethic_fanatic_militarist
-				has_ethic = ethic_authoritarian
-				has_ethic = ethic_fanatic_authoritarian
-				has_ethic = ethic_xenophobe
-				has_ethic = ethic_fanatic_xenophobe
+				is_militarist = yes
+				is_authoritarian = yes
+				is_xenophobe = yes
 			}
 		}
 		hidden_effect = {
@@ -872,10 +869,8 @@ country_event = {
 		custom_tooltip = apsr.24117.button.B.tooltip
 		trigger = {
 			OR = {
-				has_ethic = ethic_materialist
-				has_ethic = ethic_fanatic_materialist
-				has_ethic = ethic_spiritualist
-				has_ethic = ethic_fanatic_spiritualist
+				is_materialist = yes
+				is_spiritualist = yes
 			}
 		}
 		hidden_effect = {
@@ -889,12 +884,9 @@ country_event = {
 		custom_tooltip = apsr.24117.button.C.tooltip
 		trigger = {
 			OR = {
-				has_ethic = ethic_pacifist
-				has_ethic = ethic_fanatic_pacifist
-				has_ethic = ethic_egalitarian
-				has_ethic = ethic_fanatic_egalitarian
-				has_ethic = ethic_xenophile
-				has_ethic = ethic_fanatic_xenophile
+				is_pacifist = yes
+				is_egalitarian = yes
+				is_xenophile = yes
 			}
 		}
 		hidden_effect = {

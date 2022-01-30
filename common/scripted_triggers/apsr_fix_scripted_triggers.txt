@@ -67,10 +67,7 @@ can_destroy_planet_with_PLANET_KILLER_NEUTRON = {
 					is_country_type = primitive
 				}
 				from.owner = {
-					OR = {
-						has_ethic = ethic_xenophobe
-						has_ethic = ethic_fanatic_xenophobe
-					}
+					is_xenophobe = yes
 				}
 			}
 			AND = { # at war with primitive space owner
@@ -135,7 +132,7 @@ can_destroy_planet_with_PLANET_KILLER_GODRAY = {
 			}
 			AND = {
 				exists = owner
-				owner = { is_same_value = from.owner }
+				is_owned_by = from.owner
 			}
 		}
 	}
@@ -151,14 +148,14 @@ can_destroy_planet_with_PLANET_KILLER_GODRAY = {
 			}
 			exists = owner
 			owner = {
-				is_same_value = from.owner
+				is_same_empire = from.owner
 			}
 		}
 		custom_tooltip = {
 			text = not_owned_test_fire
 			exists = owner
 			owner = {
-				is_same_value = from.owner
+				is_same_empire = from.owner
 			}
 		}
 	}

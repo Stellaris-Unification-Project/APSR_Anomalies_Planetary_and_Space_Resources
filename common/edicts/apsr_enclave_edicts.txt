@@ -28,13 +28,11 @@ apsr_enclave_science_16_edict = {
 		custom_tooltip = {
 			fail_text = apsr_enclave_science_16_edict_not_ready
 			OR = {
-				AND = {
-					NOT = {
-						has_edict = apsr_enclave_science_16_edict
-					}
-					NOT = {
-						has_country_flag = apsr_enclave_science_16_edict_stop
-					}
+				NOR = {
+					has_edict = apsr_enclave_science_16_edict
+					
+					has_country_flag = apsr_enclave_science_16_edict_stop
+					
 				}
 				AND = {
 					has_country_flag = apsr_enclave_science_16_edict_stop

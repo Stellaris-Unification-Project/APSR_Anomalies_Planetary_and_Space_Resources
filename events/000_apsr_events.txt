@@ -946,10 +946,8 @@ planet_event = {
 			limit = {
 				has_modifier = apsr4_planet_modifier
 				from = {
-					NOT = {
+					NOR = {
 						has_technology = tech_apsr4_building_part1
-					}
-					NOT = {
 						is_homicidal = yes
 					}
 				}
@@ -1095,10 +1093,8 @@ planet_event = {
 				AND = {
 					has_modifier = apsr11_planet_modifier
 					from = {
-						NOT = {
+						NOR = {
 							has_authority = auth_machine_intelligence
-						}
-						NOT = {
 							has_technology = tech_apsr11_building_part_b1
 						}
 					}
@@ -1175,10 +1171,8 @@ planet_event = {
 				AND = {
 					has_modifier = apsr14_planet_modifier
 					from = {
-						NOT = {
+						NOR = {
 							has_authority = auth_machine_intelligence
-						}
-						NOT = {
 							has_technology = tech_apsr14_building_part_b1
 						}
 					}
@@ -1291,10 +1285,8 @@ planet_event = {
 				AND = {
 					has_modifier = apsr19_planet_modifier
 					from = {
-						NOT = {
+						NOR = {
 							has_authority = auth_machine_intelligence
-						}
-						NOT = {
 							has_technology = tech_apsr19_building_part_b1
 						}
 					}
@@ -1353,10 +1345,8 @@ planet_event = {
 				AND = {
 					has_modifier = apsr21_planet_modifier
 					from = {
-						NOT = {
+						NOR = {
 							is_gestalt = yes
-						}
-						NOT = {
 							has_technology = tech_apsr21_building_part_b1
 						}
 					}
@@ -1520,10 +1510,8 @@ planet_event = {
 			limit = {
 				has_modifier = apsr4_planet_modifier
 				owner = {
-					NOT = {
+					NOR = {
 						has_technology = tech_apsr4_building_part1
-					}
-					NOT = {
 						is_homicidal = yes
 					}
 				}
@@ -1669,10 +1657,8 @@ planet_event = {
 				AND = {
 					has_modifier = apsr11_planet_modifier
 					owner = {
-						NOT = {
+						NOR = {
 							has_authority = auth_machine_intelligence
-						}
-						NOT = {
 							has_technology = tech_apsr11_building_part_b1
 						}
 					}
@@ -1749,10 +1735,8 @@ planet_event = {
 				AND = {
 					has_modifier = apsr14_planet_modifier
 					owner = {
-						NOT = {
+						NOR = {
 							has_authority = auth_machine_intelligence
-						}
-						NOT = {
 							has_technology = tech_apsr14_building_part_b1
 						}
 					}
@@ -1865,10 +1849,8 @@ planet_event = {
 				AND = {
 					has_modifier = apsr19_planet_modifier
 					owner = {
-						NOT = {
+						NOR = {
 							has_authority = auth_machine_intelligence
-						}
-						NOT = {
 							has_technology = tech_apsr19_building_part_b1
 						}
 					}
@@ -1927,10 +1909,8 @@ planet_event = {
 				AND = {
 					has_modifier = apsr21_planet_modifier
 					owner = {
-						NOT = {
+						NOR = {
 							is_gestalt = yes
-						}
-						NOT = {
 							has_technology = tech_apsr21_building_part_b1
 						}
 					}
@@ -2200,10 +2180,14 @@ country_event = {
 				limit = {
 					any_system_planet = {
 						AND = {
-							NOT = { has_planet_flag = "apsr_planet" }
-							NOT = { has_planet_flag = hatchling_egg }
-							NOT = { has_planet_flag = gpm_is_precursor_world }
-							NOT = { has_planet_flag = gpm_is_wondrous_planet }
+							NOR = {
+								has_planet_flag = "apsr_planet"
+								has_planet_flag = hatchling_egg
+							}
+							NOR = {
+								has_planet_flag = gpm_is_precursor_world
+								has_planet_flag = gpm_is_wondrous_planet
+							}
 							NOT = { has_planet_flag = gpm_ego_gaia_planet }
 							is_colony = no
 							is_capital = no
@@ -2240,10 +2224,14 @@ country_event = {
 				random_system_planet = {
 					limit = {
 						AND = {
-							NOT = { has_planet_flag = "apsr_planet" }
-							NOT = { has_planet_flag = hatchling_egg }
-							NOT = { has_planet_flag = gpm_is_precursor_world }
-							NOT = { has_planet_flag = gpm_is_wondrous_planet }
+							NOR = {
+								has_planet_flag = "apsr_planet"
+								has_planet_flag = hatchling_egg
+							}
+							NOR = {
+								has_planet_flag = gpm_is_precursor_world
+								has_planet_flag = gpm_is_wondrous_planet
+							}
 							NOT = { has_planet_flag = gpm_ego_gaia_planet }
 							is_colony = no
 							is_capital = no
@@ -2291,10 +2279,14 @@ country_event = {
 				limit = {
 					any_system_planet = {
 						AND = {
-							NOT = { has_planet_flag = "apsr_planet" }
-							NOT = { has_planet_flag = hatchling_egg }
-							NOT = { has_planet_flag = gpm_is_precursor_world }
-							NOT = { has_planet_flag = gpm_is_wondrous_planet }
+							NOR = {
+								has_planet_flag = "apsr_planet"
+								has_planet_flag = hatchling_egg
+							}
+							NOR = {
+								has_planet_flag = gpm_is_precursor_world
+								has_planet_flag = gpm_is_wondrous_planet
+							}
 							NOT = { has_planet_flag = gpm_ego_gaia_planet }
 							is_colony = no
 							is_capital = no
@@ -2331,10 +2323,14 @@ country_event = {
 				random_system_planet = {
 					limit = {
 						AND = {
-							NOT = { has_planet_flag = "apsr_planet" }
-							NOT = { has_planet_flag = hatchling_egg }
-							NOT = { has_planet_flag = gpm_is_precursor_world }
-							NOT = { has_planet_flag = gpm_is_wondrous_planet }
+							NOR = {
+								has_planet_flag = "apsr_planet"
+								has_planet_flag = hatchling_egg
+							}
+							NOR = {
+								has_planet_flag = gpm_is_precursor_world
+								has_planet_flag = gpm_is_wondrous_planet
+							}
 							NOT = { has_planet_flag = gpm_ego_gaia_planet }
 							is_colony = no
 							is_capital = no
@@ -2382,10 +2378,14 @@ country_event = {
 				limit = {
 					any_system_planet = {
 						AND = {
-							NOT = { has_planet_flag = "apsr_planet" }
-							NOT = { has_planet_flag = hatchling_egg }
-							NOT = { has_planet_flag = gpm_is_precursor_world }
-							NOT = { has_planet_flag = gpm_is_wondrous_planet }
+							NOR = {
+								has_planet_flag = "apsr_planet"
+								has_planet_flag = hatchling_egg
+							}
+							NOR = {
+								has_planet_flag = gpm_is_precursor_world
+								has_planet_flag = gpm_is_wondrous_planet
+							}
 							NOT = { has_planet_flag = gpm_ego_gaia_planet }
 							is_colony = no
 							is_capital = no
@@ -2422,10 +2422,14 @@ country_event = {
 				random_system_planet = {
 					limit = {
 						AND = {
-							NOT = { has_planet_flag = "apsr_planet" }
-							NOT = { has_planet_flag = hatchling_egg }
-							NOT = { has_planet_flag = gpm_is_precursor_world }
-							NOT = { has_planet_flag = gpm_is_wondrous_planet }
+							NOR = {
+								has_planet_flag = "apsr_planet"
+								has_planet_flag = hatchling_egg
+							}
+							NOR = {
+								has_planet_flag = gpm_is_precursor_world
+								has_planet_flag = gpm_is_wondrous_planet
+							}
 							NOT = { has_planet_flag = gpm_ego_gaia_planet }
 							is_colony = no
 							is_capital = no
@@ -2473,10 +2477,14 @@ country_event = {
 				limit = {
 					any_system_planet = {
 						AND = {
-							NOT = { has_planet_flag = "apsr_planet" }
-							NOT = { has_planet_flag = hatchling_egg }
-							NOT = { has_planet_flag = gpm_is_precursor_world }
-							NOT = { has_planet_flag = gpm_is_wondrous_planet }
+							NOR = {
+								has_planet_flag = "apsr_planet"
+								has_planet_flag = hatchling_egg
+							}
+							NOR = {
+								has_planet_flag = gpm_is_precursor_world
+								has_planet_flag = gpm_is_wondrous_planet
+							}
 							NOT = { has_planet_flag = gpm_ego_gaia_planet }
 							is_colony = no
 							is_capital = no
@@ -2513,10 +2521,14 @@ country_event = {
 				random_system_planet = {
 					limit = {
 						AND = {
-							NOT = { has_planet_flag = "apsr_planet" }
-							NOT = { has_planet_flag = hatchling_egg }
-							NOT = { has_planet_flag = gpm_is_precursor_world }
-							NOT = { has_planet_flag = gpm_is_wondrous_planet }
+							NOR = {
+								has_planet_flag = "apsr_planet"
+								has_planet_flag = hatchling_egg
+							}
+							NOR = {
+								has_planet_flag = gpm_is_precursor_world
+								has_planet_flag = gpm_is_wondrous_planet
+							}
 							NOT = { has_planet_flag = gpm_ego_gaia_planet }
 							is_colony = no
 							is_capital = no
@@ -2564,10 +2576,14 @@ country_event = {
 				limit = {
 					any_system_planet = {
 						AND = {
-							NOT = { has_planet_flag = "apsr_planet" }
-							NOT = { has_planet_flag = hatchling_egg }
-							NOT = { has_planet_flag = gpm_is_precursor_world }
-							NOT = { has_planet_flag = gpm_is_wondrous_planet }
+							NOR = {
+								has_planet_flag = "apsr_planet"
+								has_planet_flag = hatchling_egg
+							}
+							NOR = {
+								has_planet_flag = gpm_is_precursor_world
+								has_planet_flag = gpm_is_wondrous_planet
+							}
 							NOT = { has_planet_flag = gpm_ego_gaia_planet }
 							is_colony = no
 							is_capital = no
@@ -2604,10 +2620,14 @@ country_event = {
 				random_system_planet = {
 					limit = {
 						AND = {
-							NOT = { has_planet_flag = "apsr_planet" }
-							NOT = { has_planet_flag = hatchling_egg }
-							NOT = { has_planet_flag = gpm_is_precursor_world }
-							NOT = { has_planet_flag = gpm_is_wondrous_planet }
+							NOR = {
+								has_planet_flag = "apsr_planet"
+								has_planet_flag = hatchling_egg
+							}
+							NOR = {
+								has_planet_flag = gpm_is_precursor_world
+								has_planet_flag = gpm_is_wondrous_planet
+							}
 							NOT = { has_planet_flag = gpm_ego_gaia_planet }
 							is_colony = no
 							is_capital = no
@@ -2655,10 +2675,14 @@ country_event = {
 				limit = {
 					any_system_planet = {
 						AND = {
-							NOT = { has_planet_flag = "apsr_planet" }
-							NOT = { has_planet_flag = hatchling_egg }
-							NOT = { has_planet_flag = gpm_is_precursor_world }
-							NOT = { has_planet_flag = gpm_is_wondrous_planet }
+							NOR = {
+								has_planet_flag = "apsr_planet"
+								has_planet_flag = hatchling_egg
+							}
+							NOR = {
+								has_planet_flag = gpm_is_precursor_world
+								has_planet_flag = gpm_is_wondrous_planet
+							}
 							NOT = { has_planet_flag = gpm_ego_gaia_planet }
 							is_colony = no
 							is_capital = no
@@ -2695,10 +2719,14 @@ country_event = {
 				random_system_planet = {
 					limit = {
 						AND = {
-							NOT = { has_planet_flag = "apsr_planet" }
-							NOT = { has_planet_flag = hatchling_egg }
-							NOT = { has_planet_flag = gpm_is_precursor_world }
-							NOT = { has_planet_flag = gpm_is_wondrous_planet }
+							NOR = {
+								has_planet_flag = "apsr_planet"
+								has_planet_flag = hatchling_egg
+							}
+							NOR = {
+								has_planet_flag = gpm_is_precursor_world
+								has_planet_flag = gpm_is_wondrous_planet
+							}
 							NOT = { has_planet_flag = gpm_ego_gaia_planet }
 							is_colony = no
 							is_capital = no
@@ -2746,10 +2774,14 @@ country_event = {
 				limit = {
 					any_system_planet = {
 						AND = {
-							NOT = { has_planet_flag = "apsr_planet" }
-							NOT = { has_planet_flag = hatchling_egg }
-							NOT = { has_planet_flag = gpm_is_precursor_world }
-							NOT = { has_planet_flag = gpm_is_wondrous_planet }
+							NOR = {
+								has_planet_flag = "apsr_planet"
+								has_planet_flag = hatchling_egg
+							}
+							NOR = {
+								has_planet_flag = gpm_is_precursor_world
+								has_planet_flag = gpm_is_wondrous_planet
+							}
 							NOT = { has_planet_flag = gpm_ego_gaia_planet }
 							is_colony = no
 							is_capital = no
@@ -2786,10 +2818,14 @@ country_event = {
 				random_system_planet = {
 					limit = {
 						AND = {
-							NOT = { has_planet_flag = "apsr_planet" }
-							NOT = { has_planet_flag = hatchling_egg }
-							NOT = { has_planet_flag = gpm_is_precursor_world }
-							NOT = { has_planet_flag = gpm_is_wondrous_planet }
+							NOR = {
+								has_planet_flag = "apsr_planet"
+								has_planet_flag = hatchling_egg
+							}
+							NOR = {
+								has_planet_flag = gpm_is_precursor_world
+								has_planet_flag = gpm_is_wondrous_planet
+							}
 							NOT = { has_planet_flag = gpm_ego_gaia_planet }
 							is_colony = no
 							is_capital = no
@@ -2837,10 +2873,14 @@ country_event = {
 				limit = {
 					any_system_planet = {
 						AND = {
-							NOT = { has_planet_flag = "apsr_planet" }
-							NOT = { has_planet_flag = hatchling_egg }
-							NOT = { has_planet_flag = gpm_is_precursor_world }
-							NOT = { has_planet_flag = gpm_is_wondrous_planet }
+							NOR = {
+								has_planet_flag = "apsr_planet"
+								has_planet_flag = hatchling_egg
+							}
+							NOR = {
+								has_planet_flag = gpm_is_precursor_world
+								has_planet_flag = gpm_is_wondrous_planet
+							}
 							NOT = { has_planet_flag = gpm_ego_gaia_planet }
 							is_colony = no
 							is_capital = no
@@ -2877,10 +2917,14 @@ country_event = {
 				random_system_planet = {
 					limit = {
 						AND = {
-							NOT = { has_planet_flag = "apsr_planet" }
-							NOT = { has_planet_flag = hatchling_egg }
-							NOT = { has_planet_flag = gpm_is_precursor_world }
-							NOT = { has_planet_flag = gpm_is_wondrous_planet }
+							NOR = {
+								has_planet_flag = "apsr_planet"
+								has_planet_flag = hatchling_egg
+							}
+							NOR = {
+								has_planet_flag = gpm_is_precursor_world
+								has_planet_flag = gpm_is_wondrous_planet
+							}
 							NOT = { has_planet_flag = gpm_ego_gaia_planet }
 							is_colony = no
 							is_capital = no
@@ -2928,10 +2972,14 @@ country_event = {
 				limit = {
 					any_system_planet = {
 						AND = {
-							NOT = { has_planet_flag = "apsr_planet" }
-							NOT = { has_planet_flag = hatchling_egg }
-							NOT = { has_planet_flag = gpm_is_precursor_world }
-							NOT = { has_planet_flag = gpm_is_wondrous_planet }
+							NOR = {
+								has_planet_flag = "apsr_planet"
+								has_planet_flag = hatchling_egg
+							}
+							NOR = {
+								has_planet_flag = gpm_is_precursor_world
+								has_planet_flag = gpm_is_wondrous_planet
+							}
 							NOT = { has_planet_flag = gpm_ego_gaia_planet }
 							is_colony = no
 							is_capital = no
@@ -2968,10 +3016,14 @@ country_event = {
 				random_system_planet = {
 					limit = {
 						AND = {
-							NOT = { has_planet_flag = "apsr_planet" }
-							NOT = { has_planet_flag = hatchling_egg }
-							NOT = { has_planet_flag = gpm_is_precursor_world }
-							NOT = { has_planet_flag = gpm_is_wondrous_planet }
+							NOR = {
+								has_planet_flag = "apsr_planet"
+								has_planet_flag = hatchling_egg
+							}
+							NOR = {
+								has_planet_flag = gpm_is_precursor_world
+								has_planet_flag = gpm_is_wondrous_planet
+							}
 							NOT = { has_planet_flag = gpm_ego_gaia_planet }
 							is_colony = no
 							is_capital = no
@@ -3019,10 +3071,14 @@ country_event = {
 				limit = {
 					any_system_planet = {
 						AND = {
-							NOT = { has_planet_flag = "apsr_planet" }
-							NOT = { has_planet_flag = hatchling_egg }
-							NOT = { has_planet_flag = gpm_is_precursor_world }
-							NOT = { has_planet_flag = gpm_is_wondrous_planet }
+							NOR = {
+								has_planet_flag = "apsr_planet"
+								has_planet_flag = hatchling_egg
+							}
+							NOR = {
+								has_planet_flag = gpm_is_precursor_world
+								has_planet_flag = gpm_is_wondrous_planet
+							}
 							NOT = { has_planet_flag = gpm_ego_gaia_planet }
 							is_colony = no
 							is_capital = no
@@ -3059,10 +3115,14 @@ country_event = {
 				random_system_planet = {
 					limit = {
 						AND = {
-							NOT = { has_planet_flag = "apsr_planet" }
-							NOT = { has_planet_flag = hatchling_egg }
-							NOT = { has_planet_flag = gpm_is_precursor_world }
-							NOT = { has_planet_flag = gpm_is_wondrous_planet }
+							NOR = {
+								has_planet_flag = "apsr_planet"
+								has_planet_flag = hatchling_egg
+							}
+							NOR = {
+								has_planet_flag = gpm_is_precursor_world
+								has_planet_flag = gpm_is_wondrous_planet
+							}
 							NOT = { has_planet_flag = gpm_ego_gaia_planet }
 							is_colony = no
 							is_capital = no
@@ -3161,7 +3221,7 @@ event = {
 					has_global_flag = apsr_mod_on
 				}
 			}
-			every_country = {
+			every_playable_country = {
 				limit = {
 					is_ai = no
 				}

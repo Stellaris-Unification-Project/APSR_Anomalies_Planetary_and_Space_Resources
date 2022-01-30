@@ -36,8 +36,10 @@ apsr_enclave_economy_20_decision = {
 
 	potential = {
 		habitable_structure = no
-		NOT = { is_planet_class = pc_city }
-		NOT = { has_deposit = apsr_enclave_economy_20_deposit }
+		NOR = {
+			is_planet_class = pc_city
+			has_deposit = apsr_enclave_economy_20_deposit
+		}
 	}
 
 	allow = {
@@ -88,10 +90,7 @@ apsr_enclave_science_20_decision = {
 			trigger = {
 				owner = {
 					NOT = {
-						OR = {
-							has_ethic = ethic_materialist
-							has_ethic = ethic_fanatic_materialist
-						}
+						is_materialist = yes
 					}
 				}
 			}
@@ -100,10 +99,7 @@ apsr_enclave_science_20_decision = {
 		cost = {
 			trigger = {
 				owner = {
-					OR = {
-						has_ethic = ethic_materialist
-						has_ethic = ethic_fanatic_materialist
-					}
+					is_materialist = yes
 				}
 			}
 			influence = 50
@@ -147,10 +143,7 @@ apsr_enclave_science_19_decision_1 = {
 			trigger = {
 				owner = {
 					NOT = {
-						OR = {
-							has_ethic = ethic_materialist
-							has_ethic = ethic_fanatic_materialist
-						}
+						is_materialist = yes
 					}
 				}
 			}
@@ -159,10 +152,7 @@ apsr_enclave_science_19_decision_1 = {
 		cost = {
 			trigger = {
 				owner = {
-					OR = {
-						has_ethic = ethic_materialist
-						has_ethic = ethic_fanatic_materialist
-					}
+					is_materialist = yes
 				}
 			}
 			influence = 25
@@ -209,10 +199,7 @@ apsr_enclave_science_19_decision_2 = {
 			trigger = {
 				owner = {
 					NOT = {
-						OR = {
-							has_ethic = ethic_materialist
-							has_ethic = ethic_fanatic_materialist
-						}
+						is_materialist = yes
 					}
 				}
 			}
@@ -221,10 +208,7 @@ apsr_enclave_science_19_decision_2 = {
 		cost = {
 			trigger = {
 				owner = {
-					OR = {
-						has_ethic = ethic_materialist
-						has_ethic = ethic_fanatic_materialist
-					}
+					is_materialist = yes
 				}
 			}
 			influence = 25
@@ -271,10 +255,7 @@ apsr_enclave_science_19_decision_3 = {
 			trigger = {
 				owner = {
 					NOT = {
-						OR = {
-							has_ethic = ethic_materialist
-							has_ethic = ethic_fanatic_materialist
-						}
+						is_materialist = yes
 					}
 				}
 			}
@@ -283,10 +264,7 @@ apsr_enclave_science_19_decision_3 = {
 		cost = {
 			trigger = {
 				owner = {
-					OR = {
-						has_ethic = ethic_materialist
-						has_ethic = ethic_fanatic_materialist
-					}
+					is_materialist = yes
 				}
 			}
 			influence = 25
@@ -333,10 +311,7 @@ apsr_enclave_science_19_decision_off = {
 			trigger = {
 				owner = {
 					NOT = {
-						OR = {
-							has_ethic = ethic_materialist
-							has_ethic = ethic_fanatic_materialist
-						}
+						is_materialist = yes
 					}
 				}
 			}
@@ -345,10 +320,7 @@ apsr_enclave_science_19_decision_off = {
 		cost = {
 			trigger = {
 				owner = {
-					OR = {
-						has_ethic = ethic_materialist
-						has_ethic = ethic_fanatic_materialist
-					}
+					is_materialist = yes
 				}
 			}
 			influence = 25
@@ -401,12 +373,10 @@ apsr_enclave_defence_20_decision = {
 		cost = {
 			trigger = {
 				owner = {
-					NOT = {
-						OR = {
+					NOR = {
 							has_ethic = ethic_fanatic_pacifist
 							has_ethic = ethic_pacifist
-						}
-					}
+}
 				}
 			}
 			influence = 100

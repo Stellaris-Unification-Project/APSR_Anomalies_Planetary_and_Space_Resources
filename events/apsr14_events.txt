@@ -365,12 +365,10 @@ ship_event = {
 	desc = {
 		trigger = {
 			owner = { 
-				NOT = { 
-					OR = {
+				NOR = {
 						has_authority = auth_machine_intelligence
 						has_country_flag = synthetic_age
-					} 
-				} 
+} 
 			}
 		}
 		text = apsr.14011.desc.bio
@@ -567,12 +565,10 @@ planet_event = {
 	desc = {
 		trigger = {
 			owner = { 
-				NOT = { 
-					OR = {
+				NOR = {
 						has_authority = auth_machine_intelligence
 						has_country_flag = synthetic_age
-					} 
-				} 
+} 
 			}
 		}
 		text = apsr.14013.desc.bio
@@ -992,12 +988,10 @@ planet_event = {
 				AND = {
 					has_building = apsr14_building_part_m1
 					owner = {
-						NOT = {
-							OR = {
+						NOR = {
 								has_authority = auth_machine_intelligence
 								has_country_flag = synthetic_age
-							}
-						}
+}
 					}
 				}
 			}
@@ -1011,12 +1005,10 @@ planet_event = {
 				AND = {
 					has_building = apsr14_building_part_m2
 					owner = {
-						NOT = {
-							OR = {
+						NOR = {
 								has_authority = auth_machine_intelligence
 								has_country_flag = synthetic_age
-							}
-						}
+}
 					}
 				}
 			}
@@ -1030,12 +1022,10 @@ planet_event = {
 				AND = {
 					has_building = apsr14_building_part_m3
 					owner = {
-						NOT = {
-							OR = {
+						NOR = {
 								has_authority = auth_machine_intelligence
 								has_country_flag = synthetic_age
-							}
-						}
+}
 					}
 				}
 			}
@@ -1049,12 +1039,10 @@ planet_event = {
 				AND = {
 					has_building = apsr14_building_part_m4
 					owner = {
-						NOT = {
-							OR = {
+						NOR = {
 								has_authority = auth_machine_intelligence
 								has_country_flag = synthetic_age
-							}
-						}
+}
 					}
 				}
 			}
@@ -1118,12 +1106,10 @@ ship_event = {
 	desc = {
 		trigger = {
 			owner = { 
-				NOT = { 
-					OR = {
+				NOR = {
 						has_authority = auth_machine_intelligence
 						has_country_flag = synthetic_age
-					} 
-				} 
+} 
 			}
 		}
 		text = apsr.14601.desc.bio

@@ -4,12 +4,10 @@ spawn_random_apsr_resource_with_origin = {
 	if = {
 		limit = {
 			owner = {
-				NOT = {
-					OR = {
+				NOR = {
 						is_hive_empire = yes
 						is_machine_empire = yes
-					}
-				}
+}
 			}
 		}
 		add_modifier = { modifier = apsr_origin_planet_modifier days = -1 }
@@ -40,12 +38,10 @@ spawn_apsr_districts_with_origin = {
 	if = {
 		limit = { 
 			owner = { 
-				NOT = {
-					OR = {
+				NOR = {
 						is_hive_empire = yes
 						is_machine_empire = yes
-					}
-				}
+}
 			} 
 		}
 		remove_district = district_city

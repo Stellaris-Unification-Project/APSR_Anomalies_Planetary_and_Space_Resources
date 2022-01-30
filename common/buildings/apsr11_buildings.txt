@@ -445,13 +445,11 @@ apsr11_building_part_m1 = {
 	potential = {
 		AND = {
 			has_modifier = "apsr11_planet_modifier"
-			NOT = {
-				OR = {
+			NOR = {
 					has_building = apsr11_building_part_b1
 					has_building = apsr11_building_part_b2
 					has_building = apsr11_building_part_b3
-				}
-			}
+}
 		}
 	}
 	
@@ -473,11 +471,9 @@ apsr11_building_part_m1 = {
 			exists = owner
 			owner = { 
 				AND = {
-					NOT = {
+					NOR = {
 						is_hive_empire = yes
-					}
-					NOT = {
-						is_lithoid_empire = yes 
+						is_lithoid_empire = yes
 					}
 					has_technology = tech_apsr11_building_part_m1
 				}
@@ -612,11 +608,9 @@ apsr11_building_part_m2 = {
 			exists = owner
 			owner = { 
 				AND = {
-					NOT = {
+					NOR = {
 						is_hive_empire = yes
-					}
-					NOT = {
-						is_lithoid_empire = yes 
+						is_lithoid_empire = yes
 					}
 					has_technology = tech_apsr11_building_part_m2
 				}
@@ -766,11 +760,9 @@ apsr11_building_part_m3 = {
 			exists = owner
 			owner = { 
 				AND = {
-					NOT = {
+					NOR = {
 						is_hive_empire = yes
-					}
-					NOT = {
-						is_lithoid_empire = yes 
+						is_lithoid_empire = yes
 					}
 					has_technology = tech_apsr11_building_part_m3
 				}

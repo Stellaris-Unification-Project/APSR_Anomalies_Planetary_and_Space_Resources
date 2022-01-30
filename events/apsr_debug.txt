@@ -90,11 +90,9 @@ planet_event = {
 		name = apsr_debug.1.1.no
 		custom_tooltip = apsr_debug.1.1.no.tooltip
 		trigger = {
-			NOT = {
-				AND = {
-					has_modifier = apsr1_planet_modifier
-					has_deposit = apsr1_deposit 
-				}
+			NAND = {
+				has_modifier = apsr1_planet_modifier
+				has_deposit = apsr1_deposit 
 			}
 		}
 		hidden_effect = {	
@@ -172,11 +170,9 @@ planet_event = {
 		name = apsr_debug.1.2.no
 		custom_tooltip = apsr_debug.1.2.no.tooltip
 		trigger = {
-			NOT = {
-				AND = {
-					has_modifier = apsr2_planet_modifier
-					has_deposit = apsr2_deposit 
-				}
+			NAND = {
+				has_modifier = apsr2_planet_modifier
+				has_deposit = apsr2_deposit 
 			}
 		}
 		hidden_effect = {	
@@ -253,11 +249,9 @@ planet_event = {
 		name = apsr_debug.1.3.no
 		custom_tooltip = apsr_debug.1.3.no.tooltip
 		trigger = {
-			NOT = {
-				AND = {
-					has_modifier = apsr3_planet_modifier
-					has_deposit = apsr3_deposit 
-				}
+			NAND = {
+				has_modifier = apsr3_planet_modifier
+				has_deposit = apsr3_deposit 
 			}
 		}
 		hidden_effect = {	
@@ -336,11 +330,9 @@ planet_event = {
 		name = apsr_debug.1.4.no
 		custom_tooltip = apsr_debug.1.4.no.tooltip
 		trigger = {
-			NOT = {
-				AND = {
-					has_modifier = apsr4_planet_modifier
-					has_deposit = apsr4_deposit 
-				}
+			NAND = {
+				has_modifier = apsr4_planet_modifier
+				has_deposit = apsr4_deposit 
 			}
 		}
 		hidden_effect = {	
@@ -416,11 +408,9 @@ planet_event = {
 		name = apsr_debug.1.5.no
 		custom_tooltip = apsr_debug.1.5.no.tooltip
 		trigger = {
-			NOT = {
-				AND = {
-					has_modifier = apsr5_planet_modifier
-					has_deposit = apsr5_deposit 
-				}
+			NAND = {
+				has_modifier = apsr5_planet_modifier
+				has_deposit = apsr5_deposit 
 			}
 		}
 		hidden_effect = {	
@@ -496,11 +486,9 @@ planet_event = {
 		name = apsr_debug.1.6.no
 		custom_tooltip = apsr_debug.1.6.no.tooltip
 		trigger = {
-			NOT = {
-				AND = {
-					has_modifier = apsr6_planet_modifier
-					has_deposit = apsr6_deposit 
-				}
+			NAND = {
+				has_modifier = apsr6_planet_modifier
+				has_deposit = apsr6_deposit 
 			}
 		}
 		hidden_effect = {	
@@ -577,11 +565,9 @@ planet_event = {
 		name = apsr_debug.1.7.no
 		custom_tooltip = apsr_debug.1.7.no.tooltip
 		trigger = {
-			NOT = {
-				AND = {
-					has_modifier = apsr7_planet_modifier
-					has_deposit = apsr7_deposit 
-				}
+			NAND = {
+				has_modifier = apsr7_planet_modifier
+				has_deposit = apsr7_deposit 
 			}
 		}
 		hidden_effect = {	
@@ -657,11 +643,9 @@ planet_event = {
 		name = apsr_debug.1.8.no
 		custom_tooltip = apsr_debug.1.8.no.tooltip
 		trigger = {
-			NOT = {
-				AND = {
-					has_modifier = apsr8_planet_modifier
-					has_deposit = apsr8_deposit 
-				}
+			NAND = {
+				has_modifier = apsr8_planet_modifier
+				has_deposit = apsr8_deposit 
 			}
 		}
 		hidden_effect = {	
@@ -737,11 +721,9 @@ planet_event = {
 		name = apsr_debug.1.9.no
 		custom_tooltip = apsr_debug.1.9.no.tooltip
 		trigger = {
-			NOT = {
-				AND = {
-					has_modifier = apsr9_planet_modifier
-					has_deposit = apsr9_deposit 
-				}
+			NAND = {
+				has_modifier = apsr9_planet_modifier
+				has_deposit = apsr9_deposit 
 			}
 		}
 		hidden_effect = {	
@@ -815,11 +797,9 @@ planet_event = {
 		name = apsr_debug.1.10.no
 		custom_tooltip = apsr_debug.1.10.no.tooltip
 		trigger = {
-			NOT = {
-				AND = {
-					has_modifier = apsr10_planet_modifier
-					has_deposit = apsr10_deposit 
-				}
+			NAND = {
+				has_modifier = apsr10_planet_modifier
+				has_deposit = apsr10_deposit 
 			}
 		}
 		hidden_effect = {
@@ -930,11 +910,9 @@ planet_event = {
 		name = apsr_debug.1.11.no
 		custom_tooltip = apsr_debug.1.11.no.tooltip
 		trigger = {
-			NOT = {
-				AND = {
-					has_modifier = apsr11_planet_modifier
-					has_deposit = apsr11_deposit 
-				}
+			NAND = {
+				has_modifier = apsr11_planet_modifier
+				has_deposit = apsr11_deposit 
 			}
 		}
 		hidden_effect = {	
@@ -1010,11 +988,9 @@ planet_event = {
 		name = apsr_debug.1.12.no
 		custom_tooltip = apsr_debug.1.12.no.tooltip
 		trigger = {
-			NOT = {
-				AND = {
-					has_modifier = apsr12_planet_modifier
-					has_deposit = apsr12_deposit 
-				}
+			NAND = {
+				has_modifier = apsr12_planet_modifier
+				has_deposit = apsr12_deposit 
 			}
 		}
 		hidden_effect = {	
@@ -1090,11 +1066,9 @@ planet_event = {
 		name = apsr_debug.1.13.no
 		custom_tooltip = apsr_debug.1.13.no.tooltip
 		trigger = {
-			NOT = {
-				AND = {
-					has_modifier = apsr13_planet_modifier
-					has_deposit = apsr13_deposit 
-				}
+			NAND = {
+				has_modifier = apsr13_planet_modifier
+				has_deposit = apsr13_deposit 
 			}
 		}
 		hidden_effect = {
@@ -1173,11 +1147,9 @@ planet_event = {
 		name = apsr_debug.1.14.no
 		custom_tooltip = apsr_debug.1.14.no.tooltip
 		trigger = {
-			NOT = {
-				AND = {
-					has_modifier = apsr14_planet_modifier
-					has_deposit = apsr14_deposit 
-				}
+			NAND = {
+				has_modifier = apsr14_planet_modifier
+				has_deposit = apsr14_deposit 
 			}
 		}
 		hidden_effect = {	
@@ -1262,11 +1234,9 @@ planet_event = {
 		name = apsr_debug.1.15.no
 		custom_tooltip = apsr_debug.1.15.no.tooltip
 		trigger = {
-			NOT = {
-				AND = {
-					has_modifier = apsr15_planet_modifier
-					has_deposit = apsr15_deposit 
-				}
+			NAND = {
+				has_modifier = apsr15_planet_modifier
+				has_deposit = apsr15_deposit 
 			}
 		}
 		hidden_effect = {	
@@ -1342,11 +1312,9 @@ planet_event = {
 		name = apsr_debug.1.16.no
 		custom_tooltip = apsr_debug.1.16.no.tooltip
 		trigger = {
-			NOT = {
-				AND = {
-					has_modifier = apsr16_planet_modifier
-					has_deposit = apsr16_deposit 
-				}
+			NAND = {
+				has_modifier = apsr16_planet_modifier
+				has_deposit = apsr16_deposit 
 			}
 		}
 		hidden_effect = {
@@ -1422,11 +1390,9 @@ planet_event = {
 		name = apsr_debug.1.17.no
 		custom_tooltip = apsr_debug.1.17.no.tooltip
 		trigger = {
-			NOT = {
-				AND = {
-					has_modifier = apsr17_planet_modifier
-					has_deposit = apsr17_deposit 
-				}
+			NAND = {
+				has_modifier = apsr17_planet_modifier
+				has_deposit = apsr17_deposit 
 			}
 		}
 		hidden_effect = {	
@@ -1502,11 +1468,9 @@ planet_event = {
 		name = apsr_debug.1.18.no
 		custom_tooltip = apsr_debug.1.18.no.tooltip
 		trigger = {
-			NOT = {
-				AND = {
-					has_modifier = apsr18_planet_modifier
-					has_deposit = apsr18_deposit 
-				}
+			NAND = {
+				has_modifier = apsr18_planet_modifier
+				has_deposit = apsr18_deposit 
 			}
 		}
 		hidden_effect = {	
@@ -1585,11 +1549,9 @@ planet_event = {
 		name = apsr_debug.1.19.no
 		custom_tooltip = apsr_debug.1.19.no.tooltip
 		trigger = {
-			NOT = {
-				AND = {
-					has_modifier = apsr19_planet_modifier
-					has_deposit = apsr19_deposit 
-				}
+			NAND = {
+				has_modifier = apsr19_planet_modifier
+				has_deposit = apsr19_deposit 
 			}
 		}
 		hidden_effect = {
@@ -1665,11 +1627,9 @@ planet_event = {
 		name = apsr_debug.1.20.no
 		custom_tooltip = apsr_debug.1.20.no.tooltip
 		trigger = {
-			NOT = {
-				AND = {
-					has_modifier = apsr20_planet_modifier
-					has_deposit = apsr20_deposit 
-				}
+			NAND = {
+				has_modifier = apsr20_planet_modifier
+				has_deposit = apsr20_deposit 
 			}
 		}
 		hidden_effect = {	
@@ -1782,11 +1742,9 @@ planet_event = {
 		name = apsr_debug.1.21.no
 		custom_tooltip = apsr_debug.1.21.no.tooltip
 		trigger = {
-			NOT = {
-				AND = {
-					has_modifier = apsr21_planet_modifier
-					has_deposit = apsr21_deposit 
-				}
+			NAND = {
+				has_modifier = apsr21_planet_modifier
+				has_deposit = apsr21_deposit 
 			}
 		}
 		hidden_effect = {	
@@ -1862,11 +1820,9 @@ planet_event = {
 		name = apsr_debug.1.22.no
 		custom_tooltip = apsr_debug.1.22.no.tooltip
 		trigger = {
-			NOT = {
-				AND = {
-					has_modifier = apsr22_planet_modifier
-					has_deposit = apsr22_deposit 
-				}
+			NAND = {
+				has_modifier = apsr22_planet_modifier
+				has_deposit = apsr22_deposit 
 			}
 		}
 		hidden_effect = {	
@@ -1942,11 +1898,9 @@ planet_event = {
 		name = apsr_debug.1.23.no
 		custom_tooltip = apsr_debug.1.23.no.tooltip
 		trigger = {
-			NOT = {
-				AND = {
-					has_modifier = apsr23_planet_modifier
-					has_deposit = apsr23_deposit 
-				}
+			NAND = {
+				has_modifier = apsr23_planet_modifier
+				has_deposit = apsr23_deposit 
 			}
 		}
 		hidden_effect = {	
@@ -2022,11 +1976,9 @@ planet_event = {
 		name = apsr_debug.1.24.no
 		custom_tooltip = apsr_debug.1.24.no.tooltip
 		trigger = {
-			NOT = {
-				AND = {
-					has_modifier = apsr24_planet_modifier
-					has_deposit = apsr24_deposit 
-				}
+			NAND = {
+				has_modifier = apsr24_planet_modifier
+				has_deposit = apsr24_deposit 
 			}
 		}
 		hidden_effect = {	

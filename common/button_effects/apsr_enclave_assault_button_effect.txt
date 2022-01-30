@@ -1,14 +1,14 @@
-# Приписки:
-# d - обычная империя (не гештальт)
-# g - коллективный разум (рой)
-# m - механическая империя (машинный разум)
+# :
+# d -   ( )
+# g -   ()
+# m -   ( )
 
 
 
 ################################################################
-##### ФОН
+##### 
 
-# Для роя
+#  
 GFX_apsr_enclave_assault_picture_hive = {
 	potential = {
 		has_authority = auth_hive_mind
@@ -20,7 +20,7 @@ GFX_apsr_enclave_assault_picture_hive = {
 	}
 }
 
-# Для машин
+#  
 GFX_apsr_enclave_assault_picture_machine = {
 	potential = {
 		has_authority = auth_machine_intelligence
@@ -33,16 +33,14 @@ GFX_apsr_enclave_assault_picture_machine = {
 }
 	
 
-# Для остальных
+#  
 GFX_apsr_enclave_assault_picture_all = {
 	potential = {
-		AND = {
-			NOT = {
-				has_authority = auth_hive_mind
-			}
-			NOT = {
-				has_authority = auth_machine_intelligence
-			}
+		NOR = {
+			has_authority = auth_hive_mind
+			
+			has_authority = auth_machine_intelligence
+			
 		}
 	}
 	allow = {
@@ -55,9 +53,9 @@ GFX_apsr_enclave_assault_picture_all = {
 
 
 ################################################################
-##### УРОВЕНЬ 0
+#####  0
 
-# условие показа пока не выбрано любое улучшение
+#       
 apsr_enclave_assault_button_00 = {
 	potential = {
 		NOT = {
@@ -94,7 +92,7 @@ apsr_enclave_assault_button_00 = {
 	}
 }
 
-# условие показа фона описания
+#    
 apsr_enclave_assault_button_00_available = {
 	potential = {
 		OR = {
@@ -134,13 +132,13 @@ apsr_enclave_assault_button_00_available = {
 
 
 ################################################################
-##### УРОВЕНЬ 1
+#####  1
 
 
 
-### КНОПКА 1
+###  1
 
-# кнопка выбора усиления и открытия описания
+#      
 apsr_enclave_assault_button_01_select = {
 	potential = {
 		NOT = {
@@ -179,7 +177,7 @@ apsr_enclave_assault_button_01_select = {
 	}
 }
 
-# условие отображения описания слева
+#    
 apsr_enclave_assault_button_01_pressed = {
 	potential = {
 		has_country_flag = apsr_enclave_assault_button_01_pressed
@@ -191,7 +189,7 @@ apsr_enclave_assault_button_01_pressed = {
 	}
 }
 
-# условие отображения кнопки покупки
+#    
 apsr_enclave_assault_button_01_buy = {
 	potential = {
 		has_country_flag = apsr_enclave_assault_button_01_pressed
@@ -344,7 +342,7 @@ apsr_enclave_assault_button_01_buy = {
 	}
 }
 
-# кнопка выбора улучшения после покупки
+#     
 apsr_enclave_assault_button_01_purchased = {
 	potential = {
 		has_country_flag = apsr_enclave_assault_button_01_purchase
@@ -359,9 +357,9 @@ apsr_enclave_assault_button_01_purchased = {
 
 
 
-### КНОПКА 02
+###  02
 
-# кнопка выбора усиления и открытия описания
+#      
 apsr_enclave_assault_button_02_select = {
 	potential = {
 		NOT = {
@@ -400,7 +398,7 @@ apsr_enclave_assault_button_02_select = {
 	}
 }
 
-# условие отображения описания слева
+#    
 apsr_enclave_assault_button_02_pressed = {
 	potential = {	
 		has_country_flag = apsr_enclave_assault_button_02_pressed
@@ -412,7 +410,7 @@ apsr_enclave_assault_button_02_pressed = {
 	}
 }
 
-# условие отображения кнопки покупки
+#    
 apsr_enclave_assault_button_02_buy = {
 	potential = {
 		has_country_flag = apsr_enclave_assault_button_02_pressed
@@ -565,7 +563,7 @@ apsr_enclave_assault_button_02_buy = {
 	}
 }
 
-# кнопка выбора улучшения после покупки
+#     
 apsr_enclave_assault_button_02_purchased = {
 	potential = {
 		has_country_flag = apsr_enclave_assault_button_02_purchase
@@ -580,9 +578,9 @@ apsr_enclave_assault_button_02_purchased = {
 
 
 
-### КНОПКА 03
+###  03
 
-# кнопка выбора усиления и открытия описания
+#      
 apsr_enclave_assault_button_03_select = {
 	potential = {
 		NOT = {
@@ -621,7 +619,7 @@ apsr_enclave_assault_button_03_select = {
 	}
 }
 
-# условие отображения описания слева
+#    
 apsr_enclave_assault_button_03_pressed = {
 	potential = {
 		has_country_flag = apsr_enclave_assault_button_03_pressed
@@ -633,7 +631,7 @@ apsr_enclave_assault_button_03_pressed = {
 	}
 }
 
-# условие отображения кнопки покупки
+#    
 apsr_enclave_assault_button_03_buy = {
 	potential = {
 		has_country_flag = apsr_enclave_assault_button_03_pressed
@@ -786,7 +784,7 @@ apsr_enclave_assault_button_03_buy = {
 	}
 }
 
-# кнопка выбора улучшения после покупки
+#     
 apsr_enclave_assault_button_03_purchased = {
 	potential = {
 		has_country_flag = apsr_enclave_assault_button_03_purchase
@@ -801,9 +799,9 @@ apsr_enclave_assault_button_03_purchased = {
 
 
 
-### КНОПКА 04
+###  04
 
-# кнопка выбора усиления и открытия описания
+#      
 apsr_enclave_assault_button_04_select = {
 	potential = {
 		NOT = {
@@ -842,7 +840,7 @@ apsr_enclave_assault_button_04_select = {
 	}
 }
 
-# условие отображения описания слева
+#    
 apsr_enclave_assault_button_04_pressed = {
 	potential = {
 		has_country_flag = apsr_enclave_assault_button_04_pressed
@@ -854,7 +852,7 @@ apsr_enclave_assault_button_04_pressed = {
 	}
 }
 
-# условие отображения кнопки покупки
+#    
 apsr_enclave_assault_button_04_buy = {
 	potential = {
 		has_country_flag = apsr_enclave_assault_button_04_pressed
@@ -1007,7 +1005,7 @@ apsr_enclave_assault_button_04_buy = {
 	}
 }
 
-# кнопка выбора улучшения после покупки
+#     
 apsr_enclave_assault_button_04_purchased = {
 	potential = {
 		has_country_flag = apsr_enclave_assault_button_04_purchase
@@ -1022,9 +1020,9 @@ apsr_enclave_assault_button_04_purchased = {
 
 
 
-### КНОПКА 05
+###  05
 
-# кнопка выбора усиления и открытия описания
+#      
 apsr_enclave_assault_button_05_select = {
 	potential = {
 		NOT = {
@@ -1063,7 +1061,7 @@ apsr_enclave_assault_button_05_select = {
 	}
 }
 
-# условие отображения описания слева
+#    
 apsr_enclave_assault_button_05_pressed = {
 	potential = {
 		has_country_flag = apsr_enclave_assault_button_05_pressed
@@ -1075,7 +1073,7 @@ apsr_enclave_assault_button_05_pressed = {
 	}
 }
 
-# условие отображения кнопки покупки
+#    
 apsr_enclave_assault_button_05_buy = {
 	potential = {
 		has_country_flag = apsr_enclave_assault_button_05_pressed
@@ -1228,7 +1226,7 @@ apsr_enclave_assault_button_05_buy = {
 	}
 }
 
-# кнопка выбора улучшения после покупки
+#     
 apsr_enclave_assault_button_05_purchased = {
 	potential = {
 		has_country_flag = apsr_enclave_assault_button_05_purchase
@@ -1243,9 +1241,9 @@ apsr_enclave_assault_button_05_purchased = {
 
 
 
-### КНОПКА 06
+###  06
 
-# кнопка выбора усиления и открытия описания
+#      
 apsr_enclave_assault_button_06_select = {
 	potential = {
 		NOT = {
@@ -1284,7 +1282,7 @@ apsr_enclave_assault_button_06_select = {
 	}
 }
 
-# условие отображения описания слева
+#    
 apsr_enclave_assault_button_06_pressed = {
 	potential = {
 		has_country_flag = apsr_enclave_assault_button_06_pressed
@@ -1296,7 +1294,7 @@ apsr_enclave_assault_button_06_pressed = {
 	}
 }
 
-# условие отображения кнопки покупки
+#    
 apsr_enclave_assault_button_06_buy = {
 	potential = {
 		has_country_flag = apsr_enclave_assault_button_06_pressed
@@ -1449,7 +1447,7 @@ apsr_enclave_assault_button_06_buy = {
 	}
 }
 
-# кнопка выбора улучшения после покупки
+#     
 apsr_enclave_assault_button_06_purchased = {
 	potential = {
 		has_country_flag = apsr_enclave_assault_button_06_purchase
@@ -1464,9 +1462,9 @@ apsr_enclave_assault_button_06_purchased = {
 
 
 
-### КНОПКА 07
+###  07
 
-# кнопка выбора усиления и открытия описания
+#      
 apsr_enclave_assault_button_07_select = {
 	potential = {
 		NOT = {
@@ -1505,7 +1503,7 @@ apsr_enclave_assault_button_07_select = {
 	}
 }
 
-# условие отображения описания слева
+#    
 apsr_enclave_assault_button_07_pressed = {
 	potential = {
 		has_country_flag = apsr_enclave_assault_button_07_pressed
@@ -1517,7 +1515,7 @@ apsr_enclave_assault_button_07_pressed = {
 	}
 }
 
-# условие отображения кнопки покупки
+#    
 apsr_enclave_assault_button_07_buy = {
 	potential = {
 		has_country_flag = apsr_enclave_assault_button_07_pressed
@@ -1670,7 +1668,7 @@ apsr_enclave_assault_button_07_buy = {
 	}
 }
 
-# кнопка выбора улучшения после покупки
+#     
 apsr_enclave_assault_button_07_purchased = {
 	potential = {
 		has_country_flag = apsr_enclave_assault_button_07_purchase
@@ -1685,9 +1683,9 @@ apsr_enclave_assault_button_07_purchased = {
 
 
 
-### КНОПКА 08
+###  08
 
-# кнопка выбора усиления и открытия описания
+#      
 apsr_enclave_assault_button_08_select = {
 	potential = {
 		NOT = {
@@ -1726,7 +1724,7 @@ apsr_enclave_assault_button_08_select = {
 	}
 }
 
-# условие отображения описания слева
+#    
 apsr_enclave_assault_button_08_pressed = {
 	potential = {
 		has_country_flag = apsr_enclave_assault_button_08_pressed
@@ -1738,7 +1736,7 @@ apsr_enclave_assault_button_08_pressed = {
 	}
 }
 
-# условие отображения кнопки покупки
+#    
 apsr_enclave_assault_button_08_buy = {
 	potential = {
 		has_country_flag = apsr_enclave_assault_button_08_pressed
@@ -1891,7 +1889,7 @@ apsr_enclave_assault_button_08_buy = {
 	}
 }
 
-# кнопка выбора улучшения после покупки
+#     
 apsr_enclave_assault_button_08_purchased = {
 	potential = {
 		has_country_flag = apsr_enclave_assault_button_08_purchase
@@ -1906,9 +1904,9 @@ apsr_enclave_assault_button_08_purchased = {
 
 
 
-### КНОПКА 09
+###  09
 
-# кнопка выбора усиления и открытия описания
+#      
 apsr_enclave_assault_button_09_select = {
 	potential = {
 		NOT = {
@@ -1947,7 +1945,7 @@ apsr_enclave_assault_button_09_select = {
 	}
 }
 
-# условие отображения описания слева
+#    
 apsr_enclave_assault_button_09_pressed = {
 	potential = {
 		has_country_flag = apsr_enclave_assault_button_09_pressed
@@ -1959,7 +1957,7 @@ apsr_enclave_assault_button_09_pressed = {
 	}
 }
 
-# условие отображения кнопки покупки
+#    
 apsr_enclave_assault_button_09_buy = {
 	potential = {
 		has_country_flag = apsr_enclave_assault_button_09_pressed
@@ -2112,7 +2110,7 @@ apsr_enclave_assault_button_09_buy = {
 	}
 }
 
-# кнопка выбора улучшения после покупки
+#     
 apsr_enclave_assault_button_09_purchased = {
 	potential = {
 		has_country_flag = apsr_enclave_assault_button_09_purchase
@@ -2127,9 +2125,9 @@ apsr_enclave_assault_button_09_purchased = {
 
 
 
-### КНОПКА 10
+###  10
 
-# кнопка выбора усиления и открытия описания
+#      
 apsr_enclave_assault_button_10_select = {
 	potential = {
 		NOT = {
@@ -2168,7 +2166,7 @@ apsr_enclave_assault_button_10_select = {
 	}
 }
 
-# условие отображения описания слева
+#    
 apsr_enclave_assault_button_10_pressed = {
 	potential = {
 		has_country_flag = apsr_enclave_assault_button_10_pressed
@@ -2180,7 +2178,7 @@ apsr_enclave_assault_button_10_pressed = {
 	}
 }
 
-# условие отображения кнопки покупки
+#    
 apsr_enclave_assault_button_10_buy = {
 	potential = {
 		has_country_flag = apsr_enclave_assault_button_10_pressed
@@ -2333,7 +2331,7 @@ apsr_enclave_assault_button_10_buy = {
 	}
 }
 
-# кнопка выбора улучшения после покупки
+#     
 apsr_enclave_assault_button_10_purchased = {
 	potential = {
 		has_country_flag = apsr_enclave_assault_button_10_purchase
@@ -2348,9 +2346,9 @@ apsr_enclave_assault_button_10_purchased = {
 
 
 
-### КНОПКА 11
+###  11
 
-# кнопка выбора усиления и открытия описания
+#      
 apsr_enclave_assault_button_11_select = {
 	potential = {
 		NOT = {
@@ -2389,7 +2387,7 @@ apsr_enclave_assault_button_11_select = {
 	}
 }
 
-# условие отображения описания слева
+#    
 apsr_enclave_assault_button_11_pressed = {
 	potential = {
 		has_country_flag = apsr_enclave_assault_button_11_pressed
@@ -2401,7 +2399,7 @@ apsr_enclave_assault_button_11_pressed = {
 	}
 }
 
-# условие отображения кнопки покупки
+#    
 apsr_enclave_assault_button_11_buy = {
 	potential = {
 		has_country_flag = apsr_enclave_assault_button_11_pressed
@@ -2556,7 +2554,7 @@ apsr_enclave_assault_button_11_buy = {
 	}
 }
 
-# кнопка выбора улучшения после покупки
+#     
 apsr_enclave_assault_button_11_purchased = {
 	potential = {
 		has_country_flag = apsr_enclave_assault_button_11_purchase
@@ -2569,7 +2567,7 @@ apsr_enclave_assault_button_11_purchased = {
 	}
 }
 
-# кнопка закрыта
+#  
 apsr_enclave_assault_button_11_locked = {
 	potential = {
 		NOT = {
@@ -2597,9 +2595,9 @@ apsr_enclave_assault_button_11_locked = {
 
 
 
-### КНОПКА 12
+###  12
 
-# кнопка выбора усиления и открытия описания
+#      
 apsr_enclave_assault_button_12_select = {
 	potential = {
 		NOT = {
@@ -2638,7 +2636,7 @@ apsr_enclave_assault_button_12_select = {
 	}
 }
 
-# условие отображения описания слева
+#    
 apsr_enclave_assault_button_12_pressed = {
 	potential = {
 		has_country_flag = apsr_enclave_assault_button_12_pressed
@@ -2650,7 +2648,7 @@ apsr_enclave_assault_button_12_pressed = {
 	}
 }
 
-# условие отображения кнопки покупки
+#    
 apsr_enclave_assault_button_12_buy = {
 	potential = {
 		has_country_flag = apsr_enclave_assault_button_12_pressed
@@ -2805,7 +2803,7 @@ apsr_enclave_assault_button_12_buy = {
 	}
 }
 
-# кнопка выбора улучшения после покупки
+#     
 apsr_enclave_assault_button_12_purchased = {
 	potential = {
 		has_country_flag = apsr_enclave_assault_button_12_purchase
@@ -2818,7 +2816,7 @@ apsr_enclave_assault_button_12_purchased = {
 	}
 }
 
-# кнопка закрыта
+#  
 apsr_enclave_assault_button_12_locked = {
 	potential = {
 		NOT = {
@@ -2846,9 +2844,9 @@ apsr_enclave_assault_button_12_locked = {
 
 
 
-### КНОПКА 13
+###  13
 
-# кнопка выбора усиления и открытия описания
+#      
 apsr_enclave_assault_button_13_select = {
 	potential = {
 		NOT = {
@@ -2887,7 +2885,7 @@ apsr_enclave_assault_button_13_select = {
 	}
 }
 
-# условие отображения описания слева
+#    
 apsr_enclave_assault_button_13_pressed = {
 	potential = {
 		has_country_flag = apsr_enclave_assault_button_13_pressed
@@ -2899,7 +2897,7 @@ apsr_enclave_assault_button_13_pressed = {
 	}
 }
 
-# условие отображения кнопки покупки
+#    
 apsr_enclave_assault_button_13_buy = {
 	potential = {
 		has_country_flag = apsr_enclave_assault_button_13_pressed
@@ -3054,7 +3052,7 @@ apsr_enclave_assault_button_13_buy = {
 	}
 }
 
-# кнопка выбора улучшения после покупки
+#     
 apsr_enclave_assault_button_13_purchased = {
 	potential = {
 		has_country_flag = apsr_enclave_assault_button_13_purchase
@@ -3067,7 +3065,7 @@ apsr_enclave_assault_button_13_purchased = {
 	}
 }
 
-# кнопка закрыта
+#  
 apsr_enclave_assault_button_13_locked = {
 	potential = {
 		NOT = {
@@ -3095,9 +3093,9 @@ apsr_enclave_assault_button_13_locked = {
 
 
 
-### КНОПКА 14
+###  14
 
-# кнопка выбора усиления и открытия описания
+#      
 apsr_enclave_assault_button_14_select = {
 	potential = {
 		NOT = {
@@ -3136,7 +3134,7 @@ apsr_enclave_assault_button_14_select = {
 	}
 }
 
-# условие отображения описания слева
+#    
 apsr_enclave_assault_button_14_pressed = {
 	potential = {
 		has_country_flag = apsr_enclave_assault_button_14_pressed
@@ -3148,7 +3146,7 @@ apsr_enclave_assault_button_14_pressed = {
 	}
 }
 
-# условие отображения кнопки покупки
+#    
 apsr_enclave_assault_button_14_buy = {
 	potential = {
 		has_country_flag = apsr_enclave_assault_button_14_pressed
@@ -3303,7 +3301,7 @@ apsr_enclave_assault_button_14_buy = {
 	}
 }
 
-# кнопка выбора улучшения после покупки
+#     
 apsr_enclave_assault_button_14_purchased = {
 	potential = {
 		has_country_flag = apsr_enclave_assault_button_14_purchase
@@ -3316,7 +3314,7 @@ apsr_enclave_assault_button_14_purchased = {
 	}
 }
 
-# кнопка закрыта
+#  
 apsr_enclave_assault_button_14_locked = {
 	potential = {
 		NOT = {
@@ -3344,18 +3342,16 @@ apsr_enclave_assault_button_14_locked = {
 
 
 
-### КНОПКА 15 - обычные
+###  15 - 
 
-# кнопка выбора усиления и открытия описания
+#      
 apsr_enclave_assault_button_15_select = {
 	potential = {
-		AND = {
-			NOT = {
-				has_country_flag = apsr_enclave_assault_button_15_purchase
-			}
-			NOT = {
-				is_unfriendly = yes
-			}
+		NOR = {
+			has_country_flag = apsr_enclave_assault_button_15_purchase
+			
+			is_unfriendly = yes
+			
 		}
 	}
 	allow = {
@@ -3390,7 +3386,7 @@ apsr_enclave_assault_button_15_select = {
 	}
 }
 
-# условие отображения описания слева
+#    
 apsr_enclave_assault_button_15_pressed = {
 	potential = {
 		has_country_flag = apsr_enclave_assault_button_15_pressed
@@ -3402,7 +3398,7 @@ apsr_enclave_assault_button_15_pressed = {
 	}
 }
 
-# условие отображения кнопки покупки
+#    
 apsr_enclave_assault_button_15_buy = {
 	potential = {
 		has_country_flag = apsr_enclave_assault_button_15_pressed
@@ -3557,7 +3553,7 @@ apsr_enclave_assault_button_15_buy = {
 	}
 }
 
-# кнопка выбора улучшения после покупки
+#     
 apsr_enclave_assault_button_15_purchased = {
 	potential = {
 		AND = {
@@ -3575,7 +3571,7 @@ apsr_enclave_assault_button_15_purchased = {
 	}
 }
 
-# кнопка закрыта
+#  
 apsr_enclave_assault_button_15_locked = {
 	potential = {
 		NOT = {
@@ -3603,9 +3599,9 @@ apsr_enclave_assault_button_15_locked = {
 
 
 
-### КНОПКА 15 - геноцидные - поборник
+###  15 -  - 
 
-# кнопка выбора усиления и открытия описания
+#      
 apsr_enclave_assault_button_15ext_select = {
 	potential = {
 		AND = {
@@ -3647,7 +3643,7 @@ apsr_enclave_assault_button_15ext_select = {
 	}
 }
 
-# условие отображения описания слева
+#    
 apsr_enclave_assault_button_15ext_pressed = {
 	potential = {
 		has_country_flag = apsr_enclave_assault_button_15ext_pressed
@@ -3659,7 +3655,7 @@ apsr_enclave_assault_button_15ext_pressed = {
 	}
 }
 
-# условие отображения кнопки покупки
+#    
 apsr_enclave_assault_button_15ext_buy = {
 	potential = {
 		has_country_flag = apsr_enclave_assault_button_15ext_pressed
@@ -3814,7 +3810,7 @@ apsr_enclave_assault_button_15ext_buy = {
 	}
 }
 
-# кнопка выбора улучшения после покупки
+#     
 apsr_enclave_assault_button_15ext_purchased = {
 	potential = {
 		AND = {
@@ -3830,7 +3826,7 @@ apsr_enclave_assault_button_15ext_purchased = {
 	}
 }
 
-# кнопка закрыта
+#  
 apsr_enclave_assault_button_15ext_locked = {
 	potential = {
 		NOT = {
@@ -3858,9 +3854,9 @@ apsr_enclave_assault_button_15ext_locked = {
 
 
 
-### КНОПКА 16
+###  16
 
-# кнопка выбора усиления и открытия описания
+#      
 apsr_enclave_assault_button_16_select = {
 	potential = {
 		NOT = {
@@ -3899,7 +3895,7 @@ apsr_enclave_assault_button_16_select = {
 	}
 }
 
-# условие отображения описания слева
+#    
 apsr_enclave_assault_button_16_pressed = {
 	potential = {
 		has_country_flag = apsr_enclave_assault_button_16_pressed
@@ -3911,7 +3907,7 @@ apsr_enclave_assault_button_16_pressed = {
 	}
 }
 
-# условие отображения кнопки покупки
+#    
 apsr_enclave_assault_button_16_buy = {
 	potential = {
 		has_country_flag = apsr_enclave_assault_button_16_pressed
@@ -4004,7 +4000,7 @@ apsr_enclave_assault_button_16_buy = {
 	}
 }
 
-# кнопка выбора улучшения после покупки
+#     
 apsr_enclave_assault_button_16_purchased = {
 	potential = {
 		has_country_flag = apsr_enclave_assault_button_16_purchase
@@ -4017,7 +4013,7 @@ apsr_enclave_assault_button_16_purchased = {
 	}
 }
 
-# кнопка закрыта
+#  
 apsr_enclave_assault_button_16_locked = {
 	potential = {
 		NOT = {
@@ -4053,9 +4049,9 @@ apsr_enclave_assault_button_16_locked = {
 
 
 
-### КНОПКА 17
+###  17
 
-# кнопка выбора усиления и открытия описания
+#      
 apsr_enclave_assault_button_17_select = {
 	potential = {
 		NOT = {
@@ -4094,7 +4090,7 @@ apsr_enclave_assault_button_17_select = {
 	}
 }
 
-# условие отображения описания слева
+#    
 apsr_enclave_assault_button_17_pressed = {
 	potential = {
 		has_country_flag = apsr_enclave_assault_button_17_pressed
@@ -4106,7 +4102,7 @@ apsr_enclave_assault_button_17_pressed = {
 	}
 }
 
-# условие отображения кнопки покупки
+#    
 apsr_enclave_assault_button_17_buy = {
 	potential = {
 		has_country_flag = apsr_enclave_assault_button_17_pressed
@@ -4199,7 +4195,7 @@ apsr_enclave_assault_button_17_buy = {
 	}
 }
 
-# кнопка выбора улучшения после покупки
+#     
 apsr_enclave_assault_button_17_purchased = {
 	potential = {
 		has_country_flag = apsr_enclave_assault_button_17_purchase
@@ -4212,7 +4208,7 @@ apsr_enclave_assault_button_17_purchased = {
 	}
 }
 
-# кнопка закрыта
+#  
 apsr_enclave_assault_button_17_locked = {
 	potential = {
 		NOT = {
@@ -4248,18 +4244,16 @@ apsr_enclave_assault_button_17_locked = {
 
 
 
-### КНОПКА 18 - обычные
+###  18 - 
 
-# кнопка выбора усиления и открытия описания
+#      
 apsr_enclave_assault_button_18_select = {
 	potential = {
-		AND = {
-			NOT = {
-				has_country_flag = apsr_enclave_assault_button_18_purchase
-			}
-			NOT = {
-				is_unfriendly = yes
-			}
+		NOR = {
+			has_country_flag = apsr_enclave_assault_button_18_purchase
+			
+			is_unfriendly = yes
+			
 		}
 	}
 	allow = {
@@ -4294,7 +4288,7 @@ apsr_enclave_assault_button_18_select = {
 	}
 }
 
-# условие отображения описания слева
+#    
 apsr_enclave_assault_button_18_pressed = {
 	potential = {
 		has_country_flag = apsr_enclave_assault_button_18_pressed
@@ -4306,7 +4300,7 @@ apsr_enclave_assault_button_18_pressed = {
 	}
 }
 
-# условие отображения кнопки покупки
+#    
 apsr_enclave_assault_button_18_buy = {
 	potential = {
 		has_country_flag = apsr_enclave_assault_button_18_pressed
@@ -4399,7 +4393,7 @@ apsr_enclave_assault_button_18_buy = {
 	}
 }
 
-# кнопка выбора улучшения после покупки
+#     
 apsr_enclave_assault_button_18_purchased = {
 	potential = {
 		AND = {
@@ -4417,7 +4411,7 @@ apsr_enclave_assault_button_18_purchased = {
 	}
 }
 
-# кнопка закрыта
+#  
 apsr_enclave_assault_button_18_locked = {
 	potential = {
 		NOT = {
@@ -4453,9 +4447,9 @@ apsr_enclave_assault_button_18_locked = {
 
 
 
-### КНОПКА 18 - геноцидные
+###  18 - 
 
-# кнопка выбора усиления и открытия описания
+#      
 apsr_enclave_assault_button_18ext_select = {
 	potential = {
 		AND = {
@@ -4497,7 +4491,7 @@ apsr_enclave_assault_button_18ext_select = {
 	}
 }
 
-# условие отображения описания слева
+#    
 apsr_enclave_assault_button_18ext_pressed = {
 	potential = {
 		has_country_flag = apsr_enclave_assault_button_18ext_pressed
@@ -4509,7 +4503,7 @@ apsr_enclave_assault_button_18ext_pressed = {
 	}
 }
 
-# условие отображения кнопки покупки
+#    
 apsr_enclave_assault_button_18ext_buy = {
 	potential = {
 		has_country_flag = apsr_enclave_assault_button_18ext_pressed
@@ -4606,7 +4600,7 @@ apsr_enclave_assault_button_18ext_buy = {
 	}
 }
 
-# кнопка выбора улучшения после покупки
+#     
 apsr_enclave_assault_button_18ext_purchased = {
 	potential = {
 		AND = {
@@ -4622,7 +4616,7 @@ apsr_enclave_assault_button_18ext_purchased = {
 	}
 }
 
-# кнопка закрыта
+#  
 apsr_enclave_assault_button_18ext_locked = {
 	potential = {
 		NOT = {
@@ -4658,9 +4652,9 @@ apsr_enclave_assault_button_18ext_locked = {
 
 
 
-### КНОПКА 19
+###  19
 
-# кнопка выбора усиления и открытия описания
+#      
 apsr_enclave_assault_button_19_select = {
 	potential = {
 		NOT = {
@@ -4699,7 +4693,7 @@ apsr_enclave_assault_button_19_select = {
 	}
 }
 
-# условие отображения описания слева
+#    
 apsr_enclave_assault_button_19_pressed = {
 	potential = {
 		has_country_flag = apsr_enclave_assault_button_19_pressed
@@ -4711,7 +4705,7 @@ apsr_enclave_assault_button_19_pressed = {
 	}
 }
 
-# условие отображения кнопки покупки
+#    
 apsr_enclave_assault_button_19_buy = {
 	potential = {
 		has_country_flag = apsr_enclave_assault_button_19_pressed
@@ -4804,7 +4798,7 @@ apsr_enclave_assault_button_19_buy = {
 	}
 }
 
-# кнопка выбора улучшения после покупки
+#     
 apsr_enclave_assault_button_19_purchased = {
 	potential = {
 		has_country_flag = apsr_enclave_assault_button_19_purchase
@@ -4817,7 +4811,7 @@ apsr_enclave_assault_button_19_purchased = {
 	}
 }
 
-# кнопка закрыта
+#  
 apsr_enclave_assault_button_19_locked = {
 	potential = {
 		NOT = {
@@ -4853,9 +4847,9 @@ apsr_enclave_assault_button_19_locked = {
 
 
 
-### КНОПКА 20
+###  20
 
-# кнопка выбора усиления и открытия описания
+#      
 apsr_enclave_assault_button_20_select = {
 	potential = {
 		NOT = {
@@ -4894,7 +4888,7 @@ apsr_enclave_assault_button_20_select = {
 	}
 }
 
-# условие отображения описания слева
+#    
 apsr_enclave_assault_button_20_pressed = {
 	potential = {
 		has_country_flag = apsr_enclave_assault_button_20_pressed
@@ -4906,7 +4900,7 @@ apsr_enclave_assault_button_20_pressed = {
 	}
 }
 
-# условие отображения кнопки покупки
+#    
 apsr_enclave_assault_button_20_buy = {
 	potential = {
 		has_country_flag = apsr_enclave_assault_button_20_pressed
@@ -4999,7 +4993,7 @@ apsr_enclave_assault_button_20_buy = {
 	}
 }
 
-# кнопка выбора улучшения после покупки
+#     
 apsr_enclave_assault_button_20_purchased = {
 	potential = {
 		has_country_flag = apsr_enclave_assault_button_20_purchase
@@ -5012,7 +5006,7 @@ apsr_enclave_assault_button_20_purchased = {
 	}
 }
 
-# кнопка закрыта
+#  
 apsr_enclave_assault_button_20_locked = {
 	potential = {
 		NOT = {
@@ -5051,13 +5045,13 @@ apsr_enclave_assault_button_20_locked = {
 
 
 ################################################################
-##### БОНУСЫ
+##### 
 
 
 
-### БОНУС 1
+###  1
 
-# вариант 1 (P)
+#  1 (P)
 apsr_enclave_assault_bonus_01_P_show = {
 	potential = {
 		has_country_flag = apsr_enclave_assault_set_1_bonus_is_01
@@ -5070,7 +5064,7 @@ apsr_enclave_assault_bonus_01_P_show = {
 	}
 }
 
-# вариант 2 (J)
+#  2 (J)
 apsr_enclave_assault_bonus_01_J_show = {
 	potential = {
 		has_country_flag = apsr_enclave_assault_set_1_bonus_is_02
@@ -5083,7 +5077,7 @@ apsr_enclave_assault_bonus_01_J_show = {
 	}
 }
 
-# вариант 3 (Y)
+#  3 (Y)
 apsr_enclave_assault_bonus_01_Y_show = {
 	potential = {
 		has_country_flag = apsr_enclave_assault_set_1_bonus_is_03
@@ -5096,7 +5090,7 @@ apsr_enclave_assault_bonus_01_Y_show = {
 	}
 }
 
-# вариант 4 (Q)
+#  4 (Q)
 apsr_enclave_assault_bonus_01_Q_show = {
 	potential = {
 		has_country_flag = apsr_enclave_assault_set_1_bonus_is_04
@@ -5109,7 +5103,7 @@ apsr_enclave_assault_bonus_01_Q_show = {
 	}
 }
 
-# вариант 5 (K)
+#  5 (K)
 apsr_enclave_assault_bonus_01_K_show = {
 	potential = {
 		has_country_flag = apsr_enclave_assault_set_1_bonus_is_05
@@ -5122,7 +5116,7 @@ apsr_enclave_assault_bonus_01_K_show = {
 	}
 }
 
-# вариант 6 (I)
+#  6 (I)
 apsr_enclave_assault_bonus_01_I_show = {
 	potential = {
 		has_country_flag = apsr_enclave_assault_set_1_bonus_is_06
@@ -5135,7 +5129,7 @@ apsr_enclave_assault_bonus_01_I_show = {
 	}
 }
 
-# вариант 7 (M)
+#  7 (M)
 apsr_enclave_assault_bonus_01_M_show = {
 	potential = {
 		has_country_flag = apsr_enclave_assault_set_1_bonus_is_07
@@ -5148,7 +5142,7 @@ apsr_enclave_assault_bonus_01_M_show = {
 	}
 }
 
-# вариант 8 (W)
+#  8 (W)
 apsr_enclave_assault_bonus_01_W_show = {
 	potential = {
 		has_country_flag = apsr_enclave_assault_set_1_bonus_is_08
@@ -5163,9 +5157,9 @@ apsr_enclave_assault_bonus_01_W_show = {
 
 
 
-### БОНУС 2
+###  2
 
-# вариант 1 (P)
+#  1 (P)
 apsr_enclave_assault_bonus_02_P_show = {
 	potential = {
 		has_country_flag = apsr_enclave_assault_set_2_bonus_is_01
@@ -5178,7 +5172,7 @@ apsr_enclave_assault_bonus_02_P_show = {
 	}
 }
 
-# вариант 2 (J)
+#  2 (J)
 apsr_enclave_assault_bonus_02_J_show = {
 	potential = {
 		has_country_flag = apsr_enclave_assault_set_2_bonus_is_02
@@ -5191,7 +5185,7 @@ apsr_enclave_assault_bonus_02_J_show = {
 	}
 }
 
-# вариант 3 (Y)
+#  3 (Y)
 apsr_enclave_assault_bonus_02_Y_show = {
 	potential = {
 		has_country_flag = apsr_enclave_assault_set_2_bonus_is_03
@@ -5204,7 +5198,7 @@ apsr_enclave_assault_bonus_02_Y_show = {
 	}
 }
 
-# вариант 4 (Q)
+#  4 (Q)
 apsr_enclave_assault_bonus_02_Q_show = {
 	potential = {
 		has_country_flag = apsr_enclave_assault_set_2_bonus_is_04
@@ -5217,7 +5211,7 @@ apsr_enclave_assault_bonus_02_Q_show = {
 	}
 }
 
-# вариант 5 (K)
+#  5 (K)
 apsr_enclave_assault_bonus_02_K_show = {
 	potential = {
 		has_country_flag = apsr_enclave_assault_set_2_bonus_is_05
@@ -5230,7 +5224,7 @@ apsr_enclave_assault_bonus_02_K_show = {
 	}
 }
 
-# вариант 6 (I)
+#  6 (I)
 apsr_enclave_assault_bonus_02_I_show = {
 	potential = {
 		has_country_flag = apsr_enclave_assault_set_2_bonus_is_06
@@ -5243,7 +5237,7 @@ apsr_enclave_assault_bonus_02_I_show = {
 	}
 }
 
-# вариант 7 (M)
+#  7 (M)
 apsr_enclave_assault_bonus_02_M_show = {
 	potential = {
 		has_country_flag = apsr_enclave_assault_set_2_bonus_is_07
@@ -5256,7 +5250,7 @@ apsr_enclave_assault_bonus_02_M_show = {
 	}
 }
 
-# вариант 8 (W)
+#  8 (W)
 apsr_enclave_assault_bonus_02_W_show = {
 	potential = {
 		has_country_flag = apsr_enclave_assault_set_2_bonus_is_08
@@ -5271,9 +5265,9 @@ apsr_enclave_assault_bonus_02_W_show = {
 
 
 
-### БОНУС 3
+###  3
 
-# вариант 1 (P)
+#  1 (P)
 apsr_enclave_assault_bonus_03_P_show = {
 	potential = {
 		has_country_flag = apsr_enclave_assault_set_3_bonus_is_01
@@ -5286,7 +5280,7 @@ apsr_enclave_assault_bonus_03_P_show = {
 	}
 }
 
-# вариант 2 (J)
+#  2 (J)
 apsr_enclave_assault_bonus_03_J_show = {
 	potential = {
 		has_country_flag = apsr_enclave_assault_set_3_bonus_is_02
@@ -5299,7 +5293,7 @@ apsr_enclave_assault_bonus_03_J_show = {
 	}
 }
 
-# вариант 3 (Y)
+#  3 (Y)
 apsr_enclave_assault_bonus_03_Y_show = {
 	potential = {
 		has_country_flag = apsr_enclave_assault_set_3_bonus_is_03
@@ -5312,7 +5306,7 @@ apsr_enclave_assault_bonus_03_Y_show = {
 	}
 }
 
-# вариант 4 (Q)
+#  4 (Q)
 apsr_enclave_assault_bonus_03_Q_show = {
 	potential = {
 		has_country_flag = apsr_enclave_assault_set_3_bonus_is_04
@@ -5325,7 +5319,7 @@ apsr_enclave_assault_bonus_03_Q_show = {
 	}
 }
 
-# вариант 5 (K)
+#  5 (K)
 apsr_enclave_assault_bonus_03_K_show = {
 	potential = {
 		has_country_flag = apsr_enclave_assault_set_3_bonus_is_05
@@ -5338,7 +5332,7 @@ apsr_enclave_assault_bonus_03_K_show = {
 	}
 }
 
-# вариант 6 (I)
+#  6 (I)
 apsr_enclave_assault_bonus_03_I_show = {
 	potential = {
 		has_country_flag = apsr_enclave_assault_set_3_bonus_is_06
@@ -5351,7 +5345,7 @@ apsr_enclave_assault_bonus_03_I_show = {
 	}
 }
 
-# вариант 7 (M)
+#  7 (M)
 apsr_enclave_assault_bonus_03_M_show = {
 	potential = {
 		has_country_flag = apsr_enclave_assault_set_3_bonus_is_07
@@ -5364,7 +5358,7 @@ apsr_enclave_assault_bonus_03_M_show = {
 	}
 }
 
-# вариант 8 (W)
+#  8 (W)
 apsr_enclave_assault_bonus_03_W_show = {
 	potential = {
 		has_country_flag = apsr_enclave_assault_set_3_bonus_is_08
@@ -5377,7 +5371,7 @@ apsr_enclave_assault_bonus_03_W_show = {
 	}
 }
 
-# вариант 9 (G)
+#  9 (G)
 apsr_enclave_assault_bonus_03_G_show = {
 	potential = {
 		has_country_flag = apsr_enclave_assault_set_3_bonus_is_09
@@ -5390,7 +5384,7 @@ apsr_enclave_assault_bonus_03_G_show = {
 	}
 }
 
-# вариант 10 (U)
+#  10 (U)
 apsr_enclave_assault_bonus_03_U_show = {
 	potential = {
 		has_country_flag = apsr_enclave_assault_set_3_bonus_is_10
@@ -5403,7 +5397,7 @@ apsr_enclave_assault_bonus_03_U_show = {
 	}
 }
 
-# вариант 11 (N)
+#  11 (N)
 apsr_enclave_assault_bonus_03_N_show = {
 	potential = {
 		has_country_flag = apsr_enclave_assault_set_3_bonus_is_11
@@ -5416,7 +5410,7 @@ apsr_enclave_assault_bonus_03_N_show = {
 	}
 }
 
-# вариант 12 (T)
+#  12 (T)
 apsr_enclave_assault_bonus_03_T_show = {
 	potential = {
 		has_country_flag = apsr_enclave_assault_set_3_bonus_is_12
@@ -5431,9 +5425,9 @@ apsr_enclave_assault_bonus_03_T_show = {
 
 
 
-### БОНУС 4
+###  4
 
-# вариант 9 (G)
+#  9 (G)
 apsr_enclave_assault_bonus_04_G_show = {
 	potential = {
 		has_country_flag = apsr_enclave_assault_set_4_bonus_is_09
@@ -5446,7 +5440,7 @@ apsr_enclave_assault_bonus_04_G_show = {
 	}
 }
 
-# вариант 10 (U)
+#  10 (U)
 apsr_enclave_assault_bonus_04_U_show = {
 	potential = {
 		has_country_flag = apsr_enclave_assault_set_4_bonus_is_10
@@ -5459,7 +5453,7 @@ apsr_enclave_assault_bonus_04_U_show = {
 	}
 }
 
-# вариант 11 (N)
+#  11 (N)
 apsr_enclave_assault_bonus_04_N_show = {
 	potential = {
 		has_country_flag = apsr_enclave_assault_set_4_bonus_is_11
@@ -5472,7 +5466,7 @@ apsr_enclave_assault_bonus_04_N_show = {
 	}
 }
 
-# вариант 12 (T)
+#  12 (T)
 apsr_enclave_assault_bonus_04_T_show = {
 	potential = {
 		has_country_flag = apsr_enclave_assault_set_4_bonus_is_12
@@ -5485,7 +5479,7 @@ apsr_enclave_assault_bonus_04_T_show = {
 	}
 }
 
-# вариант 13 (C)
+#  13 (C)
 apsr_enclave_assault_bonus_04_C_show = {
 	potential = {
 		has_country_flag = apsr_enclave_assault_set_4_bonus_is_13
@@ -5498,7 +5492,7 @@ apsr_enclave_assault_bonus_04_C_show = {
 	}
 }
 
-# вариант 14 (V)
+#  14 (V)
 apsr_enclave_assault_bonus_04_V_show = {
 	potential = {
 		has_country_flag = apsr_enclave_assault_set_4_bonus_is_14
@@ -5511,7 +5505,7 @@ apsr_enclave_assault_bonus_04_V_show = {
 	}
 }
 
-# вариант 15 (F)
+#  15 (F)
 apsr_enclave_assault_bonus_04_F_show = {
 	potential = {
 		has_country_flag = apsr_enclave_assault_set_4_bonus_is_15
